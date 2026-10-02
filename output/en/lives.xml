@@ -1,0 +1,9 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <a name="lives"> </a>
+  <h3>Lives do REL</h3>
+  <p> Seguem as lives sobre o REL realizadas pelo Datasus. Essas transmissões têm teor informativo e
+    abordam tanto o contexto negocial quanto técnico do modelo. Os vídeos cobrem detalhadamente as etapas de
+    credenciamento, APIs, homologação, além de aprofundar nos modelos informacional e computacional, na montagem dos
+    Bundles e em dicas gerais e orientações para a implementação. </p>
+</div>

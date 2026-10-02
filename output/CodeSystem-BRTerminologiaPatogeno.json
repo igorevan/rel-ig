@@ -1,0 +1,213 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BRTerminologiaPatogeno",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRTerminologiaPatogeno</b></p><a name=\"BRTerminologiaPatogeno\"> </a><a name=\"hcBRTerminologiaPatogeno\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRTerminologiaPatogeno-01\"> </a></td><td>Orthopoxvirus (nome do gênero do vírus)</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"BRTerminologiaPatogeno-02\"> </a></td><td>Orthopoxvirus não-varíola</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRTerminologiaPatogeno-03\"> </a></td><td>Vírus Monkeypox</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"BRTerminologiaPatogeno-04\"> </a></td><td>Parapoxvirus (nome do gênero do vírus)</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRTerminologiaPatogeno-05\"> </a></td><td>Vírus Orf</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"BRTerminologiaPatogeno-06\"> </a></td><td>Vírus Pseudovaríola</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"BRTerminologiaPatogeno-07\"> </a></td><td>SARS-CoV-2</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"BRTerminologiaPatogeno-08\"> </a></td><td>Chikungunya Vírus</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"BRTerminologiaPatogeno-09\"> </a></td><td>Dengue Vírus</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"BRTerminologiaPatogeno-10\"> </a></td><td>Vírus da Febre Amarela</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRTerminologiaPatogeno-11\"> </a></td><td>Vírus da Encefalite Japonesa</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRTerminologiaPatogeno-12\"> </a></td><td>Zika Vírus</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"BRTerminologiaPatogeno-13\"> </a></td><td>Vírus do Nilo Ocidental</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRTerminologiaPatogeno-14\"> </a></td><td>Vírus Oropouche</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRTerminologiaPatogeno-15\"> </a></td><td>Vírus Mayaro</td></tr></table><p><b>Ecrãs de idiomas adicionais</b></p><table class=\"codes\"><tr><td><b>Código</b></td><td><b>English (English, en)</b></td><td><b>Spanish (es)</b></td></tr><tr><td>01</td><td>Orthopoxvirus</td><td>Orthopoxvirus (género)</td></tr><tr><td>02</td><td>Orthopoxvirus species, not Variola virus</td><td>Orthopoxvirus, no Variola (especie)</td></tr><tr><td>03</td><td>Monkeypox virus</td><td>Virus de la Viruela del Mono</td></tr><tr><td>04</td><td>Parapoxvirus</td><td>Parapoxvirus (género)</td></tr><tr><td>05</td><td>Orf virus</td><td>Virus del Orf</td></tr><tr><td>06</td><td>Pseudocowpox virus</td><td>Virus de la Pseudoviruela Vacuna</td></tr><tr><td>07</td><td>SARS-CoV-2</td><td>SARS-CoV-2</td></tr><tr><td>08</td><td>Chikungunya virus</td><td></td></tr><tr><td>09</td><td>Dengue virus</td><td></td></tr><tr><td>10</td><td>Yellow fever virus</td><td></td></tr><tr><td>11</td><td>Japanese encephalitis virus</td><td></td></tr><tr><td>12</td><td>Zika virus</td><td></td></tr><tr><td>13</td><td>West Nile virus</td><td></td></tr><tr><td>14</td><td>Oropouche virus</td><td></td></tr><tr><td>15</td><td>Mayaro virus</td><td></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
+  "version" : "1.0.0-release",
+  "name" : "BRTerminologiaPatogeno",
+  "title" : "Patógeno (CodeSystem)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-12-23T14:16:40.0457007+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "Terminologia para indicação de um Patógeno.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "01",
+    "display" : "Orthopoxvirus (nome do gênero do vírus)",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Orthopoxvirus"
+    },
+    {
+      "language" : "es",
+      "value" : "Orthopoxvirus (género)"
+    }]
+  },
+  {
+    "code" : "02",
+    "display" : "Orthopoxvirus não-varíola",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Orthopoxvirus species, not Variola virus"
+    },
+    {
+      "language" : "es",
+      "value" : "Orthopoxvirus, no Variola (especie)"
+    }]
+  },
+  {
+    "code" : "03",
+    "display" : "Vírus Monkeypox",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Monkeypox virus"
+    },
+    {
+      "language" : "es",
+      "value" : "Virus de la Viruela del Mono"
+    }]
+  },
+  {
+    "code" : "04",
+    "display" : "Parapoxvirus (nome do gênero do vírus)",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Parapoxvirus"
+    },
+    {
+      "language" : "es",
+      "value" : "Parapoxvirus (género)"
+    }]
+  },
+  {
+    "code" : "05",
+    "display" : "Vírus Orf",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Orf virus"
+    },
+    {
+      "language" : "es",
+      "value" : "Virus del Orf"
+    }]
+  },
+  {
+    "code" : "06",
+    "display" : "Vírus Pseudovaríola",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Pseudocowpox virus"
+    },
+    {
+      "language" : "es",
+      "value" : "Virus de la Pseudoviruela Vacuna"
+    }]
+  },
+  {
+    "code" : "07",
+    "display" : "SARS-CoV-2",
+    "designation" : [{
+      "language" : "en",
+      "value" : "SARS-CoV-2"
+    },
+    {
+      "language" : "es",
+      "value" : "SARS-CoV-2"
+    }]
+  },
+  {
+    "code" : "08",
+    "display" : "Chikungunya Vírus",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Chikungunya virus"
+    }]
+  },
+  {
+    "code" : "09",
+    "display" : "Dengue Vírus",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Dengue virus"
+    }]
+  },
+  {
+    "code" : "10",
+    "display" : "Vírus da Febre Amarela",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Yellow fever virus"
+    }]
+  },
+  {
+    "code" : "11",
+    "display" : "Vírus da Encefalite Japonesa",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Japanese encephalitis virus"
+    }]
+  },
+  {
+    "code" : "12",
+    "display" : "Zika Vírus",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Zika virus"
+    }]
+  },
+  {
+    "code" : "13",
+    "display" : "Vírus do Nilo Ocidental",
+    "designation" : [{
+      "language" : "en",
+      "value" : "West Nile virus"
+    }]
+  },
+  {
+    "code" : "14",
+    "display" : "Vírus Oropouche",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Oropouche virus"
+    }]
+  },
+  {
+    "code" : "15",
+    "display" : "Vírus Mayaro",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Mayaro virus"
+    }]
+  }]
+}

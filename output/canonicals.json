@@ -1,0 +1,231 @@
+[{
+  "id" : "BRCID10",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+  "version" : "1.0.0-release",
+  "name" : "BRCID10"
+},
+{
+  "id" : "BRNomeExameGAL",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+  "version" : "1.0.0-release",
+  "name" : "BRNomeExameGAL"
+},
+{
+  "id" : "BRNomeExameLOINC",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC",
+  "version" : "1.0.0-release",
+  "name" : "BRNomeExameLOINC"
+},
+{
+  "id" : "BRResultadoQualitativoExame",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
+  "version" : "1.0.0-release",
+  "name" : "BRResultadoQualitativoExame"
+},
+{
+  "id" : "BRSubgrupoTabelaSUS",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
+  "version" : "1.0.0-release",
+  "name" : "BRSubgrupoTabelaSUS"
+},
+{
+  "id" : "BRTerminologiaPatogeno",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
+  "version" : "1.0.0-release",
+  "name" : "BRTerminologiaPatogeno"
+},
+{
+  "id" : "BRTerminologiaSuspeitaDiagnostica",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+  "version" : "1.0.0-release",
+  "name" : "BRTerminologiaSuspeitaDiagnostica"
+},
+{
+  "id" : "BRTipoAmostraGAL",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoAmostraGAL"
+},
+{
+  "id" : "BRTipoDocumento",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoDocumento"
+},
+{
+  "id" : "BRTipoResultadoAVIDEZ",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoAVIDEZ",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoAVIDEZ"
+},
+{
+  "id" : "BRTipoResultadoDTNT",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoDTNT"
+},
+{
+  "id" : "BRTipoResultadoHISPT",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoHISPT",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoHISPT"
+},
+{
+  "id" : "BRTipoResultadoPRAU",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPRAU",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoPRAU"
+},
+{
+  "id" : "BRTipoResultadoPSNG",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPSNG",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoPSNG"
+},
+{
+  "id" : "BRTipoResultadoRGNR",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRGNR",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoRGNR"
+},
+{
+  "id" : "BRTipoResultadoRSBAC",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSBAC",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoRSBAC"
+},
+{
+  "id" : "BRTipoResultadoRSCUL",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSCUL",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoResultadoRSCUL"
+},
+{
+  "id" : "BRAmostraBiologica-1.0",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRAmostraBiologica"
+},
+{
+  "id" : "BRCondicaoSaude",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude",
+  "version" : "1.0.0-release",
+  "name" : "BRCondicaoSaude"
+},
+{
+  "id" : "BRDiagnosticoLaboratorioClinico-3.2.1",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1",
+  "version" : "1.0.0-release",
+  "name" : "BRDiagnosticoLaboratorioClinico"
+},
+{
+  "id" : "BRPatogeno",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPatogeno",
+  "version" : "1.0.0-release",
+  "name" : "BRPatogeno"
+},
+{
+  "id" : "BRResultadoExameLaboratorial-3.2.1",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1",
+  "version" : "1.0.0-release",
+  "name" : "BRResultadoExameLaboratorial"
+},
+{
+  "id" : "BRCategoriaExame-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaExame-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRCategoriaExame"
+},
+{
+  "id" : "BREstadoDocumento-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BREstadoDocumento"
+},
+{
+  "id" : "BREstadoObservacao-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoObservacao-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BREstadoObservacao"
+},
+{
+  "id" : "BRNomeExame-2.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRNomeExame-2.0",
+  "version" : "1.0.0-release",
+  "name" : "BRNomeExame"
+},
+{
+  "id" : "BRResultadoQualitativoExame-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRResultadoQualitativoExame"
+},
+{
+  "id" : "BRResultadoQualitativoExame-2.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-2.0",
+  "version" : "1.0.0-release",
+  "name" : "BRResultadoQualitativoExame"
+},
+{
+  "id" : "BRTerminologiaPatogeno",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaPatogeno",
+  "version" : "1.0.0-release",
+  "name" : "BRTerminologiaPatogeno"
+},
+{
+  "id" : "BRTerminologiaSuspeitaDiagnostica",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
+  "version" : "1.0.0-release",
+  "name" : "BRTerminologiaSuspeitaDiagnostica"
+},
+{
+  "id" : "BRTipoAmostra-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoAmostra"
+},
+{
+  "id" : "BRTipoDocumento-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRTipoDocumento"
+},
+{
+  "id" : "br.gov.saude.rel.fhir",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir",
+  "version" : "1.0.0-release",
+  "name" : "RELIG"
+}]

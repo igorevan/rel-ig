@@ -1,0 +1,196 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRTerminologiaPatogeno",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
+  "version": "1.0.1",
+  "name": "BRTerminologiaPatogeno",
+  "title": "Patógeno (CodeSystem)",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-12-23T14:16:40.0457007+00:00",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "Terminologia para indicação de um Patógeno.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Orthopoxvirus (nome do gênero do vírus)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Orthopoxvirus"
+        },
+        {
+          "language": "es",
+          "value": "Orthopoxvirus (género)"
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "display": "Orthopoxvirus não-varíola",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Orthopoxvirus species, not Variola virus"
+        },
+        {
+          "language": "es",
+          "value": "Orthopoxvirus, no Variola (especie)"
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "display": "Vírus Monkeypox",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Monkeypox virus"
+        },
+        {
+          "language": "es",
+          "value": "Virus de la Viruela del Mono"
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "display": "Parapoxvirus (nome do gênero do vírus)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Parapoxvirus"
+        },
+        {
+          "language": "es",
+          "value": "Parapoxvirus (género)"
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "display": "Vírus Orf",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Orf virus"
+        },
+        {
+          "language": "es",
+          "value": "Virus del Orf"
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "display": "Vírus Pseudovaríola",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pseudocowpox virus"
+        },
+        {
+          "language": "es",
+          "value": "Virus de la Pseudoviruela Vacuna"
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "display": "SARS-CoV-2",
+      "designation": [
+        {
+          "language": "en",
+          "value": "SARS-CoV-2"
+        },
+        {
+          "language": "es",
+          "value": "SARS-CoV-2"
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "display": "Chikungunya Vírus",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Chikungunya virus"
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "display": "Dengue Vírus",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Dengue virus"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "display": "Vírus da Febre Amarela",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Yellow fever virus"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "display": "Vírus da Encefalite Japonesa",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Japanese encephalitis virus"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "display": "Zika Vírus",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Zika virus"
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "display": "Vírus do Nilo Ocidental",
+      "designation": [
+        {
+          "language": "en",
+          "value": "West Nile virus"
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "display": "Vírus Oropouche",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Oropouche virus"
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "display": "Vírus Mayaro",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mayaro virus"
+        }
+      ]
+    }
+  ]
+}

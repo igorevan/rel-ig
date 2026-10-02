@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example-bundle-rel-loinc"/>
+  <meta>
+    <lastUpdated value="2021-09-15T11:57:05.995-02:00"/>
+  </meta>
+  <identifier>
+    <system value="http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-1964"/>
+    <value value="12345678"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-09-15T11:57:05.944-02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:fb180118-848b-4455-8cae-c533790294bc"/>
+    <resource>
+      <Composition>
+        <id value="fb180118-848b-4455-8cae-c533790294bc"/>
+        <meta>
+          <profile value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_fb180118-848b-4455-8cae-c533790294bc"> </a><p class="res-header-id"><b>Narrativa gerada: Composition fb180118-848b-4455-8cae-c533790294bc</b></p><a name="fb180118-848b-4455-8cae-c533790294bc"> </a><a name="hcfb180118-848b-4455-8cae-c533790294bc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html">Resultado de Exame Laboratorial</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento REL}">Resultado de Exame(s) Laboratoriais(s)</span></p><p><b>date</b>: 2021-09-15 11:57:06-0200</p><p><b>author</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0</code>/00394544000185</p><p><b>title</b>: Resultado de Exame Laboratorial</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"/>
+            <code value="REL"/>
+          </coding>
+        </type>
+        <subject>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"/>
+            <value value="706004324048847"/>
+          </identifier>
+        </subject>
+        <date value="2021-09-15T11:57:06-02:00"/>
+        <author>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0"/>
+            <value value="00394544000185"/>
+          </identifier>
+        </author>
+        <title value="Resultado de Exame Laboratorial"/>
+        <section>
+          <entry>
+            <reference value="urn:uuid:8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:a96a4193-c359-437e-a39f-3f9667990c92"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"/>
+    <resource>
+      <Condition>
+        <id value="8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"/>
+        <meta>
+          <profile value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"> </a><p class="res-header-id"><b>Narrativa gerada: Condition 8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc</b></p><a name="8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"> </a><a name="hc8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRCondicaoSaude.html">Condição de Saúde</a></p></div><p><b>verificationStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10 A90}">Dengue [dengue clássico]</span></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/706004324048847</p><h3>Stages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Assessment</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-example-bundle-rel-loinc.html#urn-uuid-a96a4193-c359-437e-a39f-3f9667990c92">Observation Zika virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay</a></td></tr></table></div>
+        </text>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
+            <code value="A90"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"/>
+            <value value="706004324048847"/>
+          </identifier>
+        </subject>
+        <stage>
+          <assessment>
+            <reference value="urn:uuid:a96a4193-c359-437e-a39f-3f9667990c92"/>
+          </assessment>
+        </stage>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a96a4193-c359-437e-a39f-3f9667990c92"/>
+    <resource>
+      <Observation>
+        <id value="a96a4193-c359-437e-a39f-3f9667990c92"/>
+        <meta>
+          <profile value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_a96a4193-c359-437e-a39f-3f9667990c92"> </a><p class="res-header-id"><b>Narrativa gerada: Observation a96a4193-c359-437e-a39f-3f9667990c92</b></p><a name="a96a4193-c359-437e-a39f-3f9667990c92"> </a><a name="hca96a4193-c359-437e-a39f-3f9667990c92"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html">Diagnóstico em Laboratório Clínico</a></p></div><p><b>Patógeno (StructureDefinition)</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno 09}">Dengue virus</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS 0202}">Diagnóstico em laboratório clínico</span></p><p><b>code</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC 80619-0}">Zika virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/706004324048847</p><p><b>effective</b>: 2021-09-15 11:57:06-0200</p><p><b>issued</b>: 2021-09-15 12:57:06-0200</p><p><b>performer</b>: </p><ul><li>Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/034544015</li><li>Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0</code>/00394544000185</li></ul><p><b>value</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT 1}">Detectável</span></p><p><b>method</b>: <span title="Códigos:">Diagnóstico através de um hemograma.</span></p><p><b>specimen</b>: <a href="Bundle-example-bundle-rel-loinc.html#urn-uuid-3b2d133f-6192-4f20-8a1c-8da16811c812">Specimen: type = Raspado de pele</a></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Escala de -1 para +1.</td></tr></table></div>
+        </text>
+        <extension url="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPatogeno">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno"/>
+              <code value="09"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS"/>
+            <code value="0202"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC"/>
+            <code value="80619-0"/>
+          </coding>
+        </code>
+        <subject>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"/>
+            <value value="706004324048847"/>
+          </identifier>
+        </subject>
+        <effectiveDateTime value="2021-09-15T11:57:06-02:00"/>
+        <issued value="2021-09-15T12:57:06-02:00"/>
+        <performer>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0"/>
+            <value value="034544015"/>
+          </identifier>
+        </performer>
+        <performer>
+          <identifier>
+            <system value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0"/>
+            <value value="00394544000185"/>
+          </identifier>
+        </performer>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT"/>
+            <code value="1"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <text value="Diagnóstico através de um hemograma."/>
+        </method>
+        <specimen>
+          <reference value="urn:uuid:3b2d133f-6192-4f20-8a1c-8da16811c812"/>
+        </specimen>
+        <referenceRange>
+          <text value="Escala de -1 para +1."/>
+        </referenceRange>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3b2d133f-6192-4f20-8a1c-8da16811c812"/>
+    <resource>
+      <Specimen>
+        <id value="3b2d133f-6192-4f20-8a1c-8da16811c812"/>
+        <meta>
+          <profile value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_3b2d133f-6192-4f20-8a1c-8da16811c812"> </a><p class="res-header-id"><b>Narrativa gerada: Specimen 3b2d133f-6192-4f20-8a1c-8da16811c812</b></p><a name="3b2d133f-6192-4f20-8a1c-8da16811c812"> </a><a name="hc3b2d133f-6192-4f20-8a1c-8da16811c812"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRAmostraBiologica-1.0.html">Amostra Biológica</a></p></div><p><b>type</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL RASPEL}">Raspado de pele</span></p></div>
+        </text>
+        <type>
+          <coding>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL"/>
+            <code value="RASPEL"/>
+          </coding>
+        </type>
+      </Specimen>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,2329 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Exames LOINC - JSON Representation - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.18"}
+    h3,h4,h5,h6{--heading-prefix:"11.18"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-release - STU1
+
+
+
+  <img alt="Brazil flag" src="../assets/images/bra.svg" height="16" title="Brazil"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Principal</a>
+  </li>
+  <!-- <li>
+    <a href="lives.html">Lives</a>
+  </li> -->
+  <li>
+    <a href="credenciamento.html">Credenciamento</a>
+  </li>
+  <li>
+    <a href="integracao.html">Integração</a>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="mi.html" class="dropdown-toggle"> REL <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mi.html">Modelo de Informação</a>
+      </li>
+      <li>
+        <a href="mc.html">Modelo Computacional</a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle"> Especificação <b
+        class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artefatos</a>
+      </li>
+      <li>
+        <a href="exemplos.html">Exemplos</a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="toc.html" class="dropdown-toggle"> Ajuda <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="toc.html">Índice</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html"> Especificações do FHIR R4 <img
+            src="external.png"
+            style="text-align: baseline" />
+        </a>
+      </li>
+      <li>
+        <a href="changes.html">Histórico de mudanças</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="forms.html">Feedback</a>
+      </li>
+      <li>
+        <a href="suporte.html">Suporte da RNDS</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Índice</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Exames LOINC</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="CodeSystem-BRNomeExameLOINC.xml.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="CodeSystem-BRNomeExameLOINC.ttl.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/rel/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-BRNomeExameLOINC.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-BRNomeExameLOINC.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-BRNomeExameLOINC.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: Exames LOINC</h2>
+
+  <table class="colsn" data-fhir="generated">
+    <tr>
+
+      <td colspan="1">
+        
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Normative</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-BRNomeExameLOINC.json" no-download="true">Raw json</a> | <a href="CodeSystem-BRNomeExameLOINC.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "BRNomeExameLOINC",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "en",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated"
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "ehr"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">_valueInteger</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#integer.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCanonical</a>" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "normative",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">_valueCode</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCanonical</a>" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "4.0.1"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0-release",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "BRNomeExameLOINC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Exames LOINC",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2020-04-29T20:29:49.3397125+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Ministério da Saúde do Brasil",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Ministério da Saúde do Brasil",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.saude.gov.br"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "cgiis.datasus@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94306-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 Painel de RNA - Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94307-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus, [presença de] gene 2 N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94308-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene N em amostra não especificada, por amplificação de ácido nucleico usando conjunto de sonda / primer N2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94309-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] RNA em amostra não especificada, por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94310-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS (como) Coronavírus  [Presença de] gene N em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94311-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94312-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94313-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS (como) Coronavírus [Limiar de ciclo de] gene N em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94314-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene RdRp em amostra não especificada por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94315-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene E em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94316-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94500-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94502-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94503-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 painel -  anticorpos em Soro, Plasma ou Sangue por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94504-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 painel - anticorpos, Soro ou Plasma por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94505-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [dosagem de] anticorpos IgG [Unidades/Volume] em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94506-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [dosagem de] anticorpos IgM [Unidades/Volume] em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94507-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgG em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94508-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgM em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94509-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [limiar de ciclo de] gene E em amostra não especificada por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94510-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [limiar de ciclo de] gene 2 N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94511-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [limiar de ciclo da] região ORF1ab em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94531-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 painel RNA - em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94532-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado + MERS Coronavírus, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94533-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene N em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94534-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene RdRp em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94547-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgG e IgM em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94558-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] antígenos Ag em amostra respiratória por imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94559-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] gene da regição ORF1ab em amostra respiratória por amplificação do ácido nucléico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94562-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgA Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94563-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgG Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94564-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] anticorpos IgM Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94565-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [presença de] DNA em rinofaringe por NAA por detecção sem sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94639-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] região anticorpos ORF1 em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94640-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene S em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94641-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene S em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94642-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] gene S em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94643-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] gene S em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94644-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] região anticorpos ORF1 em Amostra respiratória por Amplificação do ácido nucleico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94645-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] gene RdRp em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94646-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] gene RdRp em Amostra respiratória por Amplificação do ácido nucleico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94647-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado [Presença de] RNA em Amosta Inespecífica por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94660-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94661-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Interpretação de] anticorpos em Soro ou Plasma"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94720-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [dosagem de] anticorpos IgA em Soro ou Plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94745-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] RNA em Amostra respiratória por Amplificação do ácido nucleico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94746-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Limiar de ciclo de] RNA em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94756-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene N em Amostra respiratória por Amplificação do ácido nucleido usando sonda primer set N1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94757-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene N em Amostra respiratória por Amplificação do ácido nucleico usando sonda primer set N2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94758-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado [Presença de] gene E em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94759-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] RNA em Nasofaringe por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94760-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene N em Nasofaringe por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94761-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] anticorpos IgG em teste em Amostra de sangue seco por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94762-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] anticorpos em Soro ou Plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94763-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] em Amostra não específica por cultura em organismo específico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94765-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado [Presença de] gene E em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94766-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene N em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94767-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene S em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94768-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] anticorpos IgA em Soro Plasma ou Sangue por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94769-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [dosagem de] anticorpos em Soro ou Plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94819-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [dosagem de] (carga viral) RNA em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94845-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] RNA em Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95125-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2  [Presença de] IgA+IgM em Soro ou Plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95209-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus + SARS Coronavírus 2 [Presença de] antígeno em Amostra respiratória por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95380-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B e SARS Coronavírus 2 e SARS Coronavírus relacionado painel de RNA por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95406-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [Presença de] RNA no Nariz por Amplificação de ácido nucléico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95409-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [Presença de] gene N em Nariz por  Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95410-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [Concentração de] neutralização de anticorpos em Soro por teste de neutralização de pseudovírus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95411-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [Presença de] neutralização de anticorpos em Soro por teste de neutralização de pseudovírus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95416-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2, [Presença de] anticorpos IgM teste em Amostra de Sangue seco por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95422-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B RNA e SARS Coronavírus 2 painel de gene N - Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95423-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B e SARS Coronavírus 2 identificado em  Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95425-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] gene N em Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95427-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Concentração de] anticorpos IgA em Soro ou Plasma por imunofluorescência"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95428-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Concentração de] anticorpos IgM em Soro ou Plasma por imunofluorescência"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95429-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Concentração de] anticorpos IgG em Soro ou Plasma por imunofluorescência"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95521-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [#/volume] (carga viral) gene N em Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95522-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [dosagem de] (carga viral ) gene N em Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95542-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 anticorposs IgG+IgM [Presença de] em Soro Plasma ou Sangue por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95608-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2  [Presença de] RNA em amostra respiraória por Amplificação de ácido nucleico com detecção sem sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95823-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado [Presença de] gene E em Saliva (fluido oral) por Amplificação de àcido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95824-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] região anticorpos ORF1 em Saliva (fluido oral) por Amplificação de ácido nucléico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95825-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 [Presença de] anticorpos em Amostra de Sangue seco por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95826-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 painel de RNA - Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95941-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B e SARS Coronavírus 2 e Vírus sinciciais respiratórios painel de RNA - Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95942-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B e SARS Coronavírus + SARS Coronavírus 2 painel de antígeno - Amostra de trato respiratório superior por Imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95971-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 estimulado por interferon gama [Presença de] em sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95972-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 estimulado por  interferon gama liberação por células T [Unidades/Volumes] corrigido para fundo em sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95973-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 estimulado por interferon gama liberação por células T (Unidades/Volume] em sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95974-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 estimulado por interferon gama painel - Sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96091-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene RdRp [Presença de] em saliva (fluído oral) por Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96094-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 e SARS Coronavírus relacionado painel de RNA - Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96118-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 painel de anticorpos -  Amostra de sangue seco por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96119-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 antígenos [Presença de] Amostra de trato respiratório superior por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96120-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene RdRp [Presença de] em Amostra de trato respiratório inferior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96121-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado gene E [Presença de] em Amostra de trato respiratório inferior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96122-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus relacionado gene E [Presença de] em Amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96123-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene RdRp [Presença de] em Amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96448-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene N [Presença de] em saliva (fluído oral) por amplicação de ácido nucleico usando sonda primer set N1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96603-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 proteína S domínio de ligação ao RNA anticorpo neutralizante [Presença] em soro ou plasma por imunonensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96742-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 anticorpos IgG [Massa/Volume] em soro ou plasma por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96751-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene S mutação detectada [Identificador] em specime por método genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96752-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene S mutação detectada [Presença de] em amostra por método genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96755-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interpetação de variante em Amostra narrativa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96763-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene E [Presença] em amostra respiratória por Amplificação de ácido nucléico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96764-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene E [Limiar de ciclo #] em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96765-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavírus 2 gene S [Presença] em saliva (fluído oral) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96766-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sequencia GISAID número de registro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96797-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 RNA [Presença] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96829-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 RNA [Presença de] em Amostra de doador por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96894-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 painel de sequenciamento e identificação - Amostra pelo método de genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96895-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 linhagem [tipo] em amostra pelo método de genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96896-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 clade [tipo] em amostra pelo método de genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96897-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 painel de RNA - lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96898-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 gene N [Limiar de ciclo#] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96899-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 [Limiar de ciclo#] região anticorpos ORF1 (Fases de leitura aberta-1) em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96900-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 gene S [Limiar de ciclo#] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96957-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 gene M [Presença de] em amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96958-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 gene N [Presença] em saliva (fluído oral) por Amplicação de ácido nucleico usando sonda primer CDC set N2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96986-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 gene N [Presença de] no nariz por Amplificação do ácido nucleico com detecção sem sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97097-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 [Presença] antígenos em amostra de Trato respiratório superior por imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97098-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 gene de proteína não estruturada-2 [Presença] em amostra de Trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97099-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A e B e SARS Coronavírus 2 painel de antígenos - Amostra de trato respiratório superior por imunoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97104-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 região anticorpos ORF1 (Fases de leitura aberta-1) [Unidades/Volumes] (carga viral) em amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98069-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 anticorpos [Presença] em Saliva (fluído oral) por imoensaio rápido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98080-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavírus 2 e SARS-relacionado coronavírus painel de RNA - Saliva (fluído oral) por Amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98131-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 região anticorpos ORF1b (Fases de leitura aberta-1b) [Presença] em amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98132-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 região anticorpos ORF1a (Fases de leitura aberta-1b) [Presença] em amostra respiratória por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98493-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 região anticorpos ORF1b (Fases de leitura aberta-1b) [Presença] em saliva (fluído oral)  por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98494-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS coronavirus 2 região anticorpos ORF1a (Fases de leitura aberta-1a) [Presença] em saliva (fluído oral) por Amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98732-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 proteína S Domínio de Ligação ao RNA anticorpo neutralizante [Fator de diluição] em soro ou plasma por imunonensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98733-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Percentual de neutralização por SARS coronavirus 2 proteína spike Domínio de Ligação ao RNA anticorpo neutralizante em soro ou plasma por imunonensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98734-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 proteína S Domínio de Ligação ao RNA anticorpo neutralizante [Unidades/Volume] em soro ou plasma por imunonensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98846-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interferon gama estimulado liberação por células T auxiliares (CD4+) [Unidades/volume] corrigido para sangue de fundo por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "98847-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interferon gama estimulado liberação por linfócitos [Unidades/volume] corrigido para sangue de fundo por imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99314-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 gene RdRp mutação detectada [Identificador] em amostra pelo método de genética molecular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99596-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 proteína N [Presença] anticorpos IgG em soro ou plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99597-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2  proteína S [Presença] anticorpos IgG em soro ou plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99771-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 proteína spike e proteína de nucleocapsídeo painel de interferon gama estimulado - Sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99772-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interferon gama estimulado [Interpretação] em Sangue Qualitativo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99773-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interferon gama estimulado liberado por células T. Antígeno spike área de contagem [#] corrigido para fundo em Sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99774-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SARS Coronavirus 2 interferon gama estimulado liberado por células T. Antígeno nucleocapsídeo área de contagem [#] corrigido para fundo em Sangue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "41853-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orthopoxvirus DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100434-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orthopoxvirus não-varíola DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100383-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus Monkeypox DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100888-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus Monkeypox da Africa Ocidental DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100889-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus Monkeypox da Bacia do Congo DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100885-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Parapoxvirus DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100886-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus Orf DNA [Presença de] em Amostra por Amplificação de Ácido Nucleio com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100887-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da pseudovaríola DNA [Presença] em Amostra por Amplficação de Ácido Nucleio com detecção por sonda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100891-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orthopoxvirus IgG Ab [Presença] em Soro ou Plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100892-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orthopoxvirus IgM Ab [Presença] em soro ou plasma por Imunoensaio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100893-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orthopoxvirus IgG e IgM Ab panel - Soro ou Plasma"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "40505-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo contra o Vírus Chikungunya [Título] no soro por inibição da hemaglutinação",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus Ab [Titer] in Serum by Hemagglutination inhibition"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "93976-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Painel de anticorpo IgM e IgG contra o Vírus Chikungunya - Soro ou plasma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus Ab.IgM and IgG panel - Serum or Plasma"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88630-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Chikungunya [Presença] em soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "56128-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Chikungunya [Título] em soro ou plasma por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97866-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Chikungunya [Unidades/volume] em soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88629-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Chikungunya [Presença] em soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "56130-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Chikungunya [Título] em soro ou plasma por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97867-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Chikungunya [Unidades/volume] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "86514-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Chikungunya [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus RNA [Presence] in Amniotic fluid by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60260-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Chikungunya [Presença] no soro ou plasma por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "51664-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Chikungunya [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "86515-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Chikungunya [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Chikungunya virus RNA [Presence] in Urine by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "81154-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Painel de Vírus da Dengue, chikungunya e zika por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue and Chikungunya and Zika virus panel by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "55369-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo contra o Vírus da Dengue [título] no soro por inibição da hemaglutinação",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus Ab [Titer] in Serum by Hemagglutination inhibition"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29661-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Dengue [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "100964-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Dengue [Presença] no soro, plasma ou sangue por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgG Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "23991-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Dengue [unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgG Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "75223-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG e IgM contra o Vírus da Dengue [identificador] no soro, plasma ou sangue por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgG and IgM [Identifier] in Serum, Plasma or Blood by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29663-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Dengue [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "34721-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Dengue [Presença] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgM Ab [Presence] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "23992-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Dengue [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "91064-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno NS1 do Vírus da Dengue [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus NS1 Ag [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "75377-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno NS1 do Vírus da Dengue [Presença] no soro, plasma ou sangue por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "101206-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno NS1 do Vírus da Dengue [Unidades/volume] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus NS1 Ag [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "41878-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Painel IgG e IgM contra o Vírus da Dengue - soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus IgG and IgM panel - Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60262-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1 RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "33578-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo contra o Vírus da Dengue [título] no soro por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus Ab [Titer] in Serum by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "77958-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1, 2, 3 e 4 [Identificador] no líquido cefalorraquidiano por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1 and 2 and 3 and 4 RNA [Identifier] in Cerebral spinal fluid by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88188-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1+2+3+4 [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1+2+3+4 RNA [Presence] in Urine by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94837-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1+2+3+4 [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1+2+3+4 RNA [Presence] in Amniotic fluid by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88189-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1+2+3+4 [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1+2+3+4 RNA [Presence] in Blood by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7855-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 1+2+3+4 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 1+2+3+4 RNA [Presence] in Serum or Plasma by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60420-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 2 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 2 RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60419-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 3 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 3 RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60418-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Dengue 4 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Dengue virus 4 RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "41239-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo contra o Vírus da Febre Amarela [Presença] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus Ab [Presence] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97868-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Painel de anticorpo contra o Vírus da Febre Amarela - soro ou plasma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus Ab panel - Serum or Plasma"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "77954-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Febre Amarela [Presença] no soro por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgG Ab [Presence] in Serum by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95675-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Febre Amarela [Presença] em amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgG Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6592-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Febre Amarela [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgG Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "71782-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "77955-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] no soro por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgM Ab [Presence] in Serum by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95690-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] na amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgM Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6593-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Febre Amarela [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90459-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Febre Amarela [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus RNA [Presence] in Blood by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8057-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Febre Amarela [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "94184-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Febre Amarela [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97869-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Painel de anticorpo contra o Vírus Zika - soro ou plasma",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus Ab panel - Serum or Plasma"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "91080-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Zika [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95663-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Zika [Presença] em amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgG Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "89590-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Zika [título] no soro por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgG Ab [Titer] in Serum by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97870-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Zika [unidades/volume] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80823-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80824-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "91678-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Presença] no soro, plasma ou sangue por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "89591-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Título] no soro por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Titer] in Serum by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80618-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Unidades/volume] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80619-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Zika [Unidades/volume] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "85621-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Amniotic fluid by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "91078-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Blood by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "86594-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] no líquido cefalorraquidiano por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "90462-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] no sangue do cordão umbilical por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Cord blood by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "91079-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] na placenta por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Placenta by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "85622-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] no soro ou plasma por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "79190-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "85623-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Zika [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Zika virus RNA [Presence] in Urine by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29568-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo neutralizante contra o Vírus do Nilo Ocidental [Título] no soro por teste de neutralização",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus neutralizing antibody [Titer] in Serum by Neutralization test"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "34892-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus do Nilo Ocidental [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95650-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo neutralizante contra o Vírus Mayaro [Título] na amostra por teste de neutralização",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mayaro virus neutralizing antibody [Titer] in Specimen by Neutralization test"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99120-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo neutralizante contra o Vírus Oropouche [Título] na amostra por teste de neutralização",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Oropouche virus neutralizing antibody [Titer] in Specimen by Neutralization test"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96506-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Oropouche [Presença] na amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Oropouche virus IgG Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "96531-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Oropouche [Presença] na amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Oropouche virus IgM Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "77953-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29538-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus do Nilo Ocidental Igm Ac [unidades/volume] em líquido espinhal cerebral",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97931-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Mayaro [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mayaro virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "97917-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Oropouche [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Oropouche virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "33330-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Título] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Titer] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29566-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "33328-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [título] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Titer] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "33329-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [Título] no soro",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Titer] in Serum"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "39572-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [Unidades/volume] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "38997-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Nilo Ocidental [unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgG Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29570-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo neutralizante do vírus do Nilo Ocidental [Título] no líquido espinhal cerebral por teste de neutralização",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus neutralizing antibody [Titer] in Cerebral spinal fluid by Neutralization test"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "32361-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do vírus do Nilo Ocidental [presença] no soro por NaA com detecção de sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus RNA [Presence] in Serum by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29569-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95674-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Mayaro [Presença] na amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mayaro virus IgG Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29567-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "33331-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Título] no soro",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Titer] in Serum"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "39573-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Unidades/volume] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "38166-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Nilo Ocidental [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "West Nile virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "95689-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Mayaro [Presença] na amostra por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Mayaro virus IgM Ab [Presence] in Specimen by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "22827-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Subtipo do Vírus Influenza A [Identificador] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus A subtype [Identifier] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "24015-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno do Vírus da Influenza A+B [Presença] na amostra",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus A+B Ag [Presence] in Specimen"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5867-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza B Antígeno [Presença] na amostra por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus B Ag [Presence] in Specimen by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5863-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza A Antígeno [Presença] na amostra por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus A Ag [Presence] in Specimen by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "92141-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Influenza B [Presença] em amostra do sistema Respiratório por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus B RNA [Presence] in Respiratory system specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "92142-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Influenza A [Presença] em amostra do sistema Respiratório por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus A RNA [Presence] in Respiratory system specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80382-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno do Vírus da Influenza A [Presença] em amostra das vias respiratórias superiores por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus A Ag [Presence] in Upper respiratory specimen by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "80383-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus da Influenza B Antígeno [Presença] em amostra das vias respiratórias superiores por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Influenza virus B Ag [Presence] in Upper respiratory specimen by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "24116-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Rubéola [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5335-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus da Rubéola [unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "40667-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Rubéola [Presença] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5334-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus da Rubéola [Unidades/volume] no soro ou plasma por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "52986-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Avidez do anticorpo IgG contra o Vírus da Rubéola [Relação] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "54091-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus da Rubéola [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Rubella virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "22498-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo contra o Vírus do Sarampo [Título] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus Ab [Titer] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60422-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Genótipo do Vírus do Sarampo [Identificador] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus genotype [Identifier] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5244-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Sarampo [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus IgG Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35276-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Sarampo [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus IgM Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "25421-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus do Sarampo [Unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "48508-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus do Sarampo [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35275-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus do Sarampo [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Measles virus IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "15410-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Varicela Zoster [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgG Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5403-1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Varicela Zoster [unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgG Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "29662-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Varicela Zoster [Presença] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgM Ab [Presence] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5404-9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Varicela Zoster [unidades/volume] no soro por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgM Ab [Units/volume] in Serum by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "49451-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DNA do Vírus Varicela Zoster [#/volume] (carga viral) na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus DNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "11483-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DNA do Vírus Varicela Zoster [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus DNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "104459-3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Varicela Zoster [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgG Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "17764-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgG contra o Vírus Varicela Zoster [Unidades/volume] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgG Ab [Units/volume] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "69930-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Varicela Zoster [Presença] no líquido cefalorraquidiano por imunoensaio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "31695-0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anticorpo IgM contra o Vírus Varicela Zoster [Unidades/volume] no líquido cefalorraquidiano",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Varicella zoster virus IgM Ab [Units/volume] in Cerebral spinal fluid"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5877-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vírus Sincicial Respiratório Antígeno [Presença] em amostra por imunofluorescência",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Respiratory syncytial virus Ag [Presence] in Specimen by Immunofluorescence"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "72885-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Antígeno do Vírus Sincicial Respiratório [Presença] na nasofaringe por imunoensaio rápido",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Respiratory syncytial virus Ag [Presence] in Nasopharynx by Rapid immunoassay"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "40988-8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Sincicial Respiratório [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Respiratory syncytial virus RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "30075-6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Sincicial Respiratório A [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Respiratory syncytial virus A RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "30076-4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RNA do Vírus Sincicial Respiratório B [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "en",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Respiratory syncytial virus B RNA [Presence] in Specimen by NAA with probe detection"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="CodeSystem-BRNomeExameLOINC.xml.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="CodeSystem-BRNomeExameLOINC.ttl.html">next ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
+          Package br.gov.saude.rel.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-10-02 17:00:00 -0300">
+    2026-10-02
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRNomeExameGAL"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL"/>
+  <version value="1.0.0-release"/>
+  <name value="BRNomeExameGAL"/>
+  <title value="Exames do GAL"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-05-05T11:53:58.0082379+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="coronavirusnCoV"/>
+    <display value="Novo coronavírus (2019-nCoV)"/>
+  </concept>
+  <concept>
+    <code value="COVID"/>
+    <display value="COVID-19, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="CVIDGG"/>
+    <display value="COVID-19, IgG"/>
+  </concept>
+  <concept>
+    <code value="CVIDGM"/>
+    <display value="COVID-19, IgM"/>
+  </concept>
+  <concept>
+    <code value="CHIKBM"/>
+    <display value="CHIKUNGUNYA, BIOLOGIA MOLECULAR"/>
+  </concept>
+  <concept>
+    <code value="CHIKG"/>
+    <display value="CHIKUNGUNYA, IGG"/>
+  </concept>
+  <concept>
+    <code value="CHIKM"/>
+    <display value="CHIKUNGUNYA, IGM"/>
+  </concept>
+  <concept>
+    <code value="CHIKTR"/>
+    <display value="CHIKUNGUNYA, TESTE RAPIDO IGM"/>
+  </concept>
+  <concept>
+    <code value="DENGG"/>
+    <display value="DENGUE IGG"/>
+  </concept>
+  <concept>
+    <code value="DENGM"/>
+    <display value="DENGUE IGM"/>
+  </concept>
+  <concept>
+    <code value="DENGMS"/>
+    <display value="DENGUE IGM SOROLOGIA"/>
+  </concept>
+  <concept>
+    <code value="DENGTR"/>
+    <display value="DENGUE TESTE RAPIDO"/>
+  </concept>
+  <concept>
+    <code value="DENAN"/>
+    <display value="DENGUE, DETECCAO DE ANTIGENO NS1"/>
+  </concept>
+  <concept>
+    <code value="FEAMB"/>
+    <display value="FEBRE AMARELA BIOLOGIA MOLECULAR"/>
+  </concept>
+  <concept>
+    <code value="FEAMM"/>
+    <display value="FEBRE AMARELA IGM"/>
+  </concept>
+  <concept>
+    <code value="FAEAPV"/>
+    <display value="FEBRE AMARELA, EVENTO ADVERSO POS VACINAL/EAPV"/>
+  </concept>
+  <concept>
+    <code value="FEAMG"/>
+    <display value="FEBRE AMARELA, IGG"/>
+  </concept>
+  <concept>
+    <code value="FAIMIG"/>
+    <display value="FEBRE AMARELA, TESTE RAPIDO IGM/IGG"/>
+  </concept>
+  <concept>
+    <code value="PEQARB"/>
+    <display value="PESQUISA DE ARBOVIRUS"/>
+  </concept>
+  <concept>
+    <code value="PEQZDC"/>
+    <display value="PESQUSA DE ARBOVIRUS (ZDC)"/>
+  </concept>
+  <concept>
+    <code value="ZIKABM"/>
+    <display value="ZIKA BIOLOGIA MOLECULAR"/>
+  </concept>
+  <concept>
+    <code value="ZIKAGG"/>
+    <display value="ZIKA IGG"/>
+  </concept>
+  <concept>
+    <code value="ZIKAGM"/>
+    <display value="ZIKA IGM"/>
+  </concept>
+  <concept>
+    <code value="ZIKATR"/>
+    <display value="ZIKA TESTE RAPIDO IGG E IGM"/>
+  </concept>
+  <concept>
+    <code value="FENLB"/>
+    <display value="Febre do Nilo Ocidental, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="FENLG"/>
+    <display value="Febre do Nilo Ocidental, IgG"/>
+  </concept>
+  <concept>
+    <code value="FENLM"/>
+    <display value="Febre do Nilo Ocidental, IgM"/>
+  </concept>
+  <concept>
+    <code value="MAYBIO"/>
+    <display value="Mayaro, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="MAYIGG"/>
+    <display value="Mayaro, IgG"/>
+  </concept>
+  <concept>
+    <code value="MAYIGM"/>
+    <display value="Mayaro, IgM"/>
+  </concept>
+  <concept>
+    <code value="OROBIO"/>
+    <display value="Oropouche, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="OROIGG"/>
+    <display value="Oropouche, IgG"/>
+  </concept>
+  <concept>
+    <code value="OROIGM"/>
+    <display value="Oropouche, IgM"/>
+  </concept>
+  <concept>
+    <code value="DENGB"/>
+    <display value="DENGUE, BIOLOGIA MOLECULAR"/>
+  </concept>
+  <concept>
+    <code value="INFSAZ"/>
+    <display value="Influenza"/>
+  </concept>
+  <concept>
+    <code value="RUBBM"/>
+    <display value="Rubéola, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="RUBG"/>
+    <display value="Rubéola, IgG"/>
+  </concept>
+  <concept>
+    <code value="RUBM"/>
+    <display value="Rubéola, IgM"/>
+  </concept>
+  <concept>
+    <code value="SARBM"/>
+    <display value="Sarampo, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="SARG"/>
+    <display value="Sarampo, IgG"/>
+  </concept>
+  <concept>
+    <code value="SARM"/>
+    <display value="Sarampo, IgM"/>
+  </concept>
+  <concept>
+    <code value="VARBIO"/>
+    <display value="Varicela, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="VARIG"/>
+    <display value="Varicela, IgG"/>
+  </concept>
+  <concept>
+    <code value="VARIM"/>
+    <display value="Varicela, IgM"/>
+  </concept>
+  <concept>
+    <code value="VARIOL"/>
+    <display value="Varíola"/>
+  </concept>
+  <concept>
+    <code value="VARZOS"/>
+    <display value="Varicela Zoster, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="VRSRT"/>
+    <display value="Vírus Respiratórios"/>
+  </concept>
+</CodeSystem>

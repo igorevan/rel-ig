@@ -1,0 +1,118 @@
+{
+  "package": "br.gov.saude.rel.fhir",
+  "version": "1.0.0-release",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BR",
+  "extensions": [
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPatogeno",
+      "title": "Patógeno (StructureDefinition)",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "Specimen": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0",
+        "title": "Amostra Biológica"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude",
+        "title": "Condição de Saúde"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1",
+        "title": "Diagnóstico em Laboratório Clínico"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1",
+        "title": "Resultado de Exame Laboratorial"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPatogeno": [
+      "Bundle.entry.resource",
+      "Observation"
+    ]
+  }
+}

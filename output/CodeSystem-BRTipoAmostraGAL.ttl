@@ -1,0 +1,297 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRTipoAmostraGAL> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BRTipoAmostraGAL"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRTipoAmostraGAL</b></p><a name=\"BRTipoAmostraGAL\"> </a><a name=\"hcBRTipoAmostraGAL\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">SECONF<a name=\"BRTipoAmostraGAL-SECONF\"> </a></td><td>Secreção Orofaríngea e Nasofaríngea</td></tr><tr><td style=\"white-space:nowrap\">SNOF<a name=\"BRTipoAmostraGAL-SNOF\"> </a></td><td>Swab Naso-Orofaríngeo</td></tr><tr><td style=\"white-space:nowrap\">SWNAFA<a name=\"BRTipoAmostraGAL-SWNAFA\"> </a></td><td>Swab Nasofaríngeo</td></tr><tr><td style=\"white-space:nowrap\">SWAB<a name=\"BRTipoAmostraGAL-SWAB\"> </a></td><td>Swab</td></tr><tr><td style=\"white-space:nowrap\">SECNAS<a name=\"BRTipoAmostraGAL-SECNAS\"> </a></td><td>Secreção Nasofaríngea</td></tr><tr><td style=\"white-space:nowrap\">ASNAFA<a name=\"BRTipoAmostraGAL-ASNAFA\"> </a></td><td>Aspirado Nasofaríngeo</td></tr><tr><td style=\"white-space:nowrap\">SWORO<a name=\"BRTipoAmostraGAL-SWORO\"> </a></td><td>Swab Orofaríngeo</td></tr><tr><td style=\"white-space:nowrap\">SWNAS<a name=\"BRTipoAmostraGAL-SWNAS\"> </a></td><td>Swab Nasal</td></tr><tr><td style=\"white-space:nowrap\">SECORF<a name=\"BRTipoAmostraGAL-SECORF\"> </a></td><td>Secreção Orofaríngea</td></tr><tr><td style=\"white-space:nowrap\">LAVBRA<a name=\"BRTipoAmostraGAL-LAVBRA\"> </a></td><td>Lavado Brônquico Alveolar</td></tr><tr><td style=\"white-space:nowrap\">LAVBRO<a name=\"BRTipoAmostraGAL-LAVBRO\"> </a></td><td>Lavado Brônquico</td></tr><tr><td style=\"white-space:nowrap\">CORIZA<a name=\"BRTipoAmostraGAL-CORIZA\"> </a></td><td>Coriza</td></tr><tr><td style=\"white-space:nowrap\">EXSNAS<a name=\"BRTipoAmostraGAL-EXSNAS\"> </a></td><td>Exsudato de Nasofaringe</td></tr><tr><td style=\"white-space:nowrap\">ASPBRO<a name=\"BRTipoAmostraGAL-ASPBRO\"> </a></td><td>Aspirado Brônquico</td></tr><tr><td style=\"white-space:nowrap\">LAVTBR<a name=\"BRTipoAmostraGAL-LAVTBR\"> </a></td><td>Lavado Traqueo-Brônquico</td></tr><tr><td style=\"white-space:nowrap\">SECTRA<a name=\"BRTipoAmostraGAL-SECTRA\"> </a></td><td>Secreção Traqueal</td></tr><tr><td style=\"white-space:nowrap\">EXSORO<a name=\"BRTipoAmostraGAL-EXSORO\"> </a></td><td>Exsudato de Orofaringe</td></tr><tr><td style=\"white-space:nowrap\">FGMP<a name=\"BRTipoAmostraGAL-FGMP\"> </a></td><td>Fragmentos do pulmão</td></tr><tr><td style=\"white-space:nowrap\">FGMT<a name=\"BRTipoAmostraGAL-FGMT\"> </a></td><td>Fragmento</td></tr><tr><td style=\"white-space:nowrap\">FLUORA<a name=\"BRTipoAmostraGAL-FLUORA\"> </a></td><td>Fluido oral</td></tr><tr><td style=\"white-space:nowrap\">FRAAMI<a name=\"BRTipoAmostraGAL-FRAAMI\"> </a></td><td>Fragmentos de ampigdalas</td></tr><tr><td style=\"white-space:nowrap\">FRABAC<a name=\"BRTipoAmostraGAL-FRABAC\"> </a></td><td>Fragmentos de baço</td></tr><tr><td style=\"white-space:nowrap\">FRACOR<a name=\"BRTipoAmostraGAL-FRACOR\"> </a></td><td>Fragmentos de coração</td></tr><tr><td style=\"white-space:nowrap\">FRAFIG<a name=\"BRTipoAmostraGAL-FRAFIG\"> </a></td><td>Fragmentos de fígado</td></tr><tr><td style=\"white-space:nowrap\">FRAGT<a name=\"BRTipoAmostraGAL-FRAGT\"> </a></td><td>Fragmento de tecido</td></tr><tr><td style=\"white-space:nowrap\">FRAMOR<a name=\"BRTipoAmostraGAL-FRAMOR\"> </a></td><td>Fragmentos de múltiplos órgãos</td></tr><tr><td style=\"white-space:nowrap\">FRAPAN<a name=\"BRTipoAmostraGAL-FRAPAN\"> </a></td><td>Fragmentos de pâncreas</td></tr><tr><td style=\"white-space:nowrap\">FRARIM<a name=\"BRTipoAmostraGAL-FRARIM\"> </a></td><td>Fragmentos de rim</td></tr><tr><td style=\"white-space:nowrap\">FRATRA<a name=\"BRTipoAmostraGAL-FRATRA\"> </a></td><td>Fragmentos de traquéia</td></tr><tr><td style=\"white-space:nowrap\">FRBRON<a name=\"BRTipoAmostraGAL-FRBRON\"> </a></td><td>Fragmentos de brônquio</td></tr><tr><td style=\"white-space:nowrap\">INFP<a name=\"BRTipoAmostraGAL-INFP\"> </a></td><td>Infiltrado pulmonar</td></tr><tr><td style=\"white-space:nowrap\">INODER<a name=\"BRTipoAmostraGAL-INODER\"> </a></td><td>Inoculação intradérmica</td></tr><tr><td style=\"white-space:nowrap\">LAVORO<a name=\"BRTipoAmostraGAL-LAVORO\"> </a></td><td>Lavado de orofaringe</td></tr><tr><td style=\"white-space:nowrap\">MTBIO<a name=\"BRTipoAmostraGAL-MTBIO\"> </a></td><td>Material Não Biológico</td></tr><tr><td style=\"white-space:nowrap\">SECBRO<a name=\"BRTipoAmostraGAL-SECBRO\"> </a></td><td>Secreção brônquica</td></tr><tr><td style=\"white-space:nowrap\">SECOC<a name=\"BRTipoAmostraGAL-SECOC\"> </a></td><td>Secreção ocular</td></tr><tr><td style=\"white-space:nowrap\">SECPEN<a name=\"BRTipoAmostraGAL-SECPEN\"> </a></td><td>Secreção peniana</td></tr><tr><td style=\"white-space:nowrap\">SGEDT<a name=\"BRTipoAmostraGAL-SGEDT\"> </a></td><td>Sangue com EDTA</td></tr><tr><td style=\"white-space:nowrap\">SGHEM<a name=\"BRTipoAmostraGAL-SGHEM\"> </a></td><td>Sangue</td></tr><tr><td style=\"white-space:nowrap\">SNCCEB<a name=\"BRTipoAmostraGAL-SNCCEB\"> </a></td><td>Fragmento do tecido do SNC - cérebro</td></tr><tr><td style=\"white-space:nowrap\">SWBAN<a name=\"BRTipoAmostraGAL-SWBAN\"> </a></td><td>Swab Anal</td></tr><tr><td style=\"white-space:nowrap\">SWOCU<a name=\"BRTipoAmostraGAL-SWOCU\"> </a></td><td>Swab Ocular</td></tr><tr><td style=\"white-space:nowrap\">SWRET<a name=\"BRTipoAmostraGAL-SWRET\"> </a></td><td>Swab retal</td></tr><tr><td style=\"white-space:nowrap\">TECPM<a name=\"BRTipoAmostraGAL-TECPM\"> </a></td><td>Tecido pós-mortem</td></tr><tr><td style=\"white-space:nowrap\">SWORA<a name=\"BRTipoAmostraGAL-SWORA\"> </a></td><td>Swab Oral</td></tr><tr><td style=\"white-space:nowrap\">SWLES<a name=\"BRTipoAmostraGAL-SWLES\"> </a></td><td>Swab de lesão</td></tr><tr><td style=\"white-space:nowrap\">SWLSP<a name=\"BRTipoAmostraGAL-SWLSP\"> </a></td><td>Swab de lesão de pele</td></tr><tr><td style=\"white-space:nowrap\">RASPEL<a name=\"BRTipoAmostraGAL-RASPEL\"> </a></td><td>Raspado de pele</td></tr><tr><td style=\"white-space:nowrap\">FRAPLA<a name=\"BRTipoAmostraGAL-FRAPLA\"> </a></td><td>Fragmento de Placenta</td></tr><tr><td style=\"white-space:nowrap\">SGCUMB<a name=\"BRTipoAmostraGAL-SGCUMB\"> </a></td><td>Sangue do Cordão Umbilical</td></tr><tr><td style=\"white-space:nowrap\">URIJ<a name=\"BRTipoAmostraGAL-URIJ\"> </a></td><td>Urina 1º jato</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-release"] ;
+  fhir:CodeSystem.name [ fhir:value "BRTipoAmostraGAL"] ;
+  fhir:CodeSystem.title [ fhir:value "Tipo de Amostra Biológica"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2020-06-09T14:39:37.7113823+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECONF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção Orofaríngea e Nasofaríngea" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SNOF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Naso-Orofaríngeo" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWNAFA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Nasofaríngeo" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWAB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECNAS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção Nasofaríngea" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ASNAFA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aspirado Nasofaríngeo" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWORO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Orofaríngeo" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWNAS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Nasal" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECORF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção Orofaríngea" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAVBRA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavado Brônquico Alveolar" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAVBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavado Brônquico" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CORIZA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Coriza" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EXSNAS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exsudato de Nasofaringe" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ASPBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aspirado Brônquico" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAVTBR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavado Traqueo-Brônquico" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECTRA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção Traqueal" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EXSORO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Exsudato de Orofaringe" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FGMP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos do pulmão" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FGMT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmento" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FLUORA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluido oral" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAAMI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de ampigdalas" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRABAC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de baço" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRACOR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de coração" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAFIG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de fígado" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAGT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmento de tecido" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAMOR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de múltiplos órgãos" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAPAN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de pâncreas" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRARIM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de rim" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRATRA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de traquéia" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRBRON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmentos de brônquio" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INFP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infiltrado pulmonar" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INODER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inoculação intradérmica" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAVORO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavado de orofaringe" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MTBIO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Material Não Biológico" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECBRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção brônquica" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECOC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção ocular" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SECPEN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secreção peniana" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SGEDT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sangue com EDTA" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SGHEM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sangue" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SNCCEB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmento do tecido do SNC - cérebro" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWBAN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Anal" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWOCU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Ocular" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWRET" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab retal" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TECPM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tecido pós-mortem" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWORA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab Oral" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWLES" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab de lesão" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SWLSP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swab de lesão de pele" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RASPEL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Raspado de pele" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRAPLA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fragmento de Placenta" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SGCUMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sangue do Cordão Umbilical" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "URIJ" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urina 1º jato" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRTipoAmostraGAL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

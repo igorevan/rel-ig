@@ -1,0 +1,138 @@
+{
+  "codeSystems" : [{
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRCID10",
+    "title" : "Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem)",
+    "description" : "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRNomeExameGAL",
+    "title" : "Exames do GAL",
+    "description" : "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRNomeExameLOINC",
+    "title" : "Exames LOINC",
+    "description" : "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRResultadoQualitativoExame",
+    "title" : "Resultado qualitativo do Exame (CodeSystem)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRSubgrupoTabelaSUS",
+    "title" : "Subgrupo da Tabela SUS",
+    "description" : "O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaPatogeno",
+    "title" : "Patógeno (CodeSystem)",
+    "description" : "Terminologia para indicação de um Patógeno."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaSuspeitaDiagnostica",
+    "title" : "Suspeita Diagnóstica (CodeSystem)",
+    "description" : "Terminologia para indicação de uma Suspeita Diagnóstica."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoAmostraGAL",
+    "title" : "Tipo de Amostra Biológica",
+    "description" : "Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL)."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoDocumento",
+    "title" : "Tipo de Documento (CodeSystem)",
+    "description" : "Classificação dos tipos de documentos compartilhados no Brasil."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoAVIDEZ",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoAVIDEZ",
+    "title" : "Tipo de Resultado (AVIDEZ)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado AVIDEZ."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoDTNT",
+    "title" : "Tipo de Resultado (DTNT)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado DTNT."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoHISPT",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoHISPT",
+    "title" : "Tipo de Resultado (HISPT)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado HISPT."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPRAU",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoPRAU",
+    "title" : "Tipo de Resultado (PRAU)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado PRAU."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPSNG",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoPSNG",
+    "title" : "Tipo de Resultado (PSNG)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado PSNG."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRGNR",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoRGNR",
+    "title" : "Tipo de Resultado (RGNR)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado RGNR."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSBAC",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoRSBAC",
+    "title" : "Tipo de Resultado (RSBAC)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado RSBAC."
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSCUL",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoResultadoRSCUL",
+    "title" : "Tipo de Resultado (RSCUL)",
+    "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado RSCUL."
+  }]
+}

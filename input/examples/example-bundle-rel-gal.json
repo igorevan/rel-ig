@@ -1,0 +1,212 @@
+{
+  "resourceType": "Bundle",
+  "id": "example-bundle-rel-gal",
+  "meta": {
+    "lastUpdated": "2021-09-15T11:57:05.995-02:00"
+  },
+  "identifier": {
+    "system": "http://www.saude.gov.br/fhir/r4/NamingSystem/BR999999",
+    "value": "12345678"
+  },
+  "type": "document",
+  "timestamp": "2021-09-15T11:57:05.944-02:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:9237b24e-cd32-4aef-8493-2055c7d3c4d4",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "9237b24e-cd32-4aef-8493-2055c7d3c4d4",
+        "meta": {
+          "profile": [
+            "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+              "code": "REL"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+            "value": "898005900000823"
+          }
+        },
+        "date": "2021-09-15T11:57:06-02:00",
+        "author": [
+          {
+            "identifier": {
+              "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0",
+              "value": "00394544000185"
+            }
+          }
+        ],
+        "title": "Resultado de Exame Laboratorial",
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "urn:uuid:6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"
+              },
+              {
+                "reference": "urn:uuid:3c263b51-02c1-4cc7-82e2-a0f32c51efa2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6f8b5374-e21b-4b0c-a6a7-2dc628ffea06",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6f8b5374-e21b-4b0c-a6a7-2dc628ffea06",
+        "meta": {
+          "profile": [
+            "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude"
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+              "code": "A90"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+            "value": "898005900000823"
+          }
+        },
+        "stage": [
+          {
+            "assessment": [
+              {
+                "reference": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3c263b51-02c1-4cc7-82e2-a0f32c51efa2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3c263b51-02c1-4cc7-82e2-a0f32c51efa2",
+        "meta": {
+          "profile": [
+            "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPatogeno",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
+                  "code": "09"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
+                "code": "0202"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+              "code": "DENGM"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+            "value": "898005900000823"
+          }
+        },
+        "effectiveDateTime": "2021-09-15T11:57:06-02:00",
+        "issued": "2021-09-15T12:57:06-02:00",
+        "performer": [
+          {
+            "identifier": {
+              "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0",
+              "value": "034544015"
+            }
+          },
+          {
+            "identifier": {
+              "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0",
+              "value": "00394544000185"
+            }
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT",
+              "code": "2"
+            }
+          ]
+        },
+        "method": {
+          "text": "Diagnóstico através de um hemograma."
+        },
+        "specimen": {
+          "reference": "urn:uuid:f957056f-01c1-4c63-94e9-a0c45a390056"
+        },
+        "referenceRange": [
+          {
+            "text": "Escala de -1 para +1."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f957056f-01c1-4c63-94e9-a0c45a390056",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "f957056f-01c1-4c63-94e9-a0c45a390056",
+        "meta": {
+          "profile": [
+            "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+              "code": "SGHEM"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

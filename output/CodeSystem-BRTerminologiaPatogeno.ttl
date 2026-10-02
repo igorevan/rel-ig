@@ -1,0 +1,256 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRTerminologiaPatogeno> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BRTerminologiaPatogeno"] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRTerminologiaPatogeno</b></p><a name=\"BRTerminologiaPatogeno\"> </a><a name=\"hcBRTerminologiaPatogeno\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRTerminologiaPatogeno-01\"> </a></td><td>Orthopoxvirus (nome do gênero do vírus)</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"BRTerminologiaPatogeno-02\"> </a></td><td>Orthopoxvirus não-varíola</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRTerminologiaPatogeno-03\"> </a></td><td>Vírus Monkeypox</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"BRTerminologiaPatogeno-04\"> </a></td><td>Parapoxvirus (nome do gênero do vírus)</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRTerminologiaPatogeno-05\"> </a></td><td>Vírus Orf</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"BRTerminologiaPatogeno-06\"> </a></td><td>Vírus Pseudovaríola</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"BRTerminologiaPatogeno-07\"> </a></td><td>SARS-CoV-2</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"BRTerminologiaPatogeno-08\"> </a></td><td>Chikungunya Vírus</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"BRTerminologiaPatogeno-09\"> </a></td><td>Dengue Vírus</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"BRTerminologiaPatogeno-10\"> </a></td><td>Vírus da Febre Amarela</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRTerminologiaPatogeno-11\"> </a></td><td>Vírus da Encefalite Japonesa</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRTerminologiaPatogeno-12\"> </a></td><td>Zika Vírus</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"BRTerminologiaPatogeno-13\"> </a></td><td>Vírus do Nilo Ocidental</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRTerminologiaPatogeno-14\"> </a></td><td>Vírus Oropouche</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRTerminologiaPatogeno-15\"> </a></td><td>Vírus Mayaro</td></tr></table><p><b>Ecrãs de idiomas adicionais</b></p><table class=\"codes\"><tr><td><b>Código</b></td><td><b>English (English, en)</b></td><td><b>Spanish (es)</b></td></tr><tr><td>01</td><td>Orthopoxvirus</td><td>Orthopoxvirus (género)</td></tr><tr><td>02</td><td>Orthopoxvirus species, not Variola virus</td><td>Orthopoxvirus, no Variola (especie)</td></tr><tr><td>03</td><td>Monkeypox virus</td><td>Virus de la Viruela del Mono</td></tr><tr><td>04</td><td>Parapoxvirus</td><td>Parapoxvirus (género)</td></tr><tr><td>05</td><td>Orf virus</td><td>Virus del Orf</td></tr><tr><td>06</td><td>Pseudocowpox virus</td><td>Virus de la Pseudoviruela Vacuna</td></tr><tr><td>07</td><td>SARS-CoV-2</td><td>SARS-CoV-2</td></tr><tr><td>08</td><td>Chikungunya virus</td><td/></tr><tr><td>09</td><td>Dengue virus</td><td/></tr><tr><td>10</td><td>Yellow fever virus</td><td/></tr><tr><td>11</td><td>Japanese encephalitis virus</td><td/></tr><tr><td>12</td><td>Zika virus</td><td/></tr><tr><td>13</td><td>West Nile virus</td><td/></tr><tr><td>14</td><td>Oropouche virus</td><td/></tr><tr><td>15</td><td>Mayaro virus</td><td/></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-release"] ;
+  fhir:CodeSystem.name [ fhir:value "BRTerminologiaPatogeno"] ;
+  fhir:CodeSystem.title [ fhir:value "Patógeno (CodeSystem)"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2022-12-23T14:16:40.0457007+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologia para indicação de um Patógeno."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus (nome do gênero do vírus)" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopoxvirus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopoxvirus (género)" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "02" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus não-varíola" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopoxvirus species, not Variola virus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopoxvirus, no Variola (especie)" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Monkeypox" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Monkeypox virus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Virus de la Viruela del Mono" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parapoxvirus (nome do gênero do vírus)" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Parapoxvirus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Parapoxvirus (género)" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Orf" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Orf virus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Virus del Orf" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Pseudovaríola" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Pseudocowpox virus" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Virus de la Pseudoviruela Vacuna" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS-CoV-2" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "SARS-CoV-2" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "es" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "SARS-CoV-2" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chikungunya Vírus" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus" ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dengue Vírus" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus" ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Febre Amarela" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus" ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Encefalite Japonesa" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Japanese encephalitis virus" ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zika Vírus" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus" ]
+     ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus do Nilo Ocidental" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus" ]
+     ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Oropouche" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oropouche virus" ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Mayaro" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mayaro virus" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRTerminologiaPatogeno.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,253 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BRNomeExameGAL",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRNomeExameGAL</b></p><a name=\"BRNomeExameGAL\"> </a><a name=\"hcBRNomeExameGAL\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">coronavirusnCoV<a name=\"BRNomeExameGAL-coronavirusnCoV\"> </a></td><td>Novo coronavírus (2019-nCoV)</td></tr><tr><td style=\"white-space:nowrap\">COVID<a name=\"BRNomeExameGAL-COVID\"> </a></td><td>COVID-19, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">CVIDGG<a name=\"BRNomeExameGAL-CVIDGG\"> </a></td><td>COVID-19, IgG</td></tr><tr><td style=\"white-space:nowrap\">CVIDGM<a name=\"BRNomeExameGAL-CVIDGM\"> </a></td><td>COVID-19, IgM</td></tr><tr><td style=\"white-space:nowrap\">CHIKBM<a name=\"BRNomeExameGAL-CHIKBM\"> </a></td><td>CHIKUNGUNYA, BIOLOGIA MOLECULAR</td></tr><tr><td style=\"white-space:nowrap\">CHIKG<a name=\"BRNomeExameGAL-CHIKG\"> </a></td><td>CHIKUNGUNYA, IGG</td></tr><tr><td style=\"white-space:nowrap\">CHIKM<a name=\"BRNomeExameGAL-CHIKM\"> </a></td><td>CHIKUNGUNYA, IGM</td></tr><tr><td style=\"white-space:nowrap\">CHIKTR<a name=\"BRNomeExameGAL-CHIKTR\"> </a></td><td>CHIKUNGUNYA, TESTE RAPIDO IGM</td></tr><tr><td style=\"white-space:nowrap\">DENGG<a name=\"BRNomeExameGAL-DENGG\"> </a></td><td>DENGUE IGG</td></tr><tr><td style=\"white-space:nowrap\">DENGM<a name=\"BRNomeExameGAL-DENGM\"> </a></td><td>DENGUE IGM</td></tr><tr><td style=\"white-space:nowrap\">DENGMS<a name=\"BRNomeExameGAL-DENGMS\"> </a></td><td>DENGUE IGM SOROLOGIA</td></tr><tr><td style=\"white-space:nowrap\">DENGTR<a name=\"BRNomeExameGAL-DENGTR\"> </a></td><td>DENGUE TESTE RAPIDO</td></tr><tr><td style=\"white-space:nowrap\">DENAN<a name=\"BRNomeExameGAL-DENAN\"> </a></td><td>DENGUE, DETECCAO DE ANTIGENO NS1</td></tr><tr><td style=\"white-space:nowrap\">FEAMB<a name=\"BRNomeExameGAL-FEAMB\"> </a></td><td>FEBRE AMARELA BIOLOGIA MOLECULAR</td></tr><tr><td style=\"white-space:nowrap\">FEAMM<a name=\"BRNomeExameGAL-FEAMM\"> </a></td><td>FEBRE AMARELA IGM</td></tr><tr><td style=\"white-space:nowrap\">FAEAPV<a name=\"BRNomeExameGAL-FAEAPV\"> </a></td><td>FEBRE AMARELA, EVENTO ADVERSO POS VACINAL/EAPV</td></tr><tr><td style=\"white-space:nowrap\">FEAMG<a name=\"BRNomeExameGAL-FEAMG\"> </a></td><td>FEBRE AMARELA, IGG</td></tr><tr><td style=\"white-space:nowrap\">FAIMIG<a name=\"BRNomeExameGAL-FAIMIG\"> </a></td><td>FEBRE AMARELA, TESTE RAPIDO IGM/IGG</td></tr><tr><td style=\"white-space:nowrap\">PEQARB<a name=\"BRNomeExameGAL-PEQARB\"> </a></td><td>PESQUISA DE ARBOVIRUS</td></tr><tr><td style=\"white-space:nowrap\">PEQZDC<a name=\"BRNomeExameGAL-PEQZDC\"> </a></td><td>PESQUSA DE ARBOVIRUS (ZDC)</td></tr><tr><td style=\"white-space:nowrap\">ZIKABM<a name=\"BRNomeExameGAL-ZIKABM\"> </a></td><td>ZIKA BIOLOGIA MOLECULAR</td></tr><tr><td style=\"white-space:nowrap\">ZIKAGG<a name=\"BRNomeExameGAL-ZIKAGG\"> </a></td><td>ZIKA IGG</td></tr><tr><td style=\"white-space:nowrap\">ZIKAGM<a name=\"BRNomeExameGAL-ZIKAGM\"> </a></td><td>ZIKA IGM</td></tr><tr><td style=\"white-space:nowrap\">ZIKATR<a name=\"BRNomeExameGAL-ZIKATR\"> </a></td><td>ZIKA TESTE RAPIDO IGG E IGM</td></tr><tr><td style=\"white-space:nowrap\">FENLB<a name=\"BRNomeExameGAL-FENLB\"> </a></td><td>Febre do Nilo Ocidental, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">FENLG<a name=\"BRNomeExameGAL-FENLG\"> </a></td><td>Febre do Nilo Ocidental, IgG</td></tr><tr><td style=\"white-space:nowrap\">FENLM<a name=\"BRNomeExameGAL-FENLM\"> </a></td><td>Febre do Nilo Ocidental, IgM</td></tr><tr><td style=\"white-space:nowrap\">MAYBIO<a name=\"BRNomeExameGAL-MAYBIO\"> </a></td><td>Mayaro, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">MAYIGG<a name=\"BRNomeExameGAL-MAYIGG\"> </a></td><td>Mayaro, IgG</td></tr><tr><td style=\"white-space:nowrap\">MAYIGM<a name=\"BRNomeExameGAL-MAYIGM\"> </a></td><td>Mayaro, IgM</td></tr><tr><td style=\"white-space:nowrap\">OROBIO<a name=\"BRNomeExameGAL-OROBIO\"> </a></td><td>Oropouche, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">OROIGG<a name=\"BRNomeExameGAL-OROIGG\"> </a></td><td>Oropouche, IgG</td></tr><tr><td style=\"white-space:nowrap\">OROIGM<a name=\"BRNomeExameGAL-OROIGM\"> </a></td><td>Oropouche, IgM</td></tr><tr><td style=\"white-space:nowrap\">DENGB<a name=\"BRNomeExameGAL-DENGB\"> </a></td><td>DENGUE, BIOLOGIA MOLECULAR</td></tr><tr><td style=\"white-space:nowrap\">INFSAZ<a name=\"BRNomeExameGAL-INFSAZ\"> </a></td><td>Influenza</td></tr><tr><td style=\"white-space:nowrap\">RUBBM<a name=\"BRNomeExameGAL-RUBBM\"> </a></td><td>Rubéola, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">RUBG<a name=\"BRNomeExameGAL-RUBG\"> </a></td><td>Rubéola, IgG</td></tr><tr><td style=\"white-space:nowrap\">RUBM<a name=\"BRNomeExameGAL-RUBM\"> </a></td><td>Rubéola, IgM</td></tr><tr><td style=\"white-space:nowrap\">SARBM<a name=\"BRNomeExameGAL-SARBM\"> </a></td><td>Sarampo, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">SARG<a name=\"BRNomeExameGAL-SARG\"> </a></td><td>Sarampo, IgG</td></tr><tr><td style=\"white-space:nowrap\">SARM<a name=\"BRNomeExameGAL-SARM\"> </a></td><td>Sarampo, IgM</td></tr><tr><td style=\"white-space:nowrap\">VARBIO<a name=\"BRNomeExameGAL-VARBIO\"> </a></td><td>Varicela, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">VARIG<a name=\"BRNomeExameGAL-VARIG\"> </a></td><td>Varicela, IgG</td></tr><tr><td style=\"white-space:nowrap\">VARIM<a name=\"BRNomeExameGAL-VARIM\"> </a></td><td>Varicela, IgM</td></tr><tr><td style=\"white-space:nowrap\">VARIOL<a name=\"BRNomeExameGAL-VARIOL\"> </a></td><td>Varíola</td></tr><tr><td style=\"white-space:nowrap\">VARZOS<a name=\"BRNomeExameGAL-VARZOS\"> </a></td><td>Varicela Zoster, Biologia Molecular</td></tr><tr><td style=\"white-space:nowrap\">VRSRT<a name=\"BRNomeExameGAL-VRSRT\"> </a></td><td>Vírus Respiratórios</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+  "version" : "1.0.0-release",
+  "name" : "BRNomeExameGAL",
+  "title" : "Exames do GAL",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-05-05T11:53:58.0082379+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "coronavirusnCoV",
+    "display" : "Novo coronavírus (2019-nCoV)"
+  },
+  {
+    "code" : "COVID",
+    "display" : "COVID-19, Biologia Molecular"
+  },
+  {
+    "code" : "CVIDGG",
+    "display" : "COVID-19, IgG"
+  },
+  {
+    "code" : "CVIDGM",
+    "display" : "COVID-19, IgM"
+  },
+  {
+    "code" : "CHIKBM",
+    "display" : "CHIKUNGUNYA, BIOLOGIA MOLECULAR"
+  },
+  {
+    "code" : "CHIKG",
+    "display" : "CHIKUNGUNYA, IGG"
+  },
+  {
+    "code" : "CHIKM",
+    "display" : "CHIKUNGUNYA, IGM"
+  },
+  {
+    "code" : "CHIKTR",
+    "display" : "CHIKUNGUNYA, TESTE RAPIDO IGM"
+  },
+  {
+    "code" : "DENGG",
+    "display" : "DENGUE IGG"
+  },
+  {
+    "code" : "DENGM",
+    "display" : "DENGUE IGM"
+  },
+  {
+    "code" : "DENGMS",
+    "display" : "DENGUE IGM SOROLOGIA"
+  },
+  {
+    "code" : "DENGTR",
+    "display" : "DENGUE TESTE RAPIDO"
+  },
+  {
+    "code" : "DENAN",
+    "display" : "DENGUE, DETECCAO DE ANTIGENO NS1"
+  },
+  {
+    "code" : "FEAMB",
+    "display" : "FEBRE AMARELA BIOLOGIA MOLECULAR"
+  },
+  {
+    "code" : "FEAMM",
+    "display" : "FEBRE AMARELA IGM"
+  },
+  {
+    "code" : "FAEAPV",
+    "display" : "FEBRE AMARELA, EVENTO ADVERSO POS VACINAL/EAPV"
+  },
+  {
+    "code" : "FEAMG",
+    "display" : "FEBRE AMARELA, IGG"
+  },
+  {
+    "code" : "FAIMIG",
+    "display" : "FEBRE AMARELA, TESTE RAPIDO IGM/IGG"
+  },
+  {
+    "code" : "PEQARB",
+    "display" : "PESQUISA DE ARBOVIRUS"
+  },
+  {
+    "code" : "PEQZDC",
+    "display" : "PESQUSA DE ARBOVIRUS (ZDC)"
+  },
+  {
+    "code" : "ZIKABM",
+    "display" : "ZIKA BIOLOGIA MOLECULAR"
+  },
+  {
+    "code" : "ZIKAGG",
+    "display" : "ZIKA IGG"
+  },
+  {
+    "code" : "ZIKAGM",
+    "display" : "ZIKA IGM"
+  },
+  {
+    "code" : "ZIKATR",
+    "display" : "ZIKA TESTE RAPIDO IGG E IGM"
+  },
+  {
+    "code" : "FENLB",
+    "display" : "Febre do Nilo Ocidental, Biologia Molecular"
+  },
+  {
+    "code" : "FENLG",
+    "display" : "Febre do Nilo Ocidental, IgG"
+  },
+  {
+    "code" : "FENLM",
+    "display" : "Febre do Nilo Ocidental, IgM"
+  },
+  {
+    "code" : "MAYBIO",
+    "display" : "Mayaro, Biologia Molecular"
+  },
+  {
+    "code" : "MAYIGG",
+    "display" : "Mayaro, IgG"
+  },
+  {
+    "code" : "MAYIGM",
+    "display" : "Mayaro, IgM"
+  },
+  {
+    "code" : "OROBIO",
+    "display" : "Oropouche, Biologia Molecular"
+  },
+  {
+    "code" : "OROIGG",
+    "display" : "Oropouche, IgG"
+  },
+  {
+    "code" : "OROIGM",
+    "display" : "Oropouche, IgM"
+  },
+  {
+    "code" : "DENGB",
+    "display" : "DENGUE, BIOLOGIA MOLECULAR"
+  },
+  {
+    "code" : "INFSAZ",
+    "display" : "Influenza"
+  },
+  {
+    "code" : "RUBBM",
+    "display" : "Rubéola, Biologia Molecular"
+  },
+  {
+    "code" : "RUBG",
+    "display" : "Rubéola, IgG"
+  },
+  {
+    "code" : "RUBM",
+    "display" : "Rubéola, IgM"
+  },
+  {
+    "code" : "SARBM",
+    "display" : "Sarampo, Biologia Molecular"
+  },
+  {
+    "code" : "SARG",
+    "display" : "Sarampo, IgG"
+  },
+  {
+    "code" : "SARM",
+    "display" : "Sarampo, IgM"
+  },
+  {
+    "code" : "VARBIO",
+    "display" : "Varicela, Biologia Molecular"
+  },
+  {
+    "code" : "VARIG",
+    "display" : "Varicela, IgG"
+  },
+  {
+    "code" : "VARIM",
+    "display" : "Varicela, IgM"
+  },
+  {
+    "code" : "VARIOL",
+    "display" : "Varíola"
+  },
+  {
+    "code" : "VARZOS",
+    "display" : "Varicela Zoster, Biologia Molecular"
+  },
+  {
+    "code" : "VRSRT",
+    "display" : "Vírus Respiratórios"
+  }]
+}

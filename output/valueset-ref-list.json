@@ -1,0 +1,132 @@
+{
+  "codeSystems" : [{
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaExame-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRCategoriaExame",
+    "title" : "Categoria do Exame",
+    "description" : "Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoDocumento",
+    "title" : "Estado do Documento",
+    "description" : "Classifica o tipo de documento que está sendo trafegado.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoObservacao-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoObservacao",
+    "title" : "Estado da Observação",
+    "description" : "Tipos de estados de uma observação.",
+    "systems" : ["http://hl7.org/fhir/observation-status"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRNomeExame-2.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRNomeExame",
+    "title" : "Nome do Exame",
+    "description" : "Classifica o exame laboratorial realizado.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRResultadoQualitativoExame",
+    "title" : "Resultado Qualitativo do Exame 1.0 (ValueSet)",
+    "description" : "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-2.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRResultadoQualitativoExame",
+    "title" : "Resultado Qualitativo do Exame 2.0 (ValueSet)",
+    "description" : "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPSNG",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSCUL",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoAVIDEZ",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoHISPT",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRGNR",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPRAU",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSBAC",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaPatogeno",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaPatogeno",
+    "title" : "Patógeno (ValueSet)",
+    "description" : "Conjunto de terminologias para indicação do Patógeno.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno"],
+    "uses" : {
+    },
+    "StructureDefinition-BRPatogeno.html" : "Patógeno (StructureDefinition)"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaSuspeitaDiagnostica",
+    "title" : "Suspeita Diagnóstica (ValueSet)",
+    "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoAmostra",
+    "title" : "Tipo de Amostra de Exame",
+    "description" : "Tipo da amostra de um exame ou teste.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+    "http://terminology.hl7.org/CodeSystem/v2-0487"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoDocumento",
+    "title" : "Tipo de Documento (ValueSet)",
+    "description" : "Classifica o tipo de documento que está sendo trafegado.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  }]
+}

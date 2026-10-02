@@ -1,0 +1,18 @@
+{
+  "package-id": "br.gov.saude.rel.fhir",
+  "version": "1.0.0-release",
+  "path": "https://fhir.saude.gov.br/rel/",
+  "mode": "working",
+  "status": "release",
+  "sequence": "Releases",
+  "desc": "1.0.0 Release",
+  "changes": "changes.html",
+  "first": true,
+  "title": "REL IG",
+  "ci-build": "https://fhir.saude.gov.br/rel/",
+  "registry-description": "Primeira versão do Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS",
+  "registry-country": "BR",
+  "registry-authority": "Ministério da Saúde do Brasil",
+  "category": "base",
+  "introduction": "Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS"
+}

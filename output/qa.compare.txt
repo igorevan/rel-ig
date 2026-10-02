@@ -1,0 +1,80 @@
+RELIG : Validation Results
+=========================================
+
+err = 1, warn = 0, info = 0
+$--
+Generated $--. FHIR version $-- for br.gov.saude.rel.fhir#$-- (canonical = https://fhir.saude.gov.br/rel)
+ Build Errors : 0 / 0 / 0
+ /home/igor/rel-ig/input/examples/example-bundle-rel-gal : 1 / 2 / 3
+ /home/igor/rel-ig/input/examples/example-bundle-rel-loinc : 0 / 2 / 2
+ /home/igor/rel-ig/input/myig : 0 / 0 / 2
+ /home/igor/rel-ig/input/resources/CodeSystem-BRCID10 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRNomeExameGAL : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRNomeExameLOINC : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRResultadoQualitativoExame : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRSubgrupoTabelaSUS : 0 / 1 / 2
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTerminologiaPatogeno : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTerminologiaSuspeitaDiagnostica : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoAmostraGAL : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoDocumento : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoAVIDEZ : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoDTNT : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoHISPT : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoPRAU : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoPSNG : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoRGNR : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoRSBAC : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/CodeSystem-BRTipoResultadoRSCUL : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/StructureDefinition-BRAmostraBiologica-1.0 : 0 / 1 / 3
+ /home/igor/rel-ig/input/resources/StructureDefinition-BRCondicaoSaude : 0 / 6 / 2
+ /home/igor/rel-ig/input/resources/StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1 : 0 / 21 / 2
+ /home/igor/rel-ig/input/resources/StructureDefinition-BRPatogeno : 0 / 0 / 2
+ /home/igor/rel-ig/input/resources/StructureDefinition-BRResultadoExameLaboratorial-3.2.1 : 0 / 15 / 2
+ /home/igor/rel-ig/input/resources/ValueSet-BRCategoriaExame-1.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BREstadoDocumento-1.0 : 0 / 1 / 5
+ /home/igor/rel-ig/input/resources/ValueSet-BREstadoObservacao-1.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRNomeExame-2.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRResultadoQualitativoExame-1.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRResultadoQualitativoExame-2.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRTerminologiaPatogeno : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRTerminologiaSuspeitaDiagnostica : 0 / 1 / 3
+ /home/igor/rel-ig/input/resources/ValueSet-BRTipoAmostra-1.0 : 0 / 1 / 1
+ /home/igor/rel-ig/input/resources/ValueSet-BRTipoDocumento-1.0 : 0 / 1 / 1
+</table>
+== n/a ==
+== input/examples/example-bundle-rel-gal.json ==
+ERROR: Bundle/example-bundle-rel-gal: Bundle.entry[0].resource.section[0]: Slice 'Composition.section.entry:condicaoSaude': a matching slice is required, but not found (from http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1|1.0.0-release). Note that other slices are allowed in addition to this required slice
+== input/examples/example-bundle-rel-loinc.json ==
+== input/myig.xml ==
+== input/resources/CodeSystem-BRCID10.xml ==
+== input/resources/CodeSystem-BRNomeExameGAL.json ==
+== input/resources/CodeSystem-BRNomeExameLOINC.json ==
+== input/resources/CodeSystem-BRResultadoQualitativoExame.json ==
+== input/resources/CodeSystem-BRSubgrupoTabelaSUS.json ==
+== input/resources/CodeSystem-BRTerminologiaPatogeno.json ==
+== input/resources/CodeSystem-BRTerminologiaSuspeitaDiagnostica.json ==
+== input/resources/CodeSystem-BRTipoAmostraGAL.json ==
+== input/resources/CodeSystem-BRTipoDocumento.xml ==
+== input/resources/CodeSystem-BRTipoResultadoAVIDEZ.json ==
+== input/resources/CodeSystem-BRTipoResultadoDTNT.json ==
+== input/resources/CodeSystem-BRTipoResultadoHISPT.json ==
+== input/resources/CodeSystem-BRTipoResultadoPRAU.json ==
+== input/resources/CodeSystem-BRTipoResultadoPSNG.json ==
+== input/resources/CodeSystem-BRTipoResultadoRGNR.json ==
+== input/resources/CodeSystem-BRTipoResultadoRSBAC.json ==
+== input/resources/CodeSystem-BRTipoResultadoRSCUL.json ==
+== input/resources/StructureDefinition-BRAmostraBiologica-1.0.json ==
+== input/resources/StructureDefinition-BRCondicaoSaude.json ==
+== input/resources/StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.json ==
+== input/resources/StructureDefinition-BRPatogeno.json ==
+== input/resources/StructureDefinition-BRResultadoExameLaboratorial-3.2.1.json ==
+== input/resources/ValueSet-BRCategoriaExame-1.0.json ==
+== input/resources/ValueSet-BREstadoDocumento-1.0.json ==
+== input/resources/ValueSet-BREstadoObservacao-1.0.json ==
+== input/resources/ValueSet-BRNomeExame-2.0.json ==
+== input/resources/ValueSet-BRResultadoQualitativoExame-1.0.xml ==
+== input/resources/ValueSet-BRResultadoQualitativoExame-2.0.json ==
+== input/resources/ValueSet-BRTerminologiaPatogeno.json ==
+== input/resources/ValueSet-BRTerminologiaSuspeitaDiagnostica.json ==
+== input/resources/ValueSet-BRTipoAmostra-1.0.json ==
+== input/resources/ValueSet-BRTipoDocumento-1.0.xml ==

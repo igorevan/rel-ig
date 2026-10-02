@@ -1,0 +1,597 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BRSubgrupoTabelaSUS",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRSubgrupoTabelaSUS</b></p><a name=\"BRSubgrupoTabelaSUS\"> </a><a name=\"hcBRSubgrupoTabelaSUS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td></tr><tr><td>group</td><td>group</td><td>string</td></tr></table><p><b>Conceitos</b></p><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>group</b></td></tr><tr><td style=\"white-space:nowrap\">0101<a name=\"BRSubgrupoTabelaSUS-0101\"> </a></td><td>Ações coletivas/individuais em saúde</td><td>01</td></tr><tr><td style=\"white-space:nowrap\">0102<a name=\"BRSubgrupoTabelaSUS-0102\"> </a></td><td>Vigilância em saúde</td><td>01</td></tr><tr><td style=\"white-space:nowrap\">0201<a name=\"BRSubgrupoTabelaSUS-0201\"> </a></td><td>Coleta de material</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0202<a name=\"BRSubgrupoTabelaSUS-0202\"> </a></td><td>Diagnóstico em laboratório clínico</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0203<a name=\"BRSubgrupoTabelaSUS-0203\"> </a></td><td>Diagnóstico por anatomia patológica e citopatologia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0204<a name=\"BRSubgrupoTabelaSUS-0204\"> </a></td><td>Diagnóstico por radiologia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0205<a name=\"BRSubgrupoTabelaSUS-0205\"> </a></td><td>Diagnóstico por ultrasonografia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0206<a name=\"BRSubgrupoTabelaSUS-0206\"> </a></td><td>Diagnóstico por tomografia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0207<a name=\"BRSubgrupoTabelaSUS-0207\"> </a></td><td>Diagnóstico por ressonância magnética</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0208<a name=\"BRSubgrupoTabelaSUS-0208\"> </a></td><td>Diagnóstico por medicina nuclear in vivo</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0209<a name=\"BRSubgrupoTabelaSUS-0209\"> </a></td><td>Diagnóstico por endoscopia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0210<a name=\"BRSubgrupoTabelaSUS-0210\"> </a></td><td>Diagnóstico por radiologia intervencionista</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0211<a name=\"BRSubgrupoTabelaSUS-0211\"> </a></td><td>Métodos diagnósticos em especialidades</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0212<a name=\"BRSubgrupoTabelaSUS-0212\"> </a></td><td>Diagnóstico e procedimentos especiais em hemoterapia</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0213<a name=\"BRSubgrupoTabelaSUS-0213\"> </a></td><td>Diagnóstico em vigilância epidemiológica e ambiental</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0214<a name=\"BRSubgrupoTabelaSUS-0214\"> </a></td><td>Diagnóstico por teste rápido</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">0301<a name=\"BRSubgrupoTabelaSUS-0301\"> </a></td><td>Consultas / Atendimentos / Acompanhamentos</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0302<a name=\"BRSubgrupoTabelaSUS-0302\"> </a></td><td>Fisioterapia</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0303<a name=\"BRSubgrupoTabelaSUS-0303\"> </a></td><td>Tratamentos clínicos (outras especialidades)</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0304<a name=\"BRSubgrupoTabelaSUS-0304\"> </a></td><td>Tratamento em oncologia</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0305<a name=\"BRSubgrupoTabelaSUS-0305\"> </a></td><td>Tratamento em nefrologia</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0306<a name=\"BRSubgrupoTabelaSUS-0306\"> </a></td><td>Hemoterapia</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0307<a name=\"BRSubgrupoTabelaSUS-0307\"> </a></td><td>Tratamentos odontológicos</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0308<a name=\"BRSubgrupoTabelaSUS-0308\"> </a></td><td>Tratamento de lesões, envenenamentos e outros, decorrentes de causas externas</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0309<a name=\"BRSubgrupoTabelaSUS-0309\"> </a></td><td>Terapias especializadas</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0310<a name=\"BRSubgrupoTabelaSUS-0310\"> </a></td><td>Parto e nascimento</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0311<a name=\"BRSubgrupoTabelaSUS-0311\"> </a></td><td>Cuidados Paliativos</td><td>03</td></tr><tr><td style=\"white-space:nowrap\">0401<a name=\"BRSubgrupoTabelaSUS-0401\"> </a></td><td>Pequenas cirurgias e cirurgias de pele, tecido subcutâneo e mucosa</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0402<a name=\"BRSubgrupoTabelaSUS-0402\"> </a></td><td>Cirurgia de glândulas endócrinas</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0403<a name=\"BRSubgrupoTabelaSUS-0403\"> </a></td><td>Cirurgia do sistema nervoso central e periférico</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0404<a name=\"BRSubgrupoTabelaSUS-0404\"> </a></td><td>Cirurgia das vias aéreas superiores, da face, da cabeça e do pescoço</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0405<a name=\"BRSubgrupoTabelaSUS-0405\"> </a></td><td>Cirurgia do aparelho da visão</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0406<a name=\"BRSubgrupoTabelaSUS-0406\"> </a></td><td>Cirurgia do aparelho circulatório</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0407<a name=\"BRSubgrupoTabelaSUS-0407\"> </a></td><td>Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0408<a name=\"BRSubgrupoTabelaSUS-0408\"> </a></td><td>Cirurgia do sistema osteomuscular</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0409<a name=\"BRSubgrupoTabelaSUS-0409\"> </a></td><td>Cirurgia do aparelho geniturinário</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0410<a name=\"BRSubgrupoTabelaSUS-0410\"> </a></td><td>Cirurgia de mama</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0411<a name=\"BRSubgrupoTabelaSUS-0411\"> </a></td><td>Cirurgia obstétrica</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0412<a name=\"BRSubgrupoTabelaSUS-0412\"> </a></td><td>Cirurgia torácica</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0413<a name=\"BRSubgrupoTabelaSUS-0413\"> </a></td><td>Cirurgia reparadora</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0414<a name=\"BRSubgrupoTabelaSUS-0414\"> </a></td><td>Bucomaxilofacial</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0415<a name=\"BRSubgrupoTabelaSUS-0415\"> </a></td><td>Outras cirurgias</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0416<a name=\"BRSubgrupoTabelaSUS-0416\"> </a></td><td>Cirurgia em oncologia</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0417<a name=\"BRSubgrupoTabelaSUS-0417\"> </a></td><td>Anestesiologia</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0418<a name=\"BRSubgrupoTabelaSUS-0418\"> </a></td><td>Cirurgia em nefrologia</td><td>04</td></tr><tr><td style=\"white-space:nowrap\">0501<a name=\"BRSubgrupoTabelaSUS-0501\"> </a></td><td>Coleta e exames para fins de doação de orgãos, tecidos e células e de transplante</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0502<a name=\"BRSubgrupoTabelaSUS-0502\"> </a></td><td>Avaliação de morte encefálica</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0503<a name=\"BRSubgrupoTabelaSUS-0503\"> </a></td><td>Ações relacionadas à doação de orgãos e tecidos para transplante</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0504<a name=\"BRSubgrupoTabelaSUS-0504\"> </a></td><td>Processamento de tecidos para transplante</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0505<a name=\"BRSubgrupoTabelaSUS-0505\"> </a></td><td>Transplante de orgãos, tecidos e células</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0506<a name=\"BRSubgrupoTabelaSUS-0506\"> </a></td><td>Acompanhamento e intercorrências no pré e pós-transplante</td><td>05</td></tr><tr><td style=\"white-space:nowrap\">0601<a name=\"BRSubgrupoTabelaSUS-0601\"> </a></td><td>Medicamentos de dispensação excepcional</td><td>06</td></tr><tr><td style=\"white-space:nowrap\">0602<a name=\"BRSubgrupoTabelaSUS-0602\"> </a></td><td>Medicamentos estratégicos</td><td>06</td></tr><tr><td style=\"white-space:nowrap\">0603<a name=\"BRSubgrupoTabelaSUS-0603\"> </a></td><td>Medicamentos de âmbito hospitalar e urgência</td><td>06</td></tr><tr><td style=\"white-space:nowrap\">0604<a name=\"BRSubgrupoTabelaSUS-0604\"> </a></td><td>Componente Especializado da Assitencia Farmaceutica</td><td>06</td></tr><tr><td style=\"white-space:nowrap\">0701<a name=\"BRSubgrupoTabelaSUS-0701\"> </a></td><td>Órteses, próteses e materiais especiais não relacionados ao ato cirúrgico</td><td>07</td></tr><tr><td style=\"white-space:nowrap\">0702<a name=\"BRSubgrupoTabelaSUS-0702\"> </a></td><td>Órteses, próteses e materiais especiais relacionados ao ato cirúrgico</td><td>07</td></tr><tr><td style=\"white-space:nowrap\">0801<a name=\"BRSubgrupoTabelaSUS-0801\"> </a></td><td>Ações relacionadas ao estabelecimento</td><td>08</td></tr><tr><td style=\"white-space:nowrap\">0802<a name=\"BRSubgrupoTabelaSUS-0802\"> </a></td><td>Ações relacionadas ao atendimento</td><td>08</td></tr><tr><td style=\"white-space:nowrap\">0803<a name=\"BRSubgrupoTabelaSUS-0803\"> </a></td><td>Autorização / Regulação</td><td>08</td></tr><tr><td style=\"white-space:nowrap\">0804<a name=\"BRSubgrupoTabelaSUS-0804\"> </a></td><td>Telessaúde</td><td>08</td></tr><tr><td style=\"white-space:nowrap\">0901<a name=\"BRSubgrupoTabelaSUS-0901\"> </a></td><td>Atenção em Oncologia e a Forma de Organização</td><td>09</td></tr><tr><td style=\"white-space:nowrap\">0902<a name=\"BRSubgrupoTabelaSUS-0902\"> </a></td><td>Atenção em Cardiologia</td><td>09</td></tr><tr><td style=\"white-space:nowrap\">0903<a name=\"BRSubgrupoTabelaSUS-0903\"> </a></td><td>Atenção em Ortopedia</td><td>09</td></tr><tr><td style=\"white-space:nowrap\">0904<a name=\"BRSubgrupoTabelaSUS-0904\"> </a></td><td>Atenção em Otorrinolaringologia</td><td>09</td></tr><tr><td style=\"white-space:nowrap\">0905<a name=\"BRSubgrupoTabelaSUS-0905\"> </a></td><td>Atenção em Oftalmologia</td><td>09</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
+  "version" : "1.0.0-release",
+  "name" : "BRSubgrupoTabelaSUS",
+  "title" : "Subgrupo da Tabela SUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-10-07T17:23:44.666897+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "property" : [{
+    "code" : "group",
+    "type" : "string"
+  }],
+  "concept" : [{
+    "code" : "0101",
+    "display" : "Ações coletivas/individuais em saúde",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "01"
+    }]
+  },
+  {
+    "code" : "0102",
+    "display" : "Vigilância em saúde",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "01"
+    }]
+  },
+  {
+    "code" : "0201",
+    "display" : "Coleta de material",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0202",
+    "display" : "Diagnóstico em laboratório clínico",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0203",
+    "display" : "Diagnóstico por anatomia patológica e citopatologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0204",
+    "display" : "Diagnóstico por radiologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0205",
+    "display" : "Diagnóstico por ultrasonografia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0206",
+    "display" : "Diagnóstico por tomografia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0207",
+    "display" : "Diagnóstico por ressonância magnética",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0208",
+    "display" : "Diagnóstico por medicina nuclear in vivo",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0209",
+    "display" : "Diagnóstico por endoscopia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0210",
+    "display" : "Diagnóstico por radiologia intervencionista",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0211",
+    "display" : "Métodos diagnósticos em especialidades",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0212",
+    "display" : "Diagnóstico e procedimentos especiais em hemoterapia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0213",
+    "display" : "Diagnóstico em vigilância epidemiológica e ambiental",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0214",
+    "display" : "Diagnóstico por teste rápido",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "02"
+    }]
+  },
+  {
+    "code" : "0301",
+    "display" : "Consultas / Atendimentos / Acompanhamentos",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0302",
+    "display" : "Fisioterapia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0303",
+    "display" : "Tratamentos clínicos (outras especialidades)",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0304",
+    "display" : "Tratamento em oncologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0305",
+    "display" : "Tratamento em nefrologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0306",
+    "display" : "Hemoterapia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0307",
+    "display" : "Tratamentos odontológicos",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0308",
+    "display" : "Tratamento de lesões, envenenamentos e outros, decorrentes de causas externas",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0309",
+    "display" : "Terapias especializadas",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0310",
+    "display" : "Parto e nascimento",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0311",
+    "display" : "Cuidados Paliativos",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "03"
+    }]
+  },
+  {
+    "code" : "0401",
+    "display" : "Pequenas cirurgias e cirurgias de pele, tecido subcutâneo e mucosa",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0402",
+    "display" : "Cirurgia de glândulas endócrinas",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0403",
+    "display" : "Cirurgia do sistema nervoso central e periférico",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0404",
+    "display" : "Cirurgia das vias aéreas superiores, da face, da cabeça e do pescoço",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0405",
+    "display" : "Cirurgia do aparelho da visão",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0406",
+    "display" : "Cirurgia do aparelho circulatório",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0407",
+    "display" : "Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0408",
+    "display" : "Cirurgia do sistema osteomuscular",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0409",
+    "display" : "Cirurgia do aparelho geniturinário",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0410",
+    "display" : "Cirurgia de mama",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0411",
+    "display" : "Cirurgia obstétrica",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0412",
+    "display" : "Cirurgia torácica",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0413",
+    "display" : "Cirurgia reparadora",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0414",
+    "display" : "Bucomaxilofacial",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0415",
+    "display" : "Outras cirurgias",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0416",
+    "display" : "Cirurgia em oncologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0417",
+    "display" : "Anestesiologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0418",
+    "display" : "Cirurgia em nefrologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "04"
+    }]
+  },
+  {
+    "code" : "0501",
+    "display" : "Coleta e exames para fins de doação de orgãos, tecidos e células e de transplante",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0502",
+    "display" : "Avaliação de morte encefálica",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0503",
+    "display" : "Ações relacionadas à doação de orgãos e tecidos para transplante",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0504",
+    "display" : "Processamento de tecidos para transplante",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0505",
+    "display" : "Transplante de orgãos, tecidos e células",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0506",
+    "display" : "Acompanhamento e intercorrências no pré e pós-transplante",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "05"
+    }]
+  },
+  {
+    "code" : "0601",
+    "display" : "Medicamentos de dispensação excepcional",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "06"
+    }]
+  },
+  {
+    "code" : "0602",
+    "display" : "Medicamentos estratégicos",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "06"
+    }]
+  },
+  {
+    "code" : "0603",
+    "display" : "Medicamentos de âmbito hospitalar e urgência",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "06"
+    }]
+  },
+  {
+    "code" : "0604",
+    "display" : "Componente Especializado da Assitencia Farmaceutica",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "06"
+    }]
+  },
+  {
+    "code" : "0701",
+    "display" : "Órteses, próteses e materiais especiais não relacionados ao ato cirúrgico",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "07"
+    }]
+  },
+  {
+    "code" : "0702",
+    "display" : "Órteses, próteses e materiais especiais relacionados ao ato cirúrgico",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "07"
+    }]
+  },
+  {
+    "code" : "0801",
+    "display" : "Ações relacionadas ao estabelecimento",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "08"
+    }]
+  },
+  {
+    "code" : "0802",
+    "display" : "Ações relacionadas ao atendimento",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "08"
+    }]
+  },
+  {
+    "code" : "0803",
+    "display" : "Autorização / Regulação",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "08"
+    }]
+  },
+  {
+    "code" : "0804",
+    "display" : "Telessaúde",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "08"
+    }]
+  },
+  {
+    "code" : "0901",
+    "display" : "Atenção em Oncologia e a Forma de Organização",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "09"
+    }]
+  },
+  {
+    "code" : "0902",
+    "display" : "Atenção em Cardiologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "09"
+    }]
+  },
+  {
+    "code" : "0903",
+    "display" : "Atenção em Ortopedia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "09"
+    }]
+  },
+  {
+    "code" : "0904",
+    "display" : "Atenção em Otorrinolaringologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "09"
+    }]
+  },
+  {
+    "code" : "0905",
+    "display" : "Atenção em Oftalmologia",
+    "property" : [{
+      "code" : "group",
+      "valueString" : "09"
+    }]
+  }]
+}

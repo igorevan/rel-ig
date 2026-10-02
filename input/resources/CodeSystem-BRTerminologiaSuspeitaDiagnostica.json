@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRTerminologiaSuspeitaDiagnostica",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+  "version": "1.0",
+  "name": "BRTerminologiaSuspeitaDiagnostica",
+  "title": "Suspeita Diagnóstica (CodeSystem)",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-09-16T14:16:40.0457007+00:00",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "Terminologia para indicação de uma Suspeita Diagnóstica.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "B04",
+      "display": "Varíola dos macacos [Monkeypox]"
+    },
+    {
+      "code": "B342",
+      "display": "Infecção por coronavírus de localização não especificada"
+    }
+  ]
+}

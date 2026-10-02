@@ -1,0 +1,1847 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRNomeExameLOINC> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BRNomeExameLOINC"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-release"] ;
+  fhir:CodeSystem.name [ fhir:value "BRNomeExameLOINC"] ;
+  fhir:CodeSystem.title [ fhir:value "Exames LOINC"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2020-04-29T20:29:49.3397125+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94306-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 Painel de RNA - Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94307-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus, [presença de] gene 2 N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94308-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene N em amostra não especificada, por amplificação de ácido nucleico usando conjunto de sonda / primer N2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94309-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] RNA em amostra não especificada, por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94310-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS (como) Coronavírus  [Presença de] gene N em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94311-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94312-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94313-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS (como) Coronavírus [Limiar de ciclo de] gene N em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94314-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene RdRp em amostra não especificada por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94315-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene E em amostra não especificada por amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94316-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94500-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94502-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94503-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 painel -  anticorpos em Soro, Plasma ou Sangue por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94504-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 painel - anticorpos, Soro ou Plasma por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94505-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [dosagem de] anticorpos IgG [Unidades/Volume] em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94506-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [dosagem de] anticorpos IgM [Unidades/Volume] em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94507-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgG em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94508-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgM em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94509-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [limiar de ciclo de] gene E em amostra não especificada por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94510-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [limiar de ciclo de] gene 2 N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94511-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [limiar de ciclo da] região ORF1ab em amostra não especificada por amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94531-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 painel RNA - em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94532-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado + MERS Coronavírus, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94533-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene N em amostra respiratória por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94534-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene RdRp em amostra respiratória por amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94547-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgG e IgM em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94558-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] antígenos Ag em amostra respiratória por imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94559-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] gene da regição ORF1ab em amostra respiratória por amplificação do ácido nucléico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94562-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgA Ab em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94563-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgG Ab em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94564-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] anticorpos IgM Ab em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94565-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [presença de] DNA em rinofaringe por NAA por detecção sem sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94639-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] região anticorpos ORF1 em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94640-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene S em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94641-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene S em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94642-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] gene S em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94643-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] gene S em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94644-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] região anticorpos ORF1 em Amostra respiratória por Amplificação do ácido nucleico" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94645-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] gene RdRp em Amostra Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94646-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] gene RdRp em Amostra respiratória por Amplificação do ácido nucleico" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94647-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado [Presença de] RNA em Amosta Inespecífica por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94660-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94661-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Interpretação de] anticorpos em Soro ou Plasma" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94720-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [dosagem de] anticorpos IgA em Soro ou Plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94745-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] RNA em Amostra respiratória por Amplificação do ácido nucleico" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94746-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Limiar de ciclo de] RNA em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94756-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene N em Amostra respiratória por Amplificação do ácido nucleido usando sonda primer set N1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94757-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene N em Amostra respiratória por Amplificação do ácido nucleico usando sonda primer set N2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94758-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado [Presença de] gene E em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94759-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] RNA em Nasofaringe por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94760-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene N em Nasofaringe por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94761-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] anticorpos IgG em teste em Amostra de sangue seco por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94762-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] anticorpos em Soro ou Plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94763-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] em Amostra não específica por cultura em organismo específico" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94765-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado [Presença de] gene E em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94766-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene N em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94767-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene S em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94768-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] anticorpos IgA em Soro Plasma ou Sangue por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94769-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [dosagem de] anticorpos em Soro ou Plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94819-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [dosagem de] (carga viral) RNA em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94845-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] RNA em Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95125-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2  [Presença de] IgA+IgM em Soro ou Plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95209-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus + SARS Coronavírus 2 [Presença de] antígeno em Amostra respiratória por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95380-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B e SARS Coronavírus 2 e SARS Coronavírus relacionado painel de RNA por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95406-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [Presença de] RNA no Nariz por Amplificação de ácido nucléico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95409-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [Presença de] gene N em Nariz por  Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95410-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [Concentração de] neutralização de anticorpos em Soro por teste de neutralização de pseudovírus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95411-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [Presença de] neutralização de anticorpos em Soro por teste de neutralização de pseudovírus" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95416-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2, [Presença de] anticorpos IgM teste em Amostra de Sangue seco por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95422-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B RNA e SARS Coronavírus 2 painel de gene N - Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95423-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B e SARS Coronavírus 2 identificado em  Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95425-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] gene N em Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95427-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Concentração de] anticorpos IgA em Soro ou Plasma por imunofluorescência" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95428-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Concentração de] anticorpos IgM em Soro ou Plasma por imunofluorescência" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95429-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Concentração de] anticorpos IgG em Soro ou Plasma por imunofluorescência" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95521-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [#/volume] (carga viral) gene N em Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95522-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [dosagem de] (carga viral ) gene N em Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95542-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 anticorposs IgG+IgM [Presença de] em Soro Plasma ou Sangue por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95608-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2  [Presença de] RNA em amostra respiraória por Amplificação de ácido nucleico com detecção sem sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95823-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado [Presença de] gene E em Saliva (fluido oral) por Amplificação de àcido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95824-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] região anticorpos ORF1 em Saliva (fluido oral) por Amplificação de ácido nucléico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95825-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 [Presença de] anticorpos em Amostra de Sangue seco por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95826-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 painel de RNA - Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95941-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B e SARS Coronavírus 2 e Vírus sinciciais respiratórios painel de RNA - Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95942-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B e SARS Coronavírus + SARS Coronavírus 2 painel de antígeno - Amostra de trato respiratório superior por Imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95971-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 estimulado por interferon gama [Presença de] em sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95972-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 estimulado por  interferon gama liberação por células T [Unidades/Volumes] corrigido para fundo em sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95973-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 estimulado por interferon gama liberação por células T (Unidades/Volume] em sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95974-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 estimulado por interferon gama painel - Sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96091-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene RdRp [Presença de] em saliva (fluído oral) por Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96094-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 e SARS Coronavírus relacionado painel de RNA - Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96118-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 painel de anticorpos -  Amostra de sangue seco por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96119-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 antígenos [Presença de] Amostra de trato respiratório superior por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96120-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene RdRp [Presença de] em Amostra de trato respiratório inferior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96121-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado gene E [Presença de] em Amostra de trato respiratório inferior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96122-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus relacionado gene E [Presença de] em Amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96123-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene RdRp [Presença de] em Amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96448-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene N [Presença de] em saliva (fluído oral) por amplicação de ácido nucleico usando sonda primer set N1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96603-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 proteína S domínio de ligação ao RNA anticorpo neutralizante [Presença] em soro ou plasma por imunonensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96742-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 anticorpos IgG [Massa/Volume] em soro ou plasma por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96751-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene S mutação detectada [Identificador] em specime por método genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96752-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene S mutação detectada [Presença de] em amostra por método genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96755-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interpetação de variante em Amostra narrativa" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96763-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene E [Presença] em amostra respiratória por Amplificação de ácido nucléico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96764-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene E [Limiar de ciclo #] em Amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96765-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavírus 2 gene S [Presença] em saliva (fluído oral) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96766-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sequencia GISAID número de registro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96797-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 RNA [Presença] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96829-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 RNA [Presença de] em Amostra de doador por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96894-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 painel de sequenciamento e identificação - Amostra pelo método de genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96895-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 linhagem [tipo] em amostra pelo método de genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96896-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 clade [tipo] em amostra pelo método de genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96897-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 painel de RNA - lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96898-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 gene N [Limiar de ciclo#] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96899-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 [Limiar de ciclo#] região anticorpos ORF1 (Fases de leitura aberta-1) em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96900-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 gene S [Limiar de ciclo#] em lavagem orofaríngea (gargarejo) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96957-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 gene M [Presença de] em amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96958-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 gene N [Presença] em saliva (fluído oral) por Amplicação de ácido nucleico usando sonda primer CDC set N2" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96986-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 gene N [Presença de] no nariz por Amplificação do ácido nucleico com detecção sem sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97097-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 [Presença] antígenos em amostra de Trato respiratório superior por imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97098-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 gene de proteína não estruturada-2 [Presença] em amostra de Trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97099-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A e B e SARS Coronavírus 2 painel de antígenos - Amostra de trato respiratório superior por imunoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97104-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 região anticorpos ORF1 (Fases de leitura aberta-1) [Unidades/Volumes] (carga viral) em amostra de trato respiratório superior por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98069-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 anticorpos [Presença] em Saliva (fluído oral) por imoensaio rápido" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98080-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavírus 2 e SARS-relacionado coronavírus painel de RNA - Saliva (fluído oral) por Amplificação do ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98131-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 região anticorpos ORF1b (Fases de leitura aberta-1b) [Presença] em amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98132-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 região anticorpos ORF1a (Fases de leitura aberta-1b) [Presença] em amostra respiratória por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98493-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 região anticorpos ORF1b (Fases de leitura aberta-1b) [Presença] em saliva (fluído oral)  por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98494-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS coronavirus 2 região anticorpos ORF1a (Fases de leitura aberta-1a) [Presença] em saliva (fluído oral) por Amplificação de ácido nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98732-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 proteína S Domínio de Ligação ao RNA anticorpo neutralizante [Fator de diluição] em soro ou plasma por imunonensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98733-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Percentual de neutralização por SARS coronavirus 2 proteína spike Domínio de Ligação ao RNA anticorpo neutralizante em soro ou plasma por imunonensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98734-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 proteína S Domínio de Ligação ao RNA anticorpo neutralizante [Unidades/Volume] em soro ou plasma por imunonensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98846-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interferon gama estimulado liberação por células T auxiliares (CD4+) [Unidades/volume] corrigido para sangue de fundo por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "98847-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interferon gama estimulado liberação por linfócitos [Unidades/volume] corrigido para sangue de fundo por imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99314-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 gene RdRp mutação detectada [Identificador] em amostra pelo método de genética molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99596-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 proteína N [Presença] anticorpos IgG em soro ou plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99597-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2  proteína S [Presença] anticorpos IgG em soro ou plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99771-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 proteína spike e proteína de nucleocapsídeo painel de interferon gama estimulado - Sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99772-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interferon gama estimulado [Interpretação] em Sangue Qualitativo" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99773-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interferon gama estimulado liberado por células T. Antígeno spike área de contagem [#] corrigido para fundo em Sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99774-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SARS Coronavirus 2 interferon gama estimulado liberado por células T. Antígeno nucleocapsídeo área de contagem [#] corrigido para fundo em Sangue" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "41853-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100434-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus não-varíola DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100383-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Monkeypox DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100888-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Monkeypox da Africa Ocidental DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100889-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Monkeypox da Bacia do Congo DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100885-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Parapoxvirus DNA [Presença de] em Amostra por Amplificação de Ácido Nucleico com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100886-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Orf DNA [Presença de] em Amostra por Amplificação de Ácido Nucleio com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100887-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da pseudovaríola DNA [Presença] em Amostra por Amplficação de Ácido Nucleio com detecção por sonda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100891-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus IgG Ab [Presença] em Soro ou Plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100892-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus IgM Ab [Presença] em soro ou plasma por Imunoensaio" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100893-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orthopoxvirus IgG e IgM Ab panel - Soro ou Plasma" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "40505-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo contra o Vírus Chikungunya [Título] no soro por inibição da hemaglutinação" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus Ab [Titer] in Serum by Hemagglutination inhibition" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "93976-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painel de anticorpo IgM e IgG contra o Vírus Chikungunya - Soro ou plasma" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus Ab.IgM and IgG panel - Serum or Plasma" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "88630-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Chikungunya [Presença] em soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "56128-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Chikungunya [Título] em soro ou plasma por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgG Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97866-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Chikungunya [Unidades/volume] em soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "88629-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Chikungunya [Presença] em soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "56130-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Chikungunya [Título] em soro ou plasma por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgM Ab [Titer] in Serum or Plasma by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97867-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Chikungunya [Unidades/volume] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "86514-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Chikungunya [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus RNA [Presence] in Amniotic fluid by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60260-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Chikungunya [Presença] no soro ou plasma por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus RNA [Presence] in Serum or Plasma by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "51664-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Chikungunya [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "86515-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Chikungunya [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Chikungunya virus RNA [Presence] in Urine by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "81154-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painel de Vírus da Dengue, chikungunya e zika por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue and Chikungunya and Zika virus panel by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "55369-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo contra o Vírus da Dengue [título] no soro por inibição da hemaglutinação" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus Ab [Titer] in Serum by Hemagglutination inhibition" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29661-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Dengue [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "100964-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Dengue [Presença] no soro, plasma ou sangue por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgG Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "23991-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Dengue [unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgG Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "75223-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG e IgM contra o Vírus da Dengue [identificador] no soro, plasma ou sangue por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgG and IgM [Identifier] in Serum, Plasma or Blood by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29663-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Dengue [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "34721-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Dengue [Presença] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgM Ab [Presence] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "23992-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Dengue [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "91064-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno NS1 do Vírus da Dengue [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus NS1 Ag [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "75377-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno NS1 do Vírus da Dengue [Presença] no soro, plasma ou sangue por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "101206-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno NS1 do Vírus da Dengue [Unidades/volume] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus NS1 Ag [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "41878-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painel IgG e IgM contra o Vírus da Dengue - soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus IgG and IgM panel - Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60262-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1 RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "33578-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo contra o Vírus da Dengue [título] no soro por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus Ab [Titer] in Serum by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "77958-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1, 2, 3 e 4 [Identificador] no líquido cefalorraquidiano por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1 and 2 and 3 and 4 RNA [Identifier] in Cerebral spinal fluid by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "88188-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1+2+3+4 [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1+2+3+4 RNA [Presence] in Urine by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94837-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1+2+3+4 [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1+2+3+4 RNA [Presence] in Amniotic fluid by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "88189-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1+2+3+4 [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1+2+3+4 RNA [Presence] in Blood by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "7855-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 1+2+3+4 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 1+2+3+4 RNA [Presence] in Serum or Plasma by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60420-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 2 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 2 RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60419-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 3 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 3 RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60418-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Dengue 4 [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Dengue virus 4 RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "41239-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo contra o Vírus da Febre Amarela [Presença] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus Ab [Presence] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97868-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painel de anticorpo contra o Vírus da Febre Amarela - soro ou plasma" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus Ab panel - Serum or Plasma" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "77954-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Febre Amarela [Presença] no soro por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgG Ab [Presence] in Serum by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95675-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Febre Amarela [Presença] em amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgG Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6592-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Febre Amarela [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgG Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "71782-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "77955-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] no soro por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgM Ab [Presence] in Serum by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95690-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Febre Amarela [Presença] na amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgM Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6593-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Febre Amarela [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "90459-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Febre Amarela [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus RNA [Presence] in Blood by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "8057-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Febre Amarela [Presença] no soro por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "94184-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Febre Amarela [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Yellow fever virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97869-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Painel de anticorpo contra o Vírus Zika - soro ou plasma" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus Ab panel - Serum or Plasma" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "91080-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Zika [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95663-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Zika [Presença] em amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgG Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "89590-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Zika [título] no soro por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgG Ab [Titer] in Serum by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97870-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Zika [unidades/volume] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80823-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80824-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "91678-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Presença] no soro, plasma ou sangue por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "89591-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Título] no soro por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Titer] in Serum by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80618-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Unidades/volume] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80619-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Zika [Unidades/volume] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus IgM Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "85621-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] no líquido amniótico por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Amniotic fluid by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "91078-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] no sangue por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Blood by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "86594-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] no líquido cefalorraquidiano por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Cerebral spinal fluid by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "90462-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] no sangue do cordão umbilical por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Cord blood by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "91079-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] na placenta por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Placenta by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "85622-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] no soro ou plasma por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Serum or Plasma by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "79190-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "85623-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Zika [Presença] na urina por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Zika virus RNA [Presence] in Urine by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29568-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo neutralizante contra o Vírus do Nilo Ocidental [Título] no soro por teste de neutralização" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus neutralizing antibody [Titer] in Serum by Neutralization test" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "34892-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus do Nilo Ocidental [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95650-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo neutralizante contra o Vírus Mayaro [Título] na amostra por teste de neutralização" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mayaro virus neutralizing antibody [Titer] in Specimen by Neutralization test" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "99120-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo neutralizante contra o Vírus Oropouche [Título] na amostra por teste de neutralização" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oropouche virus neutralizing antibody [Titer] in Specimen by Neutralization test" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96506-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Oropouche [Presença] na amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oropouche virus IgG Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "96531-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Oropouche [Presença] na amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oropouche virus IgM Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "77953-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29538-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus do Nilo Ocidental Igm Ac [unidades/volume] em líquido espinhal cerebral" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97931-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Mayaro [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mayaro virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "97917-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Oropouche [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oropouche virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "33330-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Título] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Titer] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29566-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "33328-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [título] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Titer] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "33329-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [Título] no soro" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Titer] in Serum" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "39572-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [Unidades/volume] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Units/volume] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "38997-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Nilo Ocidental [unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgG Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29570-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo neutralizante do vírus do Nilo Ocidental [Título] no líquido espinhal cerebral por teste de neutralização" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus neutralizing antibody [Titer] in Cerebral spinal fluid by Neutralization test" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "32361-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do vírus do Nilo Ocidental [presença] no soro por NaA com detecção de sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus RNA [Presence] in Serum by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29569-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95674-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Mayaro [Presença] na amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mayaro virus IgG Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29567-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "33331-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Título] no soro" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Titer] in Serum" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "39573-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Unidades/volume] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Units/volume] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "38166-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Nilo Ocidental [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "West Nile virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "95689-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Mayaro [Presença] na amostra por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mayaro virus IgM Ab [Presence] in Specimen by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "22827-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Subtipo do Vírus Influenza A [Identificador] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus A subtype [Identifier] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "24015-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno do Vírus da Influenza A+B [Presença] na amostra" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus A+B Ag [Presence] in Specimen" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5867-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza B Antígeno [Presença] na amostra por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus B Ag [Presence] in Specimen by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5863-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza A Antígeno [Presença] na amostra por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus A Ag [Presence] in Specimen by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "92141-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Influenza B [Presença] em amostra do sistema Respiratório por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus B RNA [Presence] in Respiratory system specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "92142-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Influenza A [Presença] em amostra do sistema Respiratório por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus A RNA [Presence] in Respiratory system specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80382-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno do Vírus da Influenza A [Presença] em amostra das vias respiratórias superiores por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus A Ag [Presence] in Upper respiratory specimen by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "80383-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus da Influenza B Antígeno [Presença] em amostra das vias respiratórias superiores por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Influenza virus B Ag [Presence] in Upper respiratory specimen by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "24116-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Rubéola [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus IgM Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5335-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus da Rubéola [unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "40667-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Rubéola [Presença] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus IgG Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5334-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus da Rubéola [Unidades/volume] no soro ou plasma por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus IgG Ab [Units/volume] in Serum or Plasma by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "52986-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Avidez do anticorpo IgG contra o Vírus da Rubéola [Relação] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus IgG Ab avidity [Ratio] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "54091-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus da Rubéola [Presença] em amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Rubella virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "22498-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo contra o Vírus do Sarampo [Título] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus Ab [Titer] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "60422-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Genótipo do Vírus do Sarampo [Identificador] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus genotype [Identifier] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5244-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Sarampo [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus IgG Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "35276-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Sarampo [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus IgM Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "25421-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus do Sarampo [Unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "48508-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus do Sarampo [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "35275-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus do Sarampo [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Measles virus IgG Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "15410-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Varicela Zoster [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgG Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5403-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Varicela Zoster [unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgG Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "29662-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Varicela Zoster [Presença] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgM Ab [Presence] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5404-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Varicela Zoster [unidades/volume] no soro por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgM Ab [Units/volume] in Serum by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "49451-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DNA do Vírus Varicela Zoster [#/volume] (carga viral) na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus DNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "11483-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DNA do Vírus Varicela Zoster [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus DNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "104459-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Varicela Zoster [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgG Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "17764-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgG contra o Vírus Varicela Zoster [Unidades/volume] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgG Ab [Units/volume] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "69930-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Varicela Zoster [Presença] no líquido cefalorraquidiano por imunoensaio" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgM Ab [Presence] in Cerebral spinal fluid by Immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "31695-0" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anticorpo IgM contra o Vírus Varicela Zoster [Unidades/volume] no líquido cefalorraquidiano" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Varicella zoster virus IgM Ab [Units/volume] in Cerebral spinal fluid" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5877-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Sincicial Respiratório Antígeno [Presença] em amostra por imunofluorescência" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Respiratory syncytial virus Ag [Presence] in Specimen by Immunofluorescence" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "72885-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antígeno do Vírus Sincicial Respiratório [Presença] na nasofaringe por imunoensaio rápido" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Respiratory syncytial virus Ag [Presence] in Nasopharynx by Rapid immunoassay" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "40988-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Sincicial Respiratório [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Respiratory syncytial virus RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "30075-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Sincicial Respiratório A [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Respiratory syncytial virus A RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "30076-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RNA do Vírus Sincicial Respiratório B [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda" ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Respiratory syncytial virus B RNA [Presence] in Specimen by NAA with probe detection" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRNomeExameLOINC.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

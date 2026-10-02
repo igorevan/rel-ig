@@ -1,0 +1,620 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/body-site",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTBodyStructures",
+    "title" : "SNOMED CT Body Structures",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.141"],
+    "sources" : ["2.16.840.1.113883.4.642.3.141"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.238"],
+    "sources" : ["2.16.840.1.113883.4.642.3.238"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.162"],
+    "sources" : ["2.16.840.1.113883.4.642.3.162"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.164"],
+    "sources" : ["2.16.840.1.113883.4.642.3.164"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Condition/DiagnosisSeverity",
+    "title" : "Condition/Diagnosis Severity",
+    "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.168"],
+    "sources" : ["2.16.840.1.113883.4.642.3.168"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionStage",
+    "title" : "Condition Stage",
+    "description" : "Example value set for stages of cancer and other conditions.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.170"],
+    "sources" : ["2.16.840.1.113883.4.642.3.170"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionStageType",
+    "title" : "Condition Stage Type",
+    "description" : "Example value set for the type of stages of cancer and other conditions",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.171"],
+    "sources" : ["2.16.840.1.113883.4.642.3.171"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.5"],
+    "sources" : ["2.16.840.1.113883.4.642.3.5"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentSectionCodes",
+    "title" : "Document Section Codes",
+    "description" : "Document section codes (LOINC codes used in CCDA sections).",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.237"],
+    "sources" : ["2.16.840.1.113883.4.642.3.237"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DocumentClassValueSet",
+    "title" : "Document Class Value Set",
+    "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.244"],
+    "sources" : ["2.16.840.1.113883.4.642.3.244"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Identifier Type Codes",
+    "title" : "IdentifierType",
+    "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+    "oids" : ["2.16.840.1.113883.4.642.3.45"],
+    "sources" : ["2.16.840.1.113883.4.642.3.45"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "systems" : ["http://hl7.org/fhir/identifier-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.57"],
+    "sources" : ["2.16.840.1.113883.4.642.3.57"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.322"],
+    "sources" : ["2.16.840.1.113883.4.642.3.322"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "systems" : ["http://hl7.org/fhir/list-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.318"],
+    "sources" : ["2.16.840.1.113883.4.642.3.318"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/list-order",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of the items in a list resource.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+    "oids" : ["2.16.840.1.113883.4.642.3.324"],
+    "sources" : ["2.16.840.1.113883.4.642.3.324"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ManifestationAndSymptomCodes",
+    "title" : "Manifestation and Symptom Codes",
+    "description" : "Example value set for Manifestation and Symptom codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.169"],
+    "sources" : ["2.16.840.1.113883.4.642.3.169"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCCodes",
+    "title" : "LOINC Codes",
+    "description" : "This value set includes all LOINC codes",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.396"],
+    "sources" : ["2.16.840.1.113883.4.642.3.396"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationInterpretationCodes",
+    "title" : "Observation Interpretation Codes",
+    "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.3.399"],
+    "sources" : ["2.16.840.1.113883.4.642.3.399"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationMethods",
+    "title" : "Observation Methods",
+    "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.395"],
+    "sources" : ["2.16.840.1.113883.4.642.3.395"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeAppliesToCodes",
+    "title" : "Observation Reference Range Applies To Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.407"],
+    "sources" : ["2.16.840.1.113883.4.642.3.407"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/referencerange-meaning"],
+    "oids" : ["2.16.840.1.113883.4.642.3.397"],
+    "sources" : ["2.16.840.1.113883.4.642.3.397"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.27"],
+    "sources" : ["2.16.840.1.113883.4.642.3.27"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRSpecimenCollectionMethod",
+    "title" : "FHIR Specimen Collection Method",
+    "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.468"],
+    "sources" : ["2.16.840.1.113883.4.642.3.468"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenContainerType",
+    "title" : "Specimen Container Type",
+    "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.470"],
+    "sources" : ["2.16.840.1.113883.4.642.3.470"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenProcessingProcedure",
+    "title" : "Specimen processing procedure",
+    "description" : "The technique that is used to perform the process or preserve the specimen.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+    "oids" : ["2.16.840.1.113883.4.642.3.469"],
+    "sources" : ["2.16.840.1.113883.4.642.3.469"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenStatus",
+    "title" : "SpecimenStatus",
+    "description" : "Codes providing the status/availability of a specimen.",
+    "systems" : ["http://hl7.org/fhir/specimen-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.471"],
+    "sources" : ["2.16.840.1.113883.4.642.3.471"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSAdditivePreservative",
+    "title" : "hl7VS-additivePreservative",
+    "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+    "oids" : ["2.16.840.1.113883.21.245"],
+    "sources" : ["2.16.840.1.113883.21.245"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSSpecimenCondition",
+    "title" : "hl7VS-specimenCondition",
+    "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+    "oids" : ["2.16.840.1.113883.21.333"],
+    "sources" : ["2.16.840.1.113883.21.333"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSRelevantClincialInformation",
+    "title" : "hl7VS-relevantClincialInformation",
+    "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+    "oids" : ["2.16.840.1.113883.21.440"],
+    "sources" : ["2.16.840.1.113883.21.440"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "v3 Code System ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+    "version" : "2014-03-26",
+    "status" : "active",
+    "name" : "v3.ConfidentialityClassification",
+    "title" : "V3 Value SetConfidentialityClassification",
+    "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+    "oids" : ["2.16.840.1.113883.1.11.10228"],
+    "sources" : ["2.16.840.1.113883.1.11.10228"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaExame-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRCategoriaExame",
+    "title" : "Categoria do Exame",
+    "description" : "Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoDocumento",
+    "title" : "Estado do Documento",
+    "description" : "Classifica o tipo de documento que está sendo trafegado.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoObservacao-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoObservacao",
+    "title" : "Estado da Observação",
+    "description" : "Tipos de estados de uma observação.",
+    "systems" : ["http://hl7.org/fhir/observation-status"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRNomeExame-2.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRNomeExame",
+    "title" : "Nome do Exame",
+    "description" : "Classifica o exame laboratorial realizado.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRResultadoQualitativoExame",
+    "title" : "Resultado Qualitativo do Exame 1.0 (ValueSet)",
+    "description" : "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-2.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRResultadoQualitativoExame",
+    "title" : "Resultado Qualitativo do Exame 2.0 (ValueSet)",
+    "description" : "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPSNG",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSCUL",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoAVIDEZ",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoHISPT",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRGNR",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPRAU",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSBAC",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT"],
+    "uses" : {
+    },
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaPatogeno",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaPatogeno",
+    "title" : "Patógeno (ValueSet)",
+    "description" : "Conjunto de terminologias para indicação do Patógeno.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno"],
+    "uses" : {
+    },
+    "StructureDefinition-BRPatogeno.html" : "Patógeno (StructureDefinition)"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaSuspeitaDiagnostica",
+    "title" : "Suspeita Diagnóstica (ValueSet)",
+    "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"],
+    "uses" : {
+    },
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoAmostra",
+    "title" : "Tipo de Amostra de Exame",
+    "description" : "Tipo da amostra de um exame ou teste.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+    "http://terminology.hl7.org/CodeSystem/v2-0487"],
+    "uses" : {
+    },
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTipoDocumento",
+    "title" : "Tipo de Documento (ValueSet)",
+    "description" : "Classifica o tipo de documento que está sendo trafegado.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"],
+    "uses" : {
+    },
+    "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial"
+  }]
+}

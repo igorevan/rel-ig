@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRTerminologiaSuspeitaDiagnostica",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
+  "version": "1.1",
+  "name": "BRTerminologiaSuspeitaDiagnostica",
+  "title": "Suspeita Diagnóstica (ValueSet)",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-09-16T14:11:40.0457007+00:00",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"
+      }
+    ]
+  }
+}

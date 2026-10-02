@@ -1,0 +1,70 @@
+# br.gov.saude.rel.fhir#1.0.0-release: Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS(en)
+
+## Pages
+
+* [Principal](index.md)
+* [Credenciamento](credenciamento.md)
+* [Modelo Computacional](mc.md)
+* [Downloads](downloads.md)
+* [Suporte da RNDS](suporte.md)
+* [Feedback](forms.md)
+* [Integração](integracao.md)
+* [Artifacts Summary](artifacts.md)
+* [Histórico de mudanças](changes.md)
+* [Exemplos](exemplos.md)
+* [Modelo de Informação](mi.md)
+
+## Resources
+
+### CodeSystems
+
+* [Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem)](CodeSystem-BRCID10.md)
+* [Exames do GAL](CodeSystem-BRNomeExameGAL.md)
+* [Exames LOINC](CodeSystem-BRNomeExameLOINC.md)
+* [Resultado qualitativo do Exame (CodeSystem)](CodeSystem-BRResultadoQualitativoExame.md)
+* [Subgrupo da Tabela SUS](CodeSystem-BRSubgrupoTabelaSUS.md)
+* [Patógeno (CodeSystem)](CodeSystem-BRTerminologiaPatogeno.md)
+* [Suspeita Diagnóstica (CodeSystem)](CodeSystem-BRTerminologiaSuspeitaDiagnostica.md)
+* [Tipo de Amostra Biológica](CodeSystem-BRTipoAmostraGAL.md)
+* [Tipo de Documento (CodeSystem)](CodeSystem-BRTipoDocumento.md)
+* [Tipo de Resultado (AVIDEZ)](CodeSystem-BRTipoResultadoAVIDEZ.md)
+* [Tipo de Resultado (DTNT)](CodeSystem-BRTipoResultadoDTNT.md)
+* [Tipo de Resultado (HISPT)](CodeSystem-BRTipoResultadoHISPT.md)
+* [Tipo de Resultado (PRAU)](CodeSystem-BRTipoResultadoPRAU.md)
+* [Tipo de Resultado (PSNG)](CodeSystem-BRTipoResultadoPSNG.md)
+* [Tipo de Resultado (RGNR)](CodeSystem-BRTipoResultadoRGNR.md)
+* [Tipo de Resultado (RSBAC)](CodeSystem-BRTipoResultadoRSBAC.md)
+* [Tipo de Resultado (RSCUL)](CodeSystem-BRTipoResultadoRSCUL.md)
+
+### ValueSets
+
+* [Categoria do Exame](ValueSet-BRCategoriaExame-1.0.md)
+* [Estado do Documento](ValueSet-BREstadoDocumento-1.0.md)
+* [Estado da Observação](ValueSet-BREstadoObservacao-1.0.md)
+* [Nome do Exame](ValueSet-BRNomeExame-2.0.md)
+* [Resultado Qualitativo do Exame 1.0 (ValueSet)](ValueSet-BRResultadoQualitativoExame-1.0.md)
+* [Resultado Qualitativo do Exame 2.0 (ValueSet)](ValueSet-BRResultadoQualitativoExame-2.0.md)
+* [Patógeno (ValueSet)](ValueSet-BRTerminologiaPatogeno.md)
+* [Suspeita Diagnóstica (ValueSet)](ValueSet-BRTerminologiaSuspeitaDiagnostica.md)
+* [Tipo de Amostra de Exame](ValueSet-BRTipoAmostra-1.0.md)
+* [Tipo de Documento (ValueSet)](ValueSet-BRTipoDocumento-1.0.md)
+
+### Resource Profiles
+
+* [Amostra Biológica](StructureDefinition-BRAmostraBiologica-1.0.md)
+* [Condição de Saúde](StructureDefinition-BRCondicaoSaude.md)
+* [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)
+* [Resultado de Exame Laboratorial](StructureDefinition-BRResultadoExameLaboratorial-3.2.1.md)
+
+### Extensions
+
+* [Patógeno (StructureDefinition)](StructureDefinition-BRPatogeno.md)
+
+### ImplementationGuides
+
+* [Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS](ImplementationGuide-br.gov.saude.rel.fhir.md)
+
+### Examples
+
+* [example-bundle-rel-gal (Bundle)](Bundle-example-bundle-rel-gal.md)
+* [example-bundle-rel-loinc (Bundle)](Bundle-example-bundle-rel-loinc.md)

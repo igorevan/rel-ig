@@ -1,0 +1,280 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRNomeExameGAL> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BRNomeExameGAL"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0-release"] ;
+  fhir:CodeSystem.name [ fhir:value "BRNomeExameGAL"] ;
+  fhir:CodeSystem.title [ fhir:value "Exames do GAL"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2020-05-05T11:53:58.0082379+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "coronavirusnCoV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Novo coronavírus (2019-nCoV)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COVID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COVID-19, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CVIDGG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COVID-19, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CVIDGM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COVID-19, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHIKBM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CHIKUNGUNYA, BIOLOGIA MOLECULAR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHIKG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CHIKUNGUNYA, IGG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHIKM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CHIKUNGUNYA, IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CHIKTR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CHIKUNGUNYA, TESTE RAPIDO IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENGG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE IGG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENGM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENGMS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE IGM SOROLOGIA" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENGTR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE TESTE RAPIDO" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENAN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE, DETECCAO DE ANTIGENO NS1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FEAMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FEBRE AMARELA BIOLOGIA MOLECULAR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FEAMM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FEBRE AMARELA IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FAEAPV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FEBRE AMARELA, EVENTO ADVERSO POS VACINAL/EAPV" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FEAMG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FEBRE AMARELA, IGG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FAIMIG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FEBRE AMARELA, TESTE RAPIDO IGM/IGG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PEQARB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PESQUISA DE ARBOVIRUS" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PEQZDC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PESQUSA DE ARBOVIRUS (ZDC)" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZIKABM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZIKA BIOLOGIA MOLECULAR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZIKAGG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZIKA IGG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZIKAGM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZIKA IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZIKATR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ZIKA TESTE RAPIDO IGG E IGM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FENLB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Febre do Nilo Ocidental, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FENLG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Febre do Nilo Ocidental, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FENLM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Febre do Nilo Ocidental, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAYBIO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mayaro, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAYIGG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mayaro, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAYIGM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mayaro, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OROBIO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oropouche, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OROIGG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oropouche, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OROIGM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oropouche, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DENGB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DENGUE, BIOLOGIA MOLECULAR" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INFSAZ" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RUBBM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rubéola, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RUBG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rubéola, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RUBM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rubéola, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SARBM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sarampo, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SARG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sarampo, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SARM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sarampo, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VARBIO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VARIG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela, IgG" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VARIM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela, IgM" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VARIOL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varíola" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VARZOS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Varicela Zoster, Biologia Molecular" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VRSRT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vírus Respiratórios" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/rel/CodeSystem/BRNomeExameGAL.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
