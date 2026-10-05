@@ -2,9 +2,6 @@
 
 ## Resource Profile: Diagnóstico em Laboratório Clínico 
 
- 
-Exame ou teste realizado em laboratório com finalidade diagnóstica ou investigativa. 
-
 **Usos:**
 
 * Refere a este Perfil: [Condição de Saúde](StructureDefinition-BRCondicaoSaude.md) and [Resultado de Exame Laboratorial](StructureDefinition-BRResultadoExameLaboratorial-3.2.1.md)

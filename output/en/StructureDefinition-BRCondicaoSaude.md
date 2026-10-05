@@ -2,9 +2,6 @@
 
 ## Resource Profile: Condição de Saúde 
 
- 
-Contém os dados relacionados à condição de saúde ou condição alvo do paciente avaliado. 
-
 **Usos:**
 
 * Refere a este Perfil: [Resultado de Exame Laboratorial](StructureDefinition-BRResultadoExameLaboratorial-3.2.1.md)

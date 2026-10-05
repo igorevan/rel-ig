@@ -2,9 +2,6 @@
 
 ## ValueSet: Tipo de Amostra de Exame 
 
- 
-Tipo da amostra de um exame ou teste. 
-
  **References** 
 
 * [Amostra Biológica](StructureDefinition-BRAmostraBiologica-1.0.md)

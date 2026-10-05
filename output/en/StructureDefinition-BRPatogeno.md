@@ -2,8 +2,6 @@
 
 ## Extension: Patógeno (StructureDefinition) 
 
-Extensão para inserção dos termos relacionados ao Patógeno identificado.
-
 **Context of Use**
 
 **Usage info**

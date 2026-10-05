@@ -2,9 +2,6 @@
 
 ## ValueSet: Suspeita Diagnóstica (ValueSet) 
 
- 
-Conjunto de terminologias para indicação da Suspeita Diagnóstica. 
-
  **References** 
 
 * [Condição de Saúde](StructureDefinition-BRCondicaoSaude.md)

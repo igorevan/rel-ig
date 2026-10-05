@@ -2,9 +2,6 @@
 
 ## ValueSet: Resultado Qualitativo do Exame 1.0 (ValueSet) 
 
- 
-ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo. 
-
  **References** 
 
 * [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)

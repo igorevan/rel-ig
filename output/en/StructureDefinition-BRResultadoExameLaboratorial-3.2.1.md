@@ -2,9 +2,6 @@
 
 ## Resource Profile: Resultado de Exame Laboratorial 
 
- 
-Documento que apresenta resultados de exames laboratoriais. 
-
 **Usos:**
 
 * Este Perfil não é utilizado por nenhum perfil neste guia de implementação

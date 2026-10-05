@@ -2,9 +2,6 @@
 
 ## ValueSet: Patógeno (ValueSet) 
 
- 
-Conjunto de terminologias para indicação do Patógeno. 
-
  **References** 
 
 * [Patógeno (StructureDefinition)](StructureDefinition-BRPatogeno.md)

@@ -2,9 +2,6 @@
 
 ## CodeSystem: Exames do GAL 
 
- 
-Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL). 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Nome do Exame](ValueSet-BRNomeExame-2.0.md)

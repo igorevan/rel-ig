@@ -2,9 +2,6 @@
 
 ## CodeSystem: Tipo de Amostra Biológica 
 
- 
-Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL). 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Tipo de Amostra de Exame](ValueSet-BRTipoAmostra-1.0.md)

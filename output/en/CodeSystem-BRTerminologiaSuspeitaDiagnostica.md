@@ -2,9 +2,6 @@
 
 ## CodeSystem: Suspeita Diagnóstica (CodeSystem) 
 
- 
-Terminologia para indicação de uma Suspeita Diagnóstica. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * Este CodeSystem não é utilizado aqui; pode ser utilizado noutro local (por exemplo, em especificações e/ou implementações que utilizem este conteúdo)

@@ -2,9 +2,6 @@
 
 ## ValueSet: Nome do Exame 
 
- 
-Classifica o exame laboratorial realizado. 
-
  **References** 
 
 * [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)

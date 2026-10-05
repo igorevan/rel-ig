@@ -2,9 +2,6 @@
 
 ## Resource Profile: Amostra Biológica 
 
- 
-Amostra de origem humana/animal usada em investigações biológicas/laboratoriais para fins diagnósticos. 
-
 **Usos:**
 
 * Refere a este Perfil: [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)

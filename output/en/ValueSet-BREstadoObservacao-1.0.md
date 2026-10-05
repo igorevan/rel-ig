@@ -2,9 +2,6 @@
 
 ## ValueSet: Estado da Observação 
 
- 
-Tipos de estados de uma observação. 
-
  **References** 
 
 * [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)

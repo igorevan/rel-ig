@@ -2,9 +2,6 @@
 
 ## CodeSystem: Patógeno (CodeSystem) 
 
- 
-Terminologia para indicação de um Patógeno. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Patógeno (ValueSet)](ValueSet-BRTerminologiaPatogeno.md)

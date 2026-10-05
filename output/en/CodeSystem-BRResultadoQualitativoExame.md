@@ -2,9 +2,6 @@
 
 ## CodeSystem: Resultado qualitativo do Exame (CodeSystem) 
 
- 
-Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Resultado Qualitativo do Exame 1.0 (ValueSet)](ValueSet-BRResultadoQualitativoExame-1.0.md)

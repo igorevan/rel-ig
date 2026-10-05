@@ -2,9 +2,6 @@
 
 ## CodeSystem: Tipo de Resultado (RSCUL) 
 
- 
-Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo com o tipo de resultado RSCUL. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Resultado Qualitativo do Exame 2.0 (ValueSet)](ValueSet-BRResultadoQualitativoExame-2.0.md)

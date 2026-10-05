@@ -2,9 +2,6 @@
 
 ## CodeSystem: Subgrupo da Tabela SUS 
 
- 
-O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Categoria do Exame](ValueSet-BRCategoriaExame-1.0.md)

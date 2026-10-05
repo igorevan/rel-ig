@@ -2,9 +2,6 @@
 
 ## ValueSet: Estado do Documento 
 
- 
-Classifica o tipo de documento que está sendo trafegado. 
-
  **References** 
 
 * [Resultado de Exame Laboratorial](StructureDefinition-BRResultadoExameLaboratorial-3.2.1.md)

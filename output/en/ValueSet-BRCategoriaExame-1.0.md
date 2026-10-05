@@ -2,9 +2,6 @@
 
 ## ValueSet: Categoria do Exame 
 
- 
-Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS. 
-
  **References** 
 
 * [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)
