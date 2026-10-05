@@ -3,7 +3,7 @@ RELIG : Validation Results
 
 err = 1, warn = 0, info = 0
 IG Publisher Version: 2.3.4
-Generated Mon Oct 05 14:24:41 BRT 2026. FHIR version 4.0.1 for br.gov.saude.rel.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/rel)
+Generated Mon Oct 05 14:45:46 BRT 2026. FHIR version 4.0.1 for br.gov.saude.rel.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/rel)
  Build Errors : 0 / 0 / 0
  /home/igor/rel-ig/input/examples/example-bundle-rel-gal : 1 / 2 / 3
  /home/igor/rel-ig/input/examples/example-bundle-rel-loinc : 0 / 2 / 2
