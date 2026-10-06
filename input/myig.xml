@@ -14,8 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
     <valueCode value="4.0.1" />
   </extension>
-  <url
-    value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" />
+  <url value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir" />
   <version value="1.0.0-release" />
   <name value="RELIG" />
   <title value="Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS" />
@@ -60,22 +59,18 @@
         <reference value="Bundle/example-bundle-rel-loinc" />
       </reference>
       <name value="Bundle de exemplo do REL (LOINC)" />
-      <description
-        value="Bundle de exemplo do REL com exame em LOINC" />
+      <description value="Bundle de exemplo do REL com exame em LOINC" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1"
-      />
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1" />
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/example-bundle-rel-gal" />
       </reference>
       <name value="Bundle de exemplo do REL (GAL)" />
-      <description
-        value="Bundle de exemplo do REL com exame do GAL" />
+      <description value="Bundle de exemplo do REL com exame do GAL" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1"
-      />
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1" />
     </resource>
     <page>
       <nameUrl value="toc.html" />

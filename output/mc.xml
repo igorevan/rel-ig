@@ -18,13 +18,170 @@
   <p>O diagrama abaixo apresenta o pacote <i>Bundle</i> no qual é condensado o Resultado de Exame Laboratorial (REL),
     referenciando todos os dados relevantes para caracterizar esse registro.</p>
 
+
   <p>
     <b>Figura 1 - Diagrama do <i>Bundle</i> do REL</b>
   </p>
   <div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="661"
+      viewBox="0 0 1250 1180" role="img" aria-labelledby="title desc">
+      <title id="title">Estrutura do Bundle — Resultado de Exame Laboratorial</title>
+      <desc id="desc">Bundle inclui Composition, Condition, Observation e Specimen pelas entries 0 a 3. Composition
+        referencia Condition e Observation. Condition referencia Observation. Observation referencia Specimen. Os quatro
+        perfis são clicáveis.</desc>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8"
+          orient="auto-start-reverse">
+          <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#334155" stroke-width="1.5" />
+        </marker>
+        <marker id="include-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+          <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#64748b" stroke-width="1.5" />
+        </marker>
+      </defs>
+      <style>
+        text {
+          font-family: Arial, Helvetica, sans-serif;
+          fill: #172b4d
+        }
 
-    <img height="700" src="diagramaMC.png" alt="Diagrama do Bundle do REL" />
+        .edge {
+          fill: none;
+          stroke: #334155;
+          stroke-width: 2.3;
+          stroke-linejoin: round;
+          stroke-linecap: round;
+          marker-end: url(#arrow)
+        }
 
+        .include {
+          fill: none;
+          stroke: #64748b;
+          stroke-width: 2;
+          stroke-dasharray: 7 5;
+          stroke-linejoin: round;
+          marker-end: url(#include-arrow)
+        }
+
+        .path-label {
+          font-family: Consolas, 'Liberation Mono', monospace;
+          font-size: 16px;
+          fill: #334155
+        }
+
+        .resource {
+          font-size: 28px;
+          font-weight: 700
+        }
+
+        .profile {
+          font-size: 21px
+        }
+
+        a {
+          cursor: pointer
+        }
+
+        a:hover .card,
+        a:focus .card {
+          stroke-width: 3.5
+        }
+      </style>
+      <path class="include" d="M 685 170 V 280" />
+      <path class="include" d="M 410 143 H 260 V 550 H 410" />
+      <path class="include" d="M 410 113 H 190 V 800 H 410" />
+      <path class="include" d="M 410 83 H 120 V 1050 H 410" />
+      <path class="edge" d="M 685 390 V 510" />
+      <path class="edge" d="M 960 335 H 1070 V 835 H 960" />
+      <path class="edge" d="M 685 620 V 760" />
+      <path class="edge" d="M 685 870 V 1010" />
+      <g>
+        <rect x="591.0" y="209" width="188.1" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="685" y="230" text-anchor="middle">entry[0].resource</text>
+      </g>
+      <g>
+        <rect x="216.0" y="534" width="188.1" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="310" y="555" text-anchor="middle">entry[1].resource</text>
+      </g>
+      <g>
+        <rect x="216.0" y="784" width="188.1" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="310" y="805" text-anchor="middle">entry[2].resource</text>
+      </g>
+      <g>
+        <rect x="216.0" y="1034" width="188.1" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="310" y="1055" text-anchor="middle">entry[3].resource</text>
+      </g>
+      <g>
+        <rect x="533.1" y="434" width="303.9" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="685" y="455" text-anchor="middle">section[0].entry[0].reference</text>
+      </g>
+      <g>
+        <rect x="878.1" y="664" width="303.9" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="1030" y="685" text-anchor="middle">section[0].entry[1].reference</text>
+      </g>
+      <g>
+        <rect x="518.6" y="674" width="332.8" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="685" y="695" text-anchor="middle">stage[0].assessment[0].reference</text>
+      </g>
+      <g>
+        <rect x="586.1" y="924" width="197.7" height="32" rx="7" fill="#ffffff" fill-opacity="0.98" /><text
+          class="path-label" x="685" y="945" text-anchor="middle">specimen.reference</text>
+      </g>
+      <g>
+        <rect class="card" x="410" y="60" width="550" height="110" rx="18" fill="#e8edf5" stroke="#526781"
+          stroke-width="2" />
+        <text class="resource" x="685" y="124" text-anchor="middle">Bundle</text>
+      </g>
+      <a href="StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html"
+        xlink:href="StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" target="_blank"
+        rel="noopener noreferrer" aria-label="Abrir perfil BRResultadoExameLaboratorial-3.2.1">
+        <title>Abrir perfil BRResultadoExameLaboratorial-3.2.1 no IG REL</title>
+        <g>
+          <rect class="card" x="410" y="280" width="550" height="110" rx="18" fill="#dbeafe" stroke="#2563eb"
+            stroke-width="2" />
+          <text class="resource" x="685" y="324" text-anchor="middle">Composition</text>
+          <text class="profile" x="685" y="359" text-anchor="middle">BRResultadoExameLaboratorial-3.2.1</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-BRCondicaoSaude.html" xlink:href="StructureDefinition-BRCondicaoSaude.html"
+        target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil BRCondicaoSaude">
+        <title>Abrir perfil BRCondicaoSaude no IG REL</title>
+        <g>
+          <rect class="card" x="410" y="510" width="550" height="110" rx="18" fill="#ffedd5" stroke="#d97706"
+            stroke-width="2" />
+          <text class="resource" x="685" y="554" text-anchor="middle">Condition</text>
+          <text class="profile" x="685" y="589" text-anchor="middle">BRCondicaoSaude</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html"
+        xlink:href="StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" target="_blank"
+        rel="noopener noreferrer" aria-label="Abrir perfil BRDiagnosticoLaboratorioClinico-3.2.1">
+        <title>Abrir perfil BRDiagnosticoLaboratorioClinico-3.2.1 no IG REL</title>
+        <g>
+          <rect class="card" x="410" y="760" width="550" height="110" rx="18" fill="#ede9fe" stroke="#7c3aed"
+            stroke-width="2" />
+          <text class="resource" x="685" y="804" text-anchor="middle">Observation</text>
+          <text class="profile" x="685" y="839" text-anchor="middle">BRDiagnosticoLaboratorioClinico-3.2.1</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-BRAmostraBiologica-1.0.html"
+        xlink:href="StructureDefinition-BRAmostraBiologica-1.0.html" target="_blank" rel="noopener noreferrer"
+        aria-label="Abrir perfil BRAmostraBiologica-1.0">
+        <title>Abrir perfil BRAmostraBiologica-1.0 no IG REL</title>
+        <g>
+          <rect class="card" x="410" y="1010" width="550" height="110" rx="18" fill="#ccfbf1" stroke="#0d9488"
+            stroke-width="2" />
+          <text class="resource" x="685" y="1054" text-anchor="middle">Specimen</text>
+          <text class="profile" x="685" y="1089" text-anchor="middle">BRAmostraBiologica-1.0</text>
+        </g>
+      </a>
+      <g font-size="14" fill="#64748b">
+        <path d="M 410 1153 H 454" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" /><text x="466"
+          y="1158">Inclusão no Bundle</text>
+        <path d="M 685 1153 H 729" fill="none" stroke="#334155" stroke-width="2" /><text x="741" y="1158">Referência
+          entre
+          recursos</text>
+      </g>
+    </svg>
   </div>
 
   <a name="recursos"> </a>

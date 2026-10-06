@@ -77,8 +77,8 @@
     "description" : "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
     "uses" : {
     },
-    "ValueSet-BRResultadoQualitativoExame-1.0.html" : "Resultado Qualitativo do Exame 1.0 (ValueSet)",
-    "ValueSet-BRResultadoQualitativoExame-2.0.html" : "Resultado Qualitativo do Exame 2.0 (ValueSet)"
+    "ValueSet-BRResultadoQualitativoExame-2.0.html" : "Resultado Qualitativo do Exame 2.0 (ValueSet)",
+    "ValueSet-BRResultadoQualitativoExame-1.0.html" : "Resultado Qualitativo do Exame 1.0 (ValueSet)"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
