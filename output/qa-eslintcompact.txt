@@ -4,4 +4,4 @@ RELIG
 /home/igor/rel-ig/input/examples/example-bundle-rel-gal.json: line 50, col 12, Error - Slice 'Composition.section.entry:condicaoSaude': a matching slice is required, but not found (from http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1|1.0.0-release). Note that other slices are allowed in addition to this required slice (STRUCTURE)
 
 err = 1, warn = 0, info = 0
-IG Publisher Version: 2.3.4
+IG Publisher Version: 2.3.5

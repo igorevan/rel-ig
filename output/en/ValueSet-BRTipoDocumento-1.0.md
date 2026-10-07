@@ -6,7 +6,7 @@
 
 * [Resultado de Exame Laboratorial](StructureDefinition-BRResultadoExameLaboratorial-3.2.1.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

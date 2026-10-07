@@ -9,7 +9,7 @@
 # Errors relacionados as particularidades dos CodeSystems e ValueSets da RNDS
 %Esta propriedade tem apenas um código%
 The value set expansion is too large, and only a subset has been displayed
-%Referência ao projeto CodeSystem%
+%http://hl7.org/fhir/composition-status%
 
 # Erros relacionados as especificações da RNDS
 %have an OID assigned%

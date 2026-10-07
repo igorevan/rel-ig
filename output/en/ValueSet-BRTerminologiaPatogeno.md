@@ -6,7 +6,7 @@
 
 * [Patógeno (StructureDefinition)](StructureDefinition-BRPatogeno.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

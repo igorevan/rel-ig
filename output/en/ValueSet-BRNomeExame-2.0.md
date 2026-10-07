@@ -6,7 +6,7 @@
 
 * [Diagnóstico em Laboratório Clínico](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

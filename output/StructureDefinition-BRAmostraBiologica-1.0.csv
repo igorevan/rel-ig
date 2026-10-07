@@ -140,7 +140,7 @@ Period {[]} {[]}","Collection time","Time when specimen was collected from subje
 ","FiveWs.init"
 "Specimen.collection.quantity","Specimen.collection.quantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","The quantity of specimen collected","The quantity of specimen collected; for instance the volume of a blood sample, or the physical measurement of an anatomic pathology sample.","","","","","","","","","",,,,,"",,,,"Specimen.collection.quantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".participation[typeCode=SBJ].role[classCode=SPEC].player.quantity","SPM-12"
+sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}",".participation[typeCode=SBJ].role[classCode=SPEC].player.quantity","SPM-12"
 "Specimen.collection.method","Specimen.collection.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Technique used to perform collection","A coded value specifying the technique that is used to perform the procedure.","","","","","","","","","",,"example","The  technique that is used to perform the procedure.","http://hl7.org/fhir/ValueSet/specimen-collection-method|4.0.1","",,,,"Specimen.collection.method",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".methodCode","SPM-7"
@@ -203,10 +203,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".code","SPM-27"
 "Specimen.container.capacity","Specimen.container.capacity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","Container volume or size","The capacity (volume or other measure) the container may contain.","","","","","","","","","",,,,,"",,,,"Specimen.container.capacity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".quantity","one of: SAC 16, SAC17 and SAC 20, or SAC 21 and SAC 20"
+sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}",".quantity","one of: SAC 16, SAC17 and SAC 20, or SAC 21 and SAC 20"
 "Specimen.container.specimenQuantity","Specimen.container.specimenQuantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","Quantity of specimen within container","The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type.","","","","","","","","","",,,,,"",,,,"Specimen.container.specimenQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".playedRole[classCode=CONT].quantity","SAC-23 (value) SAC-24 (units"
+sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}",".playedRole[classCode=CONT].quantity","SAC-23 (value) SAC-24 (units"
 "Specimen.container.additive[x]","Specimen.container.additive[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance|4.0.1]]}","Additive associated with container","Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.","","","","","","","","","",,"example","Substance added to specimen container.","http://terminology.hl7.org/ValueSet/v2-0371","",,,,"Specimen.container.additive[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopesRole[classCode=ADTV].player","SAC-27"

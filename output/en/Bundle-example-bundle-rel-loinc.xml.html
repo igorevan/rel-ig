@@ -24,9 +24,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
     <script type="text/javascript" src="assets/js/direction-management.js"> </script>
@@ -259,7 +259,7 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;example-bundle-rel-loinc&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;example-bundle-rel-loinc&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2021-09-15T11:57:05.995-02:00&quot;/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
@@ -323,7 +323,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/condition.html#Condition">Condition</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Condition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Condition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;8ba97ce8-dc9b-4561-9d4b-5d7e1e7bc8fc&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Condition.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude&quot;/&gt;
@@ -366,7 +366,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:a96a4193-c359-437e-a39f-3f9667990c92&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;a96a4193-c359-437e-a39f-3f9667990c92&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;a96a4193-c359-437e-a39f-3f9667990c92&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1&quot;/&gt;
@@ -447,7 +447,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:uuid:3b2d133f-6192-4f20-8a1c-8da16811c812&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/specimen.html#Specimen">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/specimen.html#Specimen">Specimen</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Specimen.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3b2d133f-6192-4f20-8a1c-8da16811c812&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Specimen.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;3b2d133f-6192-4f20-8a1c-8da16811c812&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Specimen.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0&quot;/&gt;
@@ -522,8 +522,8 @@
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
           Package br.gov.saude.rel.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-10-06 11:34:00 -0300">
-    2026-10-06
+  <span title="2026-10-07 15:04:00 -0300">
+    2026-10-07
   </span>
 
           <br/>

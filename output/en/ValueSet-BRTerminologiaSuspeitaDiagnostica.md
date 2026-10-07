@@ -6,7 +6,7 @@
 
 * [Condição de Saúde](StructureDefinition-BRCondicaoSaude.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 
