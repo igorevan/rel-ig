@@ -9,7 +9,7 @@
   "changes": "changes.html",
   "first": true,
   "title": "REL IG",
-  "ci-build": "https://fhir.saude.gov.br/rel/",
+  "ci-build": "https://github.com/igorevan/rel-ig",
   "registry-description": "Primeira versão do Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS",
   "registry-country": "BR",
   "registry-authority": "Ministério da Saúde do Brasil",

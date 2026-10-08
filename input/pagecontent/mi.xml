@@ -216,8 +216,15 @@
         <td>Suspeita Diagnóstica</td>
         <td>Texto codificado:
           <ul>
-            <li>Monkeypox</li>
             <li>COVID-19</li>
+            <li>Mpox</li>
+            <li>Dengue</li>
+            <li>Zika</li>
+            <li>Chikungunya</li>
+            <li>Febre Amarela</li>
+            <li>Oropouche</li>
+            <li>Mayaro</li>
+            <li>Febre do Nilo Ocidental</li>
           </ul>
         </td>
         <td>Nome da doença que está sendo investigada. Texto codificado por terminologia externa CID-10.</td>
@@ -260,7 +267,13 @@
             <li>Vírus Orf</li>
             <li>Vírus Pseudovaíola</li>
             <li>SARS-CoV-2</li>
-            <!-- <li></li> -->
+            <li>Chikungunya Vírus</li>
+            <li>Dengue Vírus</li>
+            <li>Vírus da Febre Amarela</li>
+            <li>Zika Vírus</li>
+            <li>Vírus do Nilo Ocidental</li>
+            <li>Vírus Oropouche</li>
+            <li>Vírus Mayaro</li>
           </ul>
         </td>
         <td>Nome do patógeno que está sendo testado.</td>

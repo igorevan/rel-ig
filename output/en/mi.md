@@ -46,8 +46,15 @@ O documento clínico **REL** (Resultado de Exame Laboratorial) destina-se a prom
 | 2 | [1..1] | Nome completo | Texto | Nome completo do sujeito do exame. |  |
 | 2 | [1..1] | CNS | Texto | Número do Cartão Nacional de Saúde válido. | `Composition.subject.identifier.value``Observation.subject.identifier.value``Condition.subject.identifier.value` |
 | 1 | [1..1] | Condição Alvo |  |  | `Condition` |
-| 2 | [1..1] | Suspeita Diagnóstica | Texto codificado:* Monkeypox
-* COVID-19
+| 2 | [1..1] | Suspeita Diagnóstica | Texto codificado:* COVID-19
+* Mpox
+* Dengue
+* Zika
+* Chikungunya
+* Febre Amarela
+* Oropouche
+* Mayaro
+* Febre do Nilo Ocidental
  | Nome da doença que está sendo investigada. Texto codificado por terminologia externa CID-10. | `Condition.code.coding.code` |
 | 1 | [1..N] | Resultado de exame de laboratório |  |  | `Observation``Specimen` |
 | 2 | [1..1] | Nome do exame | Texto codificado | Nome do exame a que foi submetida a amostra biológica. Terminologia externa LOINC. | `Observation.code.coding.code` |
@@ -59,6 +66,13 @@ O documento clínico **REL** (Resultado de Exame Laboratorial) destina-se a prom
 * Vírus Orf
 * Vírus Pseudovaíola
 * SARS-CoV-2
+* Chikungunya Vírus
+* Dengue Vírus
+* Vírus da Febre Amarela
+* Zika Vírus
+* Vírus do Nilo Ocidental
+* Vírus Oropouche
+* Vírus Mayaro
  | Nome do patógeno que está sendo testado. | `Observation.extension.valueCodeableConcept.coding.code` |
 | 3 | [1..1] | Data e hora da coleta | Data/Hora | Data e hora da coleta da amostra, conforme ISO 8601. | `Observation.effectiveDateTime` |
 | 3 | [1..1] | Resultado do exame |  | Resultado do exame laboratorial. É obrigatório o envio de um dos resultados (quantitativo ou qualitativo). | `Observation` |
