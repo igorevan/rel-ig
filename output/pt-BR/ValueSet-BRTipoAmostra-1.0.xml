@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRTipoAmostra-1.0"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="extensions"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0"/>
+  <version value="1.0.0-release"/>
+  <name value="BRTipoAmostra"/>
+  <title value="Tipo de Amostra de Exame"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-06-30T18:56:47.6561959+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Tipo da amostra de um exame ou teste."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+      <concept>
+        <code value="FRS"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Fluido Respiratório"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LAVG"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Lavado Brônquico"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NSECR"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Secreção Nasal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="PLAS"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Plasma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SPT"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Escarro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="TASP"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Aspirado Traqueal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="WB"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Sangue Total"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SER"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Soro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SECRE"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Secreção Não Especificada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="ASP"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Aspirado Não Especificado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SPUTIN"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Escarro induzido"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="WASH"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Lavado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="CSF"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Líquor"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SAL"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Saliva"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="UR"/>
+        <designation>
+          <language value="pt-BR"/>
+          <value value="Urina"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRSubgrupoTabelaSUS"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: CodeSystem BRSubgrupoTabelaSUS</b></p><a name="BRSubgrupoTabelaSUS"> </a><a name="hcBRSubgrupoTabelaSUS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td></tr><tr><td>group</td><td>group</td><td>string</td></tr></table><p><b>Conceitos</b></p><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>group</b></td></tr><tr><td style="white-space:nowrap">0101<a name="BRSubgrupoTabelaSUS-0101"> </a></td><td>Ações coletivas/individuais em saúde</td><td>01</td></tr><tr><td style="white-space:nowrap">0102<a name="BRSubgrupoTabelaSUS-0102"> </a></td><td>Vigilância em saúde</td><td>01</td></tr><tr><td style="white-space:nowrap">0201<a name="BRSubgrupoTabelaSUS-0201"> </a></td><td>Coleta de material</td><td>02</td></tr><tr><td style="white-space:nowrap">0202<a name="BRSubgrupoTabelaSUS-0202"> </a></td><td>Diagnóstico em laboratório clínico</td><td>02</td></tr><tr><td style="white-space:nowrap">0203<a name="BRSubgrupoTabelaSUS-0203"> </a></td><td>Diagnóstico por anatomia patológica e citopatologia</td><td>02</td></tr><tr><td style="white-space:nowrap">0204<a name="BRSubgrupoTabelaSUS-0204"> </a></td><td>Diagnóstico por radiologia</td><td>02</td></tr><tr><td style="white-space:nowrap">0205<a name="BRSubgrupoTabelaSUS-0205"> </a></td><td>Diagnóstico por ultrasonografia</td><td>02</td></tr><tr><td style="white-space:nowrap">0206<a name="BRSubgrupoTabelaSUS-0206"> </a></td><td>Diagnóstico por tomografia</td><td>02</td></tr><tr><td style="white-space:nowrap">0207<a name="BRSubgrupoTabelaSUS-0207"> </a></td><td>Diagnóstico por ressonância magnética</td><td>02</td></tr><tr><td style="white-space:nowrap">0208<a name="BRSubgrupoTabelaSUS-0208"> </a></td><td>Diagnóstico por medicina nuclear in vivo</td><td>02</td></tr><tr><td style="white-space:nowrap">0209<a name="BRSubgrupoTabelaSUS-0209"> </a></td><td>Diagnóstico por endoscopia</td><td>02</td></tr><tr><td style="white-space:nowrap">0210<a name="BRSubgrupoTabelaSUS-0210"> </a></td><td>Diagnóstico por radiologia intervencionista</td><td>02</td></tr><tr><td style="white-space:nowrap">0211<a name="BRSubgrupoTabelaSUS-0211"> </a></td><td>Métodos diagnósticos em especialidades</td><td>02</td></tr><tr><td style="white-space:nowrap">0212<a name="BRSubgrupoTabelaSUS-0212"> </a></td><td>Diagnóstico e procedimentos especiais em hemoterapia</td><td>02</td></tr><tr><td style="white-space:nowrap">0213<a name="BRSubgrupoTabelaSUS-0213"> </a></td><td>Diagnóstico em vigilância epidemiológica e ambiental</td><td>02</td></tr><tr><td style="white-space:nowrap">0214<a name="BRSubgrupoTabelaSUS-0214"> </a></td><td>Diagnóstico por teste rápido</td><td>02</td></tr><tr><td style="white-space:nowrap">0301<a name="BRSubgrupoTabelaSUS-0301"> </a></td><td>Consultas / Atendimentos / Acompanhamentos</td><td>03</td></tr><tr><td style="white-space:nowrap">0302<a name="BRSubgrupoTabelaSUS-0302"> </a></td><td>Fisioterapia</td><td>03</td></tr><tr><td style="white-space:nowrap">0303<a name="BRSubgrupoTabelaSUS-0303"> </a></td><td>Tratamentos clínicos (outras especialidades)</td><td>03</td></tr><tr><td style="white-space:nowrap">0304<a name="BRSubgrupoTabelaSUS-0304"> </a></td><td>Tratamento em oncologia</td><td>03</td></tr><tr><td style="white-space:nowrap">0305<a name="BRSubgrupoTabelaSUS-0305"> </a></td><td>Tratamento em nefrologia</td><td>03</td></tr><tr><td style="white-space:nowrap">0306<a name="BRSubgrupoTabelaSUS-0306"> </a></td><td>Hemoterapia</td><td>03</td></tr><tr><td style="white-space:nowrap">0307<a name="BRSubgrupoTabelaSUS-0307"> </a></td><td>Tratamentos odontológicos</td><td>03</td></tr><tr><td style="white-space:nowrap">0308<a name="BRSubgrupoTabelaSUS-0308"> </a></td><td>Tratamento de lesões, envenenamentos e outros, decorrentes de causas externas</td><td>03</td></tr><tr><td style="white-space:nowrap">0309<a name="BRSubgrupoTabelaSUS-0309"> </a></td><td>Terapias especializadas</td><td>03</td></tr><tr><td style="white-space:nowrap">0310<a name="BRSubgrupoTabelaSUS-0310"> </a></td><td>Parto e nascimento</td><td>03</td></tr><tr><td style="white-space:nowrap">0311<a name="BRSubgrupoTabelaSUS-0311"> </a></td><td>Cuidados Paliativos</td><td>03</td></tr><tr><td style="white-space:nowrap">0401<a name="BRSubgrupoTabelaSUS-0401"> </a></td><td>Pequenas cirurgias e cirurgias de pele, tecido subcutâneo e mucosa</td><td>04</td></tr><tr><td style="white-space:nowrap">0402<a name="BRSubgrupoTabelaSUS-0402"> </a></td><td>Cirurgia de glândulas endócrinas</td><td>04</td></tr><tr><td style="white-space:nowrap">0403<a name="BRSubgrupoTabelaSUS-0403"> </a></td><td>Cirurgia do sistema nervoso central e periférico</td><td>04</td></tr><tr><td style="white-space:nowrap">0404<a name="BRSubgrupoTabelaSUS-0404"> </a></td><td>Cirurgia das vias aéreas superiores, da face, da cabeça e do pescoço</td><td>04</td></tr><tr><td style="white-space:nowrap">0405<a name="BRSubgrupoTabelaSUS-0405"> </a></td><td>Cirurgia do aparelho da visão</td><td>04</td></tr><tr><td style="white-space:nowrap">0406<a name="BRSubgrupoTabelaSUS-0406"> </a></td><td>Cirurgia do aparelho circulatório</td><td>04</td></tr><tr><td style="white-space:nowrap">0407<a name="BRSubgrupoTabelaSUS-0407"> </a></td><td>Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal</td><td>04</td></tr><tr><td style="white-space:nowrap">0408<a name="BRSubgrupoTabelaSUS-0408"> </a></td><td>Cirurgia do sistema osteomuscular</td><td>04</td></tr><tr><td style="white-space:nowrap">0409<a name="BRSubgrupoTabelaSUS-0409"> </a></td><td>Cirurgia do aparelho geniturinário</td><td>04</td></tr><tr><td style="white-space:nowrap">0410<a name="BRSubgrupoTabelaSUS-0410"> </a></td><td>Cirurgia de mama</td><td>04</td></tr><tr><td style="white-space:nowrap">0411<a name="BRSubgrupoTabelaSUS-0411"> </a></td><td>Cirurgia obstétrica</td><td>04</td></tr><tr><td style="white-space:nowrap">0412<a name="BRSubgrupoTabelaSUS-0412"> </a></td><td>Cirurgia torácica</td><td>04</td></tr><tr><td style="white-space:nowrap">0413<a name="BRSubgrupoTabelaSUS-0413"> </a></td><td>Cirurgia reparadora</td><td>04</td></tr><tr><td style="white-space:nowrap">0414<a name="BRSubgrupoTabelaSUS-0414"> </a></td><td>Bucomaxilofacial</td><td>04</td></tr><tr><td style="white-space:nowrap">0415<a name="BRSubgrupoTabelaSUS-0415"> </a></td><td>Outras cirurgias</td><td>04</td></tr><tr><td style="white-space:nowrap">0416<a name="BRSubgrupoTabelaSUS-0416"> </a></td><td>Cirurgia em oncologia</td><td>04</td></tr><tr><td style="white-space:nowrap">0417<a name="BRSubgrupoTabelaSUS-0417"> </a></td><td>Anestesiologia</td><td>04</td></tr><tr><td style="white-space:nowrap">0418<a name="BRSubgrupoTabelaSUS-0418"> </a></td><td>Cirurgia em nefrologia</td><td>04</td></tr><tr><td style="white-space:nowrap">0501<a name="BRSubgrupoTabelaSUS-0501"> </a></td><td>Coleta e exames para fins de doação de orgãos, tecidos e células e de transplante</td><td>05</td></tr><tr><td style="white-space:nowrap">0502<a name="BRSubgrupoTabelaSUS-0502"> </a></td><td>Avaliação de morte encefálica</td><td>05</td></tr><tr><td style="white-space:nowrap">0503<a name="BRSubgrupoTabelaSUS-0503"> </a></td><td>Ações relacionadas à doação de orgãos e tecidos para transplante</td><td>05</td></tr><tr><td style="white-space:nowrap">0504<a name="BRSubgrupoTabelaSUS-0504"> </a></td><td>Processamento de tecidos para transplante</td><td>05</td></tr><tr><td style="white-space:nowrap">0505<a name="BRSubgrupoTabelaSUS-0505"> </a></td><td>Transplante de orgãos, tecidos e células</td><td>05</td></tr><tr><td style="white-space:nowrap">0506<a name="BRSubgrupoTabelaSUS-0506"> </a></td><td>Acompanhamento e intercorrências no pré e pós-transplante</td><td>05</td></tr><tr><td style="white-space:nowrap">0601<a name="BRSubgrupoTabelaSUS-0601"> </a></td><td>Medicamentos de dispensação excepcional</td><td>06</td></tr><tr><td style="white-space:nowrap">0602<a name="BRSubgrupoTabelaSUS-0602"> </a></td><td>Medicamentos estratégicos</td><td>06</td></tr><tr><td style="white-space:nowrap">0603<a name="BRSubgrupoTabelaSUS-0603"> </a></td><td>Medicamentos de âmbito hospitalar e urgência</td><td>06</td></tr><tr><td style="white-space:nowrap">0604<a name="BRSubgrupoTabelaSUS-0604"> </a></td><td>Componente Especializado da Assitencia Farmaceutica</td><td>06</td></tr><tr><td style="white-space:nowrap">0701<a name="BRSubgrupoTabelaSUS-0701"> </a></td><td>Órteses, próteses e materiais especiais não relacionados ao ato cirúrgico</td><td>07</td></tr><tr><td style="white-space:nowrap">0702<a name="BRSubgrupoTabelaSUS-0702"> </a></td><td>Órteses, próteses e materiais especiais relacionados ao ato cirúrgico</td><td>07</td></tr><tr><td style="white-space:nowrap">0801<a name="BRSubgrupoTabelaSUS-0801"> </a></td><td>Ações relacionadas ao estabelecimento</td><td>08</td></tr><tr><td style="white-space:nowrap">0802<a name="BRSubgrupoTabelaSUS-0802"> </a></td><td>Ações relacionadas ao atendimento</td><td>08</td></tr><tr><td style="white-space:nowrap">0803<a name="BRSubgrupoTabelaSUS-0803"> </a></td><td>Autorização / Regulação</td><td>08</td></tr><tr><td style="white-space:nowrap">0804<a name="BRSubgrupoTabelaSUS-0804"> </a></td><td>Telessaúde</td><td>08</td></tr><tr><td style="white-space:nowrap">0901<a name="BRSubgrupoTabelaSUS-0901"> </a></td><td>Atenção em Oncologia e a Forma de Organização</td><td>09</td></tr><tr><td style="white-space:nowrap">0902<a name="BRSubgrupoTabelaSUS-0902"> </a></td><td>Atenção em Cardiologia</td><td>09</td></tr><tr><td style="white-space:nowrap">0903<a name="BRSubgrupoTabelaSUS-0903"> </a></td><td>Atenção em Ortopedia</td><td>09</td></tr><tr><td style="white-space:nowrap">0904<a name="BRSubgrupoTabelaSUS-0904"> </a></td><td>Atenção em Otorrinolaringologia</td><td>09</td></tr><tr><td style="white-space:nowrap">0905<a name="BRSubgrupoTabelaSUS-0905"> </a></td><td>Atenção em Oftalmologia</td><td>09</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS"/>
+  <version value="1.0.0-release"/>
+  <name value="BRSubgrupoTabelaSUS"/>
+  <title value="Subgrupo da Tabela SUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-10-07T17:23:44.666897+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <property>
+    <code value="group"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="0101"/>
+    <display value="Ações coletivas/individuais em saúde"/>
+    <property>
+      <code value="group"/>
+      <valueString value="01"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0102"/>
+    <display value="Vigilância em saúde"/>
+    <property>
+      <code value="group"/>
+      <valueString value="01"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0201"/>
+    <display value="Coleta de material"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0202"/>
+    <display value="Diagnóstico em laboratório clínico"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0203"/>
+    <display value="Diagnóstico por anatomia patológica e citopatologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0204"/>
+    <display value="Diagnóstico por radiologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0205"/>
+    <display value="Diagnóstico por ultrasonografia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0206"/>
+    <display value="Diagnóstico por tomografia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0207"/>
+    <display value="Diagnóstico por ressonância magnética"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0208"/>
+    <display value="Diagnóstico por medicina nuclear in vivo"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0209"/>
+    <display value="Diagnóstico por endoscopia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0210"/>
+    <display value="Diagnóstico por radiologia intervencionista"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0211"/>
+    <display value="Métodos diagnósticos em especialidades"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0212"/>
+    <display value="Diagnóstico e procedimentos especiais em hemoterapia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0213"/>
+    <display value="Diagnóstico em vigilância epidemiológica e ambiental"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0214"/>
+    <display value="Diagnóstico por teste rápido"/>
+    <property>
+      <code value="group"/>
+      <valueString value="02"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0301"/>
+    <display value="Consultas / Atendimentos / Acompanhamentos"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0302"/>
+    <display value="Fisioterapia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0303"/>
+    <display value="Tratamentos clínicos (outras especialidades)"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0304"/>
+    <display value="Tratamento em oncologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0305"/>
+    <display value="Tratamento em nefrologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0306"/>
+    <display value="Hemoterapia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0307"/>
+    <display value="Tratamentos odontológicos"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0308"/>
+    <display value="Tratamento de lesões, envenenamentos e outros, decorrentes de causas externas"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0309"/>
+    <display value="Terapias especializadas"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0310"/>
+    <display value="Parto e nascimento"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0311"/>
+    <display value="Cuidados Paliativos"/>
+    <property>
+      <code value="group"/>
+      <valueString value="03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0401"/>
+    <display value="Pequenas cirurgias e cirurgias de pele, tecido subcutâneo e mucosa"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0402"/>
+    <display value="Cirurgia de glândulas endócrinas"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0403"/>
+    <display value="Cirurgia do sistema nervoso central e periférico"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0404"/>
+    <display value="Cirurgia das vias aéreas superiores, da face, da cabeça e do pescoço"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0405"/>
+    <display value="Cirurgia do aparelho da visão"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0406"/>
+    <display value="Cirurgia do aparelho circulatório"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0407"/>
+    <display value="Cirurgia do aparelho digestivo, orgãos anexos e parede abdominal"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0408"/>
+    <display value="Cirurgia do sistema osteomuscular"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0409"/>
+    <display value="Cirurgia do aparelho geniturinário"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0410"/>
+    <display value="Cirurgia de mama"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0411"/>
+    <display value="Cirurgia obstétrica"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0412"/>
+    <display value="Cirurgia torácica"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0413"/>
+    <display value="Cirurgia reparadora"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0414"/>
+    <display value="Bucomaxilofacial"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0415"/>
+    <display value="Outras cirurgias"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0416"/>
+    <display value="Cirurgia em oncologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0417"/>
+    <display value="Anestesiologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0418"/>
+    <display value="Cirurgia em nefrologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="04"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0501"/>
+    <display value="Coleta e exames para fins de doação de orgãos, tecidos e células e de transplante"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0502"/>
+    <display value="Avaliação de morte encefálica"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0503"/>
+    <display value="Ações relacionadas à doação de orgãos e tecidos para transplante"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0504"/>
+    <display value="Processamento de tecidos para transplante"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0505"/>
+    <display value="Transplante de orgãos, tecidos e células"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0506"/>
+    <display value="Acompanhamento e intercorrências no pré e pós-transplante"/>
+    <property>
+      <code value="group"/>
+      <valueString value="05"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0601"/>
+    <display value="Medicamentos de dispensação excepcional"/>
+    <property>
+      <code value="group"/>
+      <valueString value="06"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0602"/>
+    <display value="Medicamentos estratégicos"/>
+    <property>
+      <code value="group"/>
+      <valueString value="06"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0603"/>
+    <display value="Medicamentos de âmbito hospitalar e urgência"/>
+    <property>
+      <code value="group"/>
+      <valueString value="06"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0604"/>
+    <display value="Componente Especializado da Assitencia Farmaceutica"/>
+    <property>
+      <code value="group"/>
+      <valueString value="06"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0701"/>
+    <display value="Órteses, próteses e materiais especiais não relacionados ao ato cirúrgico"/>
+    <property>
+      <code value="group"/>
+      <valueString value="07"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0702"/>
+    <display value="Órteses, próteses e materiais especiais relacionados ao ato cirúrgico"/>
+    <property>
+      <code value="group"/>
+      <valueString value="07"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0801"/>
+    <display value="Ações relacionadas ao estabelecimento"/>
+    <property>
+      <code value="group"/>
+      <valueString value="08"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0802"/>
+    <display value="Ações relacionadas ao atendimento"/>
+    <property>
+      <code value="group"/>
+      <valueString value="08"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0803"/>
+    <display value="Autorização / Regulação"/>
+    <property>
+      <code value="group"/>
+      <valueString value="08"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0804"/>
+    <display value="Telessaúde"/>
+    <property>
+      <code value="group"/>
+      <valueString value="08"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0901"/>
+    <display value="Atenção em Oncologia e a Forma de Organização"/>
+    <property>
+      <code value="group"/>
+      <valueString value="09"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0902"/>
+    <display value="Atenção em Cardiologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="09"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0903"/>
+    <display value="Atenção em Ortopedia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="09"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0904"/>
+    <display value="Atenção em Otorrinolaringologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="09"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0905"/>
+    <display value="Atenção em Oftalmologia"/>
+    <property>
+      <code value="group"/>
+      <valueString value="09"/>
+    </property>
+  </concept>
+</CodeSystem>
