@@ -4,7 +4,7 @@
   <id value="BRTerminologiaSuspeitaDiagnostica"/>
   <language value="pt-BR"/>
   <text>
-    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet BRTerminologiaSuspeitaDiagnostica</b></p><a name="BRTerminologiaSuspeitaDiagnostica"> </a><a name="hcBRTerminologiaSuspeitaDiagnostica"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><ul><li>Include todos os códigos definidos em <a href="CodeSystem-BRCID10.html"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;1.0.0-release</span></li></ul></div>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet BRTerminologiaSuspeitaDiagnostica</b></p><a name="BRTerminologiaSuspeitaDiagnostica"> </a><a name="hcBRTerminologiaSuspeitaDiagnostica"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-BRCID10.html"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;1.0.0-release</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B342">B342</a></td><td>Infecção por coronavírus de localização não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B04">B04</a></td><td>Varíola dos macacos [Monkeypox]</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A90">A90</a></td><td>Dengue [dengue clássico]</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A928">A928</a></td><td>Outras febres virais especificadas transmitidas por mosquitos</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A938">A938</a></td><td>Outras febres virais especificadas transmitidas por artrópodes</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A920">A920</a></td><td>Febre de Chikungunya</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A95">A95</a></td><td>Febre amarela</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A950">A950</a></td><td>Febre amarela silvestre</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A951">A951</a></td><td>Febre amarela urbana</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A959">A959</a></td><td>Febre amarela não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A930">A930</a></td><td>Febre de oropouche</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A938">A938</a></td><td>Outras febres virais especificadas transmitidas por artrópodes</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A923">A923</a></td><td>Infecção pelo vírus West Nile</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-J10">J10</a></td><td>Influenza devida a outro vírus da influenza [gripe] identificado</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-J11">J11</a></td><td>Influenza (gripe) devida a vírus não identificado</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B974">B974</a></td><td>Vírus sincicial respiratório, como causa de doenças classificadas em outros capítulos</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B05">B05</a></td><td>Sarampo</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B059">B059</a></td><td>Sarampo sem complicação</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B06">B06</a></td><td>Rubéola</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-P350">P350</a></td><td>Síndrome da rubéola congênita</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B01">B01</a></td><td>Varicela</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B03">B03</a></td><td>Varíola</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A37">A37</a></td><td>Coqueluche</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A379">A379</a></td><td>Coqueluche não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A36">A36</a></td><td>Difteria</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A369">A369</a></td><td>Difteria não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A00">A00</a></td><td>Cólera</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-A009">A009</a></td><td>Cólera não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B24">B24</a></td><td>Doença pelo vírus da imunodeficiência humana [HIV] não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B20">B20</a></td><td>Doença pelo HIV resultando em doenças infecciosas e parasitárias</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-Z114">Z114</a></td><td>Exame especial de rastreamento de vírus da imunodeficiência humana [HIV]</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B19">B19</a></td><td>Hepatite viral não especificada</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B15">B15</a></td><td>Hepatite aguda A</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B16">B16</a></td><td>Hepatite aguda B</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B171">B171</a></td><td>Hepatite aguda C</td></tr><tr><td><a href="CodeSystem-BRCID10.html#BRCID10-B172">B172</a></td><td>Hepatite aguda E</td></tr></table></li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="ehr"/>
@@ -29,10 +29,10 @@
   <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica"/>
   <version value="1.0.0-release"/>
   <name value="BRTerminologiaSuspeitaDiagnostica"/>
-  <title value="Suspeita Diagnóstica (ValueSet)"/>
+  <title value="Suspeita Diagnóstica"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-09-16T14:11:40.0457007+00:00"/>
+  <date value="2026-10-01T14:11:40.0457007+00:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -56,6 +56,150 @@
   <compose>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
+      <concept>
+        <code value="B342"/>
+        <display value="Infecção por coronavírus de localização não especificada"/>
+      </concept>
+      <concept>
+        <code value="B04"/>
+        <display value="Varíola dos macacos [Monkeypox]"/>
+      </concept>
+      <concept>
+        <code value="A90"/>
+        <display value="Dengue [dengue clássico]"/>
+      </concept>
+      <concept>
+        <code value="A928"/>
+        <display value="Outras febres virais especificadas transmitidas por mosquitos"/>
+      </concept>
+      <concept>
+        <code value="A938"/>
+        <display value="Outras febres virais especificadas transmitidas por artrópodes"/>
+      </concept>
+      <concept>
+        <code value="A920"/>
+        <display value="Febre de Chikungunya"/>
+      </concept>
+      <concept>
+        <code value="A95"/>
+        <display value="Febre amarela"/>
+      </concept>
+      <concept>
+        <code value="A950"/>
+        <display value="Febre amarela silvestre"/>
+      </concept>
+      <concept>
+        <code value="A951"/>
+        <display value="Febre amarela urbana"/>
+      </concept>
+      <concept>
+        <code value="A959"/>
+        <display value="Febre amarela não especificada"/>
+      </concept>
+      <concept>
+        <code value="A930"/>
+        <display value="Febre de oropouche"/>
+      </concept>
+      <concept>
+        <code value="A938"/>
+        <display value="Outras febres virais especificadas transmitidas por artrópodes"/>
+      </concept>
+      <concept>
+        <code value="A923"/>
+        <display value="Infecção pelo vírus West Nile"/>
+      </concept>
+      <concept>
+        <code value="J10"/>
+        <display value="Influenza devida a outro vírus da influenza [gripe] identificado"/>
+      </concept>
+      <concept>
+        <code value="J11"/>
+        <display value="Influenza (gripe) devida a vírus não identificado"/>
+      </concept>
+      <concept>
+        <code value="B974"/>
+        <display value="Vírus sincicial respiratório, como causa de doenças classificadas em outros capítulos"/>
+      </concept>
+      <concept>
+        <code value="B05"/>
+        <display value="Sarampo"/>
+      </concept>
+      <concept>
+        <code value="B059"/>
+        <display value="Sarampo sem complicação"/>
+      </concept>
+      <concept>
+        <code value="B06"/>
+        <display value="Rubéola"/>
+      </concept>
+      <concept>
+        <code value="P350"/>
+        <display value="Síndrome da rubéola congênita"/>
+      </concept>
+      <concept>
+        <code value="B01"/>
+        <display value="Varicela"/>
+      </concept>
+      <concept>
+        <code value="B03"/>
+        <display value="Varíola"/>
+      </concept>
+      <concept>
+        <code value="A37"/>
+        <display value="Coqueluche"/>
+      </concept>
+      <concept>
+        <code value="A379"/>
+        <display value="Coqueluche não especificada"/>
+      </concept>
+      <concept>
+        <code value="A36"/>
+        <display value="Difteria"/>
+      </concept>
+      <concept>
+        <code value="A369"/>
+        <display value="Difteria não especificada"/>
+      </concept>
+      <concept>
+        <code value="A00"/>
+        <display value="Cólera"/>
+      </concept>
+      <concept>
+        <code value="A009"/>
+        <display value="Cólera não especificada"/>
+      </concept>
+      <concept>
+        <code value="B24"/>
+        <display value="Doença pelo vírus da imunodeficiência humana [HIV] não especificada"/>
+      </concept>
+      <concept>
+        <code value="B20"/>
+        <display value="Doença pelo HIV resultando em doenças infecciosas e parasitárias"/>
+      </concept>
+      <concept>
+        <code value="Z114"/>
+        <display value="Exame especial de rastreamento de vírus da imunodeficiência humana [HIV]"/>
+      </concept>
+      <concept>
+        <code value="B19"/>
+        <display value="Hepatite viral não especificada"/>
+      </concept>
+      <concept>
+        <code value="B15"/>
+        <display value="Hepatite aguda A"/>
+      </concept>
+      <concept>
+        <code value="B16"/>
+        <display value="Hepatite aguda B"/>
+      </concept>
+      <concept>
+        <code value="B171"/>
+        <display value="Hepatite aguda C"/>
+      </concept>
+      <concept>
+        <code value="B172"/>
+        <display value="Hepatite aguda E"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

@@ -45,7 +45,7 @@
 * [Resultado Qualitativo do Exame 1.0 (ValueSet)](pt-BR/ValueSet-BRResultadoQualitativoExame-1.0.md)
 * [Resultado Qualitativo do Exame 2.0 (ValueSet)](pt-BR/ValueSet-BRResultadoQualitativoExame-2.0.md)
 * [Patógeno (ValueSet)](pt-BR/ValueSet-BRTerminologiaPatogeno.md)
-* [Suspeita Diagnóstica (ValueSet)](pt-BR/ValueSet-BRTerminologiaSuspeitaDiagnostica.md)
+* [Suspeita Diagnóstica](pt-BR/ValueSet-BRTerminologiaSuspeitaDiagnostica.md)
 * [Tipo de Amostra de Exame](pt-BR/ValueSet-BRTipoAmostra-1.0.md)
 * [Tipo de Documento (ValueSet)](pt-BR/ValueSet-BRTipoDocumento-1.0.md)
 

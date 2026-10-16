@@ -31,7 +31,7 @@
   "title" : "Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-14T16:57:52-03:00",
+  "date" : "2026-10-16T15:41:13-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -866,7 +866,7 @@
       "reference" : {
         "reference" : "ValueSet/BRTerminologiaSuspeitaDiagnostica"
       },
-      "name" : "Suspeita Diagnóstica (ValueSet)",
+      "name" : "Suspeita Diagnóstica",
       "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica."
     },
     {

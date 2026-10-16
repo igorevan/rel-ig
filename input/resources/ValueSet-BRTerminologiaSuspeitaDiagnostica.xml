@@ -1,0 +1,164 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRTerminologiaSuspeitaDiagnostica" />
+  <language value="pt-BR" />
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica" />
+  <version value="2.0" />
+  <name value="BRTerminologiaSuspeitaDiagnostica" />
+  <title value="Suspeita Diagnóstica" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2026-10-01T14:11:40.0457007+00:00" />
+  <publisher value="Ministério da Saúde do Brasil" />
+  <description value="Conjunto de terminologias para indicação da Suspeita Diagnóstica." />
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10" />
+      <concept>
+        <code value="B342" />
+        <display value="Infecção por coronavírus de localização não especificada" />
+      </concept>
+      <concept>
+        <code value="B04" />
+        <display value="Varíola dos macacos [Monkeypox]" />
+      </concept>
+      <concept>
+        <code value="A90" />
+        <display value="Dengue [dengue clássico]" />
+      </concept>
+      <concept>
+        <code value="A928" />
+        <display value="Outras febres virais especificadas transmitidas por mosquitos" />
+      </concept>
+      <concept>
+        <code value="A938" />
+        <display value="Outras febres virais especificadas transmitidas por artrópodes" />
+      </concept>
+      <concept>
+        <code value="A920" />
+        <display value="Febre de Chikungunya" />
+      </concept>
+      <concept>
+        <code value="A95" />
+        <display value="Febre amarela" />
+      </concept>
+      <concept>
+        <code value="A950" />
+        <display value="Febre amarela silvestre" />
+      </concept>
+      <concept>
+        <code value="A951" />
+        <display value="Febre amarela urbana" />
+      </concept>
+      <concept>
+        <code value="A959" />
+        <display value="Febre amarela não especificada" />
+      </concept>
+      <concept>
+        <code value="A930" />
+        <display value="Febre de oropouche" />
+      </concept>
+      <concept>
+        <code value="A938" />
+        <display value="Outras febres virais especificadas transmitidas por artrópodes" />
+      </concept>
+      <concept>
+        <code value="A923" />
+        <display value="Infecção pelo vírus West Nile" />
+      </concept>
+      <concept>
+        <code value="J10" />
+        <display value="Influenza devida a outro vírus da influenza [gripe] identificado" />
+      </concept>
+      <concept>
+        <code value="J11" />
+        <display value="Influenza (gripe) devida a vírus não identificado" />
+      </concept>
+      <concept>
+        <code value="B974" />
+        <display
+          value="Vírus sincicial respiratório, como causa de doenças classificadas em outros capítulos" />
+      </concept>
+      <concept>
+        <code value="B05" />
+        <display value="Sarampo" />
+      </concept>
+      <concept>
+        <code value="B059" />
+        <display value="Sarampo sem complicação" />
+      </concept>
+      <concept>
+        <code value="B06" />
+        <display value="Rubéola" />
+      </concept>
+      <concept>
+        <code value="P350" />
+        <display value="Síndrome da rubéola congênita" />
+      </concept>
+      <concept>
+        <code value="B01" />
+        <display value="Varicela" />
+      </concept>
+      <concept>
+        <code value="B03" />
+        <display value="Varíola" />
+      </concept>
+      <concept>
+        <code value="A37" />
+        <display value="Coqueluche" />
+      </concept>
+      <concept>
+        <code value="A379" />
+        <display value="Coqueluche não especificada" />
+      </concept>
+      <concept>
+        <code value="A36" />
+        <display value="Difteria" />
+      </concept>
+      <concept>
+        <code value="A369" />
+        <display value="Difteria não especificada" />
+      </concept>
+      <concept>
+        <code value="A00" />
+        <display value="Cólera" />
+      </concept>
+      <concept>
+        <code value="A009" />
+        <display value="Cólera não especificada" />
+      </concept>
+      <concept>
+        <code value="B24" />
+        <display value="Doença pelo vírus da imunodeficiência humana [HIV] não especificada" />
+      </concept>
+      <concept>
+        <code value="B20" />
+        <display value="Doença pelo HIV resultando em doenças infecciosas e parasitárias" />
+      </concept>
+      <concept>
+        <code value="Z114" />
+        <display value="Exame especial de rastreamento de vírus da imunodeficiência humana [HIV]" />
+      </concept>
+      <concept>
+        <code value="B19" />
+        <display value="Hepatite viral não especificada" />
+      </concept>
+      <concept>
+        <code value="B15" />
+        <display value="Hepatite aguda A" />
+      </concept>
+      <concept>
+        <code value="B16" />
+        <display value="Hepatite aguda B" />
+      </concept>
+      <concept>
+        <code value="B171" />
+        <display value="Hepatite aguda C" />
+      </concept>
+      <concept>
+        <code value="B172" />
+        <display value="Hepatite aguda E" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

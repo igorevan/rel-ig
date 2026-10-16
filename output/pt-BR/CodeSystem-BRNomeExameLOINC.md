@@ -296,6 +296,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "display" : "SARS Coronavírus 2 [Presença de] em Amostra não específica por cultura em organismo específico"
   },
   {
+    "code" : "94764-8",
+    "display" : "SARS Coronavírus 2 [sequência de bases] genôma inteiro em isolado por sequenciamento"
+  },
+  {
     "code" : "94765-5",
     "display" : "SARS Coronavírus relacionado [Presença de] gene E em Soro ou Plasma por Amplificação de ácido nucleico com detecção por sonda"
   },
@@ -318,6 +322,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
   {
     "code" : "94819-0",
     "display" : "SARS Coronavírus 2 [dosagem de] (carga viral) RNA em Amostra Inespecífica por Amplificação do ácido nucleico com detecção por sonda"
+  },
+  {
+    "code" : "94822-4",
+    "display" : "SARS Coronavírus 2 [Presença de] RNA em Saliva (fluido oral) por sequenciamento"
   },
   {
     "code" : "94845-5",
@@ -364,6 +372,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "display" : "Vírus da Influenza A e B e SARS Coronavírus 2 identificado em  Amostra respiratória por Amplificação do ácido nucleico com detecção por sonda"
   },
   {
+    "code" : "95424-8",
+    "display" : "SARS Coronavírus 2 [Presença de] RNA em Amostra respiratória por sequenciamento"
+  },
+  {
     "code" : "95425-5",
     "display" : "SARS Coronavírus 2 [Presença de] gene N em Saliva (fluido oral) por Amplificação de ácido nucleico com detecção por sonda"
   },
@@ -396,6 +408,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "display" : "SARS Coronavírus 2  [Presença de] RNA em amostra respiraória por Amplificação de ácido nucleico com detecção sem sonda"
   },
   {
+    "code" : "95609-4",
+    "display" : "SARS Coronavírus 2 [Presença de] gene S em amostra respiratória por sequenciação"
+  },
+  {
     "code" : "95823-1",
     "display" : "SARS Coronavírus relacionado [Presença de] gene E em Saliva (fluido oral) por Amplificação de àcido nucleico com detecção por sonda"
   },
@@ -418,6 +434,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
   {
     "code" : "95942-9",
     "display" : "Vírus da Influenza A e B e SARS Coronavírus + SARS Coronavírus 2 painel de antígeno - Amostra de trato respiratório superior por Imunoensaio rápido"
+  },
+  {
+    "code" : "95970-0",
+    "display" : "SARS Coronavírus 2 rearranjos específicos de genes de células T de receptor beta [Presença de] em sangue por sequenciamento"
   },
   {
     "code" : "95971-8",
@@ -476,6 +496,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "display" : "SARS Coronavírus 2 proteína S domínio de ligação ao RNA anticorpo neutralizante [Presença] em soro ou plasma por imunonensaio"
   },
   {
+    "code" : "96741-4",
+    "display" : "SARS Coronavírus 2 variante [Tipo] em espécie por sequenciação"
+  },
+  {
     "code" : "96742-2",
     "display" : "SARS Coronavírus 2 anticorpos IgG [Massa/Volume] em soro ou plasma por imunoensaio"
   },
@@ -518,6 +542,10 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
   {
     "code" : "96894-1",
     "display" : "SARS coronavirus 2 painel de sequenciamento e identificação - Amostra pelo método de genética molecular"
+  },
+  {
+    "code" : "98062-3",
+    "display" : "Identificador de estudo de sequenciamento"
   },
   {
     "code" : "96895-8",
@@ -1701,6 +1729,78 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "designation" : [{
       "language" : "en",
       "value" : "Respiratory syncytial virus B RNA [Presence] in Specimen by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "97314-9",
+    "display" : "DNA de Vibrio cholerae [Presença] nas fezes por amplificação de ácidos nucleicos com detecção por sonda",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Vibrio cholerae DNA [Presence] in Stool by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "29658-2",
+    "display" : "Anticorpo IgM contra Bordetella pertussis [Presença] no soro por imunoensaio",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Bordetella pertussis IgM Ab [Presence] in Serum by Immunoassay"
+    }]
+  },
+  {
+    "code" : "91775-7",
+    "display" : "Bordetella sp. identificada em amostra do trato Respiratório inferior por meio de cultura específica para o organismo",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Bordetella sp identified in Lower respiratory specimen by Organism specific culture"
+    }]
+  },
+  {
+    "code" : "63431-1",
+    "display" : "DNA de Bordetella sp. [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Bordetella sp DNA [Presence] in Specimen by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "62426-2",
+    "display" : "Painel de DNA de Bordetella sp. - Amostra por amplificação de ácidos nucleicos com detecção por sonda",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Bordetella sp DNA panel - Specimen by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "62428-8",
+    "display" : "DNA de Bordetella sp. [Identificador] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Bordetella sp DNA [Identifier] in Specimen by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "67561-1",
+    "display" : "DNA de Corynebacterium diphtheriae [Presença] na amostra por amplificação de ácidos nucleicos com detecção por sonda",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Corynebacterium diphtheriae DNA [Presence] in Specimen by NAA with probe detection"
+    }]
+  },
+  {
+    "code" : "88584-8",
+    "display" : "Corynebacterium diphtheriae [Presença] em amostra das vias respiratórias superiores por cultura específica do organismo",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Corynebacterium diphtheriae [Presence] in Upper respiratory specimen by Organism specific culture"
+    }]
+  },
+  {
+    "code" : "6581-3",
+    "display" : "Vibrio sp. identificado na amostra por meio de cultura específica para o organismo",
+    "designation" : [{
+      "language" : "en",
+      "value" : "Vibrio sp identified in Specimen by Organism specific culture"
     }]
   }]
 }

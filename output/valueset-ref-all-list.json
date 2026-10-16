@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
@@ -181,9 +181,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
@@ -198,9 +198,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
@@ -215,9 +215,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
@@ -585,7 +585,7 @@
     "version" : "1.0.0-release",
     "status" : "active",
     "name" : "BRTerminologiaSuspeitaDiagnostica",
-    "title" : "Suspeita Diagnóstica (ValueSet)",
+    "title" : "Suspeita Diagnóstica",
     "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"],
     "uses" : {

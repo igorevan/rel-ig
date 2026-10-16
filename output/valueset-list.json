@@ -76,7 +76,7 @@
     "version" : "1.0.0-release",
     "status" : "active",
     "name" : "BRTerminologiaSuspeitaDiagnostica",
-    "title" : "Suspeita Diagnóstica (ValueSet)",
+    "title" : "Suspeita Diagnóstica",
     "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"]
   },

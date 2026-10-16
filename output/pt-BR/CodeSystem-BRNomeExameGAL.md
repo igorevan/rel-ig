@@ -262,6 +262,58 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
   {
     "code" : "VRSRT",
     "display" : "Vírus Respiratórios"
+  },
+  {
+    "code" : "BORDT",
+    "display" : "Bordetella"
+  },
+  {
+    "code" : "BORID",
+    "display" : "Bordetella, Identificação"
+  },
+  {
+    "code" : "COQBM",
+    "display" : "Coqueluche, Detecção de Bordetella pertussis"
+  },
+  {
+    "code" : "COQCU",
+    "display" : "Coqueluche, Detecção de Bordetella pertussis"
+  },
+  {
+    "code" : "BORDTA",
+    "display" : "Coqueluche, IgA"
+  },
+  {
+    "code" : "BORDTG",
+    "display" : "Coqueluche, IgG"
+  },
+  {
+    "code" : "COQGRT",
+    "display" : "Coqueluche, Pesquisa de Genes de Resistência"
+  },
+  {
+    "code" : "COQSR",
+    "display" : "Coqueluche, Sorologia"
+  },
+  {
+    "code" : "DIFCU",
+    "display" : "Difteria, Cultura"
+  },
+  {
+    "code" : "DIFGEN",
+    "display" : "Difteria, Pesquisa de genes"
+  },
+  {
+    "code" : "COCUL",
+    "display" : "Cólera"
+  },
+  {
+    "code" : "COLBM",
+    "display" : "Cólera, Biologia Molecular"
+  },
+  {
+    "code" : "COTSA",
+    "display" : "Cólera, Teste de Sensibilidade"
   }]
 }
 

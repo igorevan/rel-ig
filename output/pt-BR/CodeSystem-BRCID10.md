@@ -4,7 +4,7 @@
 
 Este sistema de códigos é referenciado na definição dos seguintes conjuntos de valores:
 
-* [Suspeita Diagnóstica (ValueSet)](ValueSet-BRTerminologiaSuspeitaDiagnostica.md)
+* [Suspeita Diagnóstica](ValueSet-BRTerminologiaSuspeitaDiagnostica.md)
 
 -------
 
