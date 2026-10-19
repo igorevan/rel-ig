@@ -2,7 +2,7 @@
 
 ## Exemplos
 
-### Exemplos
+### Exemplos do REL
 
  
 * [Bundle de exemplo do REL com exame do GAL](Bundle-example-bundle-rel-gal.md)
