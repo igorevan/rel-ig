@@ -25,7 +25,7 @@ O diagrama abaixo apresenta o pacote *Bundle* no qual é condensado o Resultado 
 | *Observation* | ` [BRDiagnosticoLaboratorioClinico-3.2.1](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md) ` |
 | *Specimen* | ` [BRAmostraBiologica-1.0](StructureDefinition-BRAmostraBiologica-1.0.md) ` |
 
-Perfis dos tipos *ValueSet* e *CodeSystem* estão associados a recursos terminológicos. No contexto de imunizações e os domínios utilizados, foram criados * CodeSystems* específicos definidos pelo [Comitê Gestor de Saúde Digital (CGSD)](https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd).
+Perfis dos tipos *ValueSet* e *CodeSystem* estão associados a recursos terminológicos. No contexto dos resultados de exames laboratoriais e os domínios utilizados, foram criados * CodeSystems* específicos definidos pelo [Comitê Gestor de Saúde Digital (CGSD)](https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd).
 
 Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização dessas atualizações no projeto [RNDS no Simplifier](https://simplifier.net/redenacionaldedadosemsaude). 
 
