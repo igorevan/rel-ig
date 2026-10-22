@@ -25,9 +25,26 @@ O diagrama abaixo apresenta o pacote *Bundle* no qual é condensado o Resultado 
 | *Observation* | ` [BRDiagnosticoLaboratorioClinico-3.2.1](StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.md) ` |
 | *Specimen* | ` [BRAmostraBiologica-1.0](StructureDefinition-BRAmostraBiologica-1.0.md) ` |
 
-Perfis dos tipos *ValueSet* e *CodeSystem* estão associados a recursos terminológicos. No contexto dos resultados de exames laboratoriais e os domínios utilizados, foram criados * CodeSystems* específicos definidos pelo [Comitê Gestor de Saúde Digital (CGSD)](https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd).
+### ValueSets e CodeSystems utilizados no REL
 
-Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização dessas atualizações no projeto [RNDS no Simplifier](https://simplifier.net/redenacionaldedadosemsaude). 
+ O Modelo Computacional do Resultado de Exame Laboratorial (REL) utiliza recursos terminológicos, como *ValueSets* e *CodeSystems*, para padronizar as informações compartilhadas na RNDS. Os perfis FHIR possuem vínculos (*bindings*) com *ValueSets*, que estabelecem os conjuntos de códigos admitidos, enquanto os *CodeSystems* definem os códigos e seus respectivos conceitos. 
 
-Note que na estrutura dos perfis há elementos com bindings para *ValueSets* que apontam para *CodeSystems*. Já no JSON (`Bundle`), o elemento “*system*” sempre indicará os *CodeSystems* relacionados aos códigos (“*value*”) indicados pelo integrador (autor do registro). 
+ No JSON, `coding.system` identifica o *CodeSystem* utilizado e `coding.code` informa o código correspondente. 
+
+ Considerando que esses recursos podem passar por atualizações e versionamentos, recomenda-se consultar as especificações vigentes e os artefatos publicados neste Guia de Implementação. 
+
+Segue abaixo uma listagem de todos os *ValueSets* utilizados no REL e seus respectivos *CodeSystems*:
+
+| | |
+| :--- | :--- |
+| [BRCategoriaExame](ValueSet-BRCategoriaExame-1.0.md) | [BRSubgrupoTabelaSUS](CodeSystem-BRSubgrupoTabelaSUS.md) |
+| [BREstadoDocumento](ValueSet-BREstadoDocumento-1.0.md) | [CompositionStatus](https://hl7.org/fhir/R4/codesystem-composition-status.html) |
+| [BREstadoObservacao](ValueSet-BREstadoObservacao-1.0.md) | [ObservationStatus](https://hl7.org/fhir/R4/codesystem-observation-status.html) |
+| [BRNomeExame](ValueSet-BRNomeExame-2.0.md) | [BRNomeExameLOINC](CodeSystem-BRNomeExameLOINC.md)[BRNomeExameGAL](CodeSystem-BRNomeExameGAL.md) |
+| [BRResultadoQualitativoExame](ValueSet-BRResultadoQualitativoExame-1.0.md) | [BRResultadoQualitativoExame](CodeSystem-BRResultadoQualitativoExame.md) |
+| [BRResultadoQualitativoExame](ValueSet-BRResultadoQualitativoExame-2.0.md) | [BRResultadoQualitativoExame](CodeSystem-BRResultadoQualitativoExame.md)[BRTipoResultadoAVIDEZ](CodeSystem-BRTipoResultadoAVIDEZ.md)[BRTipoResultadoDTNT](CodeSystem-BRTipoResultadoDTNT.md)[BRTipoResultadoHISPT](CodeSystem-BRTipoResultadoHISPT.md)[BRTipoResultadoPRAU](CodeSystem-BRTipoResultadoPRAU.md)[BRTipoResultadoPSNG](CodeSystem-BRTipoResultadoPSNG.md)[BRTipoResultadoRGNR](CodeSystem-BRTipoResultadoRGNR.md)[BRTipoResultadoRSBAC](CodeSystem-BRTipoResultadoRSBAC.md)[BRTipoResultadoRSCUL](CodeSystem-BRTipoResultadoRSCUL.md) |
+| [BRTerminologiaPatogeno](ValueSet-BRTerminologiaPatogeno.md) | [BRTerminologiaPatogeno](CodeSystem-BRTerminologiaPatogeno.md) |
+| [BRTerminologiaSuspeitaDiagnostica](ValueSet-BRTerminologiaSuspeitaDiagnostica.md) | [BRCID10](CodeSystem-BRCID10.md) |
+| [BRTipoAmostra](ValueSet-BRTipoAmostra-1.0.md) | [SpecimenType](https://terminology.hl7.org/CodeSystem-v2-0487.html)[BRTipoAmostraGAL](CodeSystem-BRTipoAmostraGAL.md) |
+| [BRTipoDocumento](ValueSet-BRTipoDocumento-1.0.md) | [BRTipoDocumento](CodeSystem-BRTipoDocumento.md) |
 

@@ -31,7 +31,7 @@
   "title" : "Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-21T09:35:29-03:00",
+  "date" : "2026-10-22T09:55:45-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
