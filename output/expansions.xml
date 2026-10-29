@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="62ed618e-f7ee-4f47-9e78-5c2cb06045c3"/>
+  <id value="a7368977-faa1-4b67-b2b3-82a1b2b7429f"/>
   <meta>
-    <lastUpdated value="2026-10-22T09:55:45.638-03:00"/>
+    <lastUpdated value="2026-10-29T11:59:13.062-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1378,8 +1378,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:26502910-9a2c-409e-bd6c-f8aec1a1d419"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:495e0aa6-3071-4bbf-81ab-2949654acff4"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -3108,8 +3108,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:e1601493-cb9c-4d51-a58f-da62ae8de66c"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:c2114fc2-bba5-4b14-b214-424cd3c0aca6"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -3605,8 +3605,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:1e489ba0-8cf8-4c01-a5d5-3fffb1fe33f8"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:3e79ca91-5949-4089-9ab9-58c201373897"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3796,8 +3796,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:9828bfc2-5c59-407f-b1fa-68f5852ec875"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:57e6be76-46d7-42fb-8c0d-d794b8593229"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3959,8 +3959,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:7294ea03-e3dc-46ed-861d-49c3e11e1d7d"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:757408fa-f8f6-4c13-8d38-da839d8744b0"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4108,8 +4108,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:be3cb8d6-5ec9-4cfe-996e-c7c1546d63a7"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:d3890fc1-607e-4d1d-a8f2-26a5609b6cc1"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -11329,8 +11329,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:06b4b276-82c9-4526-8fb7-8d98989540d9"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:37fc1082-70ed-475f-a4a3-6427d3e3a332"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="356"/>
           <offset value="0"/>
           <parameter>
@@ -20324,8 +20324,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:958a17cb-0c6d-411c-b614-bd63ac2f7872"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:6c9758e9-209c-4b5b-9d8e-931d11f8cd43"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="356"/>
           <offset value="0"/>
           <parameter>
@@ -22248,8 +22248,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:715132f1-7015-4576-accb-b587ba687c05"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:05bd47c8-abec-4a23-9d53-13777aa7a82e"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -22403,8 +22403,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:94574ec0-bcc7-4f34-ab66-314b88d4fbcb"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:61f82d1f-9486-4b57-8695-131373408984"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -23091,8 +23091,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:887ef0da-d8e0-4af2-a09d-585be7836bb8"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:27541196-2ab4-4bee-aecc-a22bb93f0644"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -23931,8 +23931,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:aff3ddfb-d56a-46f1-860f-5e8d30441c31"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:e790b41a-b29d-4101-ac6e-47ed85993427"/>
+          <timestamp value="2026-10-29T12:00:06-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -24478,8 +24478,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:3b335ef5-a995-4d06-81b8-0999e0fcf5ef"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:41469b4d-0913-4e14-ae5d-6602fb8f44ed"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="15"/>
           <offset value="0"/>
           <parameter>
@@ -24933,8 +24933,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:b52b1ad8-24fe-4ac4-bb49-d8b7313c327f"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:e2b06edb-cc8a-4145-b63c-779135366694"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="15"/>
           <offset value="0"/>
           <parameter>
@@ -25788,8 +25788,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:38d8e65f-37ce-4f5a-9507-74d32e237b88"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:8cdc0aff-e94b-455e-b939-0f588a4c1b16"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="35"/>
           <offset value="0"/>
           <parameter>
@@ -26743,8 +26743,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:3c24fc70-ac5e-4c82-a2b7-e73aff1f137a"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:5deac0d2-ec00-4276-acf7-6937608f519d"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="35"/>
           <offset value="0"/>
           <parameter>
@@ -26959,7 +26959,7 @@
               <p>Expansão efectuada internamente com base em:</p>
               <ul>
                 <li>
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html">codesystem specimenType v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html">codesystem specimenType v3.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v2-0487|3.0.0" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
                   </span>
@@ -27000,7 +27000,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-FRS">FRS</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-FRS">FRS</a>
                 </td>
                 <td>Fluido Respiratório</td>
                 <td>Fluid, Respiratory</td>
@@ -27021,7 +27021,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-LAVG">LAVG</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-LAVG">LAVG</a>
                 </td>
                 <td>Lavado Brônquico</td>
                 <td>Lavage, Bronhial</td>
@@ -27042,7 +27042,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-NSECR">NSECR</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-NSECR">NSECR</a>
                 </td>
                 <td>Secreção Nasal</td>
                 <td>Secretion, Nasal</td>
@@ -27063,7 +27063,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-PLAS">PLAS</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-PLAS">PLAS</a>
                 </td>
                 <td>Plasma</td>
                 <td>Plasma</td>
@@ -27084,7 +27084,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SPT">SPT</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SPT">SPT</a>
                 </td>
                 <td>Escarro</td>
                 <td>Sputum</td>
@@ -27105,7 +27105,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-TASP">TASP</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-TASP">TASP</a>
                 </td>
                 <td>Aspirado Traqueal</td>
                 <td>Aspirate, Tracheal</td>
@@ -27126,7 +27126,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-WB">WB</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-WB">WB</a>
                 </td>
                 <td>Sangue Total</td>
                 <td>Blood, Whole</td>
@@ -27147,7 +27147,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SER">SER</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SER">SER</a>
                 </td>
                 <td>Soro</td>
                 <td>Serum</td>
@@ -27168,7 +27168,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SECRE">SECRE</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SECRE">SECRE</a>
                 </td>
                 <td>Secreção Não Especificada</td>
                 <td>Secretion(s)</td>
@@ -27189,7 +27189,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-ASP">ASP</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-ASP">ASP</a>
                 </td>
                 <td>Aspirado Não Especificado</td>
                 <td>Aspirate</td>
@@ -27210,7 +27210,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN">SPUTIN</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN">SPUTIN</a>
                 </td>
                 <td>Escarro induzido</td>
                 <td>Sputum, Inducted</td>
@@ -27231,7 +27231,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-WASH">WASH</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-WASH">WASH</a>
                 </td>
                 <td>Lavado</td>
                 <td>Wash</td>
@@ -27252,7 +27252,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-CSF">CSF</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-CSF">CSF</a>
                 </td>
                 <td>Líquor</td>
                 <td>Cerebral spinal fluid</td>
@@ -27273,7 +27273,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SAL">SAL</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SAL">SAL</a>
                 </td>
                 <td>Saliva</td>
                 <td>Saliva</td>
@@ -27294,7 +27294,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-UR">UR</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-UR">UR</a>
                 </td>
                 <td>Urina</td>
                 <td>Urine</td>
@@ -28398,8 +28398,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:1308716a-ca27-4373-ab59-7f3949d05bb1"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:8d0cbfa6-d2ff-44a0-b6cf-7b69e820cc01"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -28773,7 +28773,7 @@
               <p>Expansão efectuada internamente com base em:</p>
               <ul>
                 <li>
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html">codesystem specimenType v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html">codesystem specimenType v3.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v2-0487|3.0.0" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
                   </span>
@@ -28814,7 +28814,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-FRS">FRS</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-FRS">FRS</a>
                 </td>
                 <td>Fluido Respiratório</td>
                 <td>Fluid, Respiratory</td>
@@ -28835,7 +28835,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-LAVG">LAVG</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-LAVG">LAVG</a>
                 </td>
                 <td>Lavado Brônquico</td>
                 <td>Lavage, Bronhial</td>
@@ -28856,7 +28856,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-NSECR">NSECR</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-NSECR">NSECR</a>
                 </td>
                 <td>Secreção Nasal</td>
                 <td>Secretion, Nasal</td>
@@ -28877,7 +28877,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-PLAS">PLAS</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-PLAS">PLAS</a>
                 </td>
                 <td>Plasma</td>
                 <td>Plasma</td>
@@ -28898,7 +28898,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SPT">SPT</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SPT">SPT</a>
                 </td>
                 <td>Escarro</td>
                 <td>Sputum</td>
@@ -28919,7 +28919,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-TASP">TASP</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-TASP">TASP</a>
                 </td>
                 <td>Aspirado Traqueal</td>
                 <td>Aspirate, Tracheal</td>
@@ -28940,7 +28940,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-WB">WB</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-WB">WB</a>
                 </td>
                 <td>Sangue Total</td>
                 <td>Blood, Whole</td>
@@ -28961,7 +28961,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SER">SER</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SER">SER</a>
                 </td>
                 <td>Soro</td>
                 <td>Serum</td>
@@ -28982,7 +28982,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SECRE">SECRE</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SECRE">SECRE</a>
                 </td>
                 <td>Secreção Não Especificada</td>
                 <td>Secretion(s)</td>
@@ -29003,7 +29003,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-ASP">ASP</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-ASP">ASP</a>
                 </td>
                 <td>Aspirado Não Especificado</td>
                 <td>Aspirate</td>
@@ -29024,7 +29024,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN">SPUTIN</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN">SPUTIN</a>
                 </td>
                 <td>Escarro induzido</td>
                 <td>Sputum, Inducted</td>
@@ -29045,7 +29045,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-WASH">WASH</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-WASH">WASH</a>
                 </td>
                 <td>Lavado</td>
                 <td>Wash</td>
@@ -29066,7 +29066,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-CSF">CSF</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-CSF">CSF</a>
                 </td>
                 <td>Líquor</td>
                 <td>Cerebral spinal fluid</td>
@@ -29087,7 +29087,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-SAL">SAL</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-SAL">SAL</a>
                 </td>
                 <td>Saliva</td>
                 <td>Saliva</td>
@@ -29108,7 +29108,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v2-0487</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-v2-0487.html#v2-0487-UR">UR</a>
+                  <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v2-0487.html#v2-0487-UR">UR</a>
                 </td>
                 <td>Urina</td>
                 <td>Urine</td>
@@ -30212,8 +30212,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:10e0a820-318e-449c-9c81-1000d2f0203a"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:0c73ee65-bbcb-49e3-9fd7-9ef9522661bd"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -30860,8 +30860,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:6e3f083e-0ba2-4147-ac6e-9db3d167d4c9"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:ad26155e-aa13-4142-ab62-d65cad0082e1"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -31229,8 +31229,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:9a5f8773-4925-44e3-b19f-ab0b4eaa9cde"/>
-          <timestamp value="2026-10-22T09:57:06-03:00"/>
+          <identifier value="urn:uuid:6796d52c-c23e-490c-9766-495e10e16b0b"/>
+          <timestamp value="2026-10-29T12:00:07-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>

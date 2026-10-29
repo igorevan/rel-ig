@@ -12,7 +12,7 @@ Generated $--. FHIR version $-- for br.gov.saude.rel.fhir#$-- (canonical = https
  /home/igor/rel-ig/input/resources/CodeSystem-BRNomeExameGAL : 0 / 1 / 1
  /home/igor/rel-ig/input/resources/CodeSystem-BRNomeExameLOINC : 0 / 1 / 1
  /home/igor/rel-ig/input/resources/CodeSystem-BRResultadoQualitativoExame : 0 / 1 / 1
- /home/igor/rel-ig/input/resources/CodeSystem-BRSubgrupoTabelaSUS : 0 / 1 / 2
+ /home/igor/rel-ig/input/resources/CodeSystem-BRSubgrupoTabelaSUS : 0 / 2 / 2
  /home/igor/rel-ig/input/resources/CodeSystem-BRTerminologiaPatogeno : 0 / 1 / 1
  /home/igor/rel-ig/input/resources/CodeSystem-BRTerminologiaSuspeitaDiagnostica : 0 / 1 / 1
  /home/igor/rel-ig/input/resources/CodeSystem-BRTipoAmostraGAL : 0 / 1 / 1

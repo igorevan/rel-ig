@@ -12,8 +12,8 @@
     "uses" : {
     },
     "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
-    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -182,9 +182,9 @@
     "uses" : {
     },
     "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -199,9 +199,9 @@
     "uses" : {
     },
     "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -216,9 +216,9 @@
     "uses" : {
     },
     "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -359,9 +359,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico"
+    "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",

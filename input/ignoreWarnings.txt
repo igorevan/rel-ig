@@ -9,6 +9,8 @@
 # Errors relacionados as particularidades dos CodeSystems e ValueSets da RNDS
 %Esta propriedade tem apenas um código%
 %http://hl7.org/fhir/composition-status%
+%http://hl7.org/fhir/ValueSet/concept-property-type%
+%http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet%
 
 # Erros relacionados as especificações da RNDS
 %have an OID assigned%
@@ -20,4 +22,3 @@ The Implementation Guide contains no examples for this profile
 The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-O extensão http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 está obsoleto com a nota Use additionalBinding extension or element instead

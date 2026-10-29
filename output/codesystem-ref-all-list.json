@@ -105,14 +105,14 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -220,7 +220,7 @@
     "oids" : ["2.16.840.1.113883.18.229"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+    "http://terminology.hl7.org/7.5.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -256,7 +256,7 @@
     "oids" : ["2.16.840.1.113883.18.317"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+    "http://terminology.hl7.org/7.5.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -268,7 +268,7 @@
     "oids" : ["2.16.840.1.113883.18.422"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+    "http://terminology.hl7.org/7.5.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -280,7 +280,7 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    "http://terminology.hl7.org/7.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
