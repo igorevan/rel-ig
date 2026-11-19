@@ -1468,7 +1468,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "BRResultadoExameLaboratorial-3.2.1","Composition.section.section","Composition.section.section","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Nested Section","A nested sub-section within this section.","Nested sections are primarily used to help human readers navigate to particular portions of the document.","","","","","","","","",,,,,"",,,,"Composition.section.section",0,*,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+cmp-1:A section must contain at least one of text, entries, or sub-sections {text.exists() or entry.exists() or section.exists()}cmp-2:A section can only have an emptyReason if it is empty {emptyReason.empty() or entry.empty()}"
 "BRResultadoExameLaboratorial-3.2.1","Composition.section.section.id","Composition.section.section.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "BRResultadoExameLaboratorial-3.2.1","Composition.section.section.extension","Composition.section.section.extension","","extensions

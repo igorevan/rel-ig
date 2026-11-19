@@ -9,7 +9,6 @@
 # Errors relacionados as particularidades dos CodeSystems e ValueSets da RNDS
 %Esta propriedade tem apenas um código%
 %http://hl7.org/fhir/composition-status%
-%http://hl7.org/fhir/ValueSet/concept-property-type%
 %http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet%
 
 # Erros relacionados as especificações da RNDS
