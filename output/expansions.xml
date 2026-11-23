@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="578f170e-1d62-447f-9347-071d9b5e0ac7"/>
+  <id value="1fc2265b-fe16-4202-be04-1d527a77fa17"/>
   <meta>
-    <lastUpdated value="2026-11-19T16:38:29.784-03:00"/>
+    <lastUpdated value="2026-11-23T11:50:29.103-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1378,8 +1378,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:0a201dff-d457-4810-b130-24b996558a44"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:3037fe60-9849-4515-9d5c-46604b7fb69c"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -3108,8 +3108,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:0a201dff-d457-4810-b130-24b996558a44"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:3037fe60-9849-4515-9d5c-46604b7fb69c"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -3605,8 +3605,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:5ecf8fac-7fce-4191-b9c2-780b1064e3aa"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:570ffa36-bac9-4319-a2ea-6d78befbd517"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3796,8 +3796,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:5ecf8fac-7fce-4191-b9c2-780b1064e3aa"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:570ffa36-bac9-4319-a2ea-6d78befbd517"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3959,8 +3959,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:8ae95d75-631d-44f9-b4af-a8deb214f3a2"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:f438e416-82cf-4588-872c-c7df191d4960"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4108,8 +4108,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:8ae95d75-631d-44f9-b4af-a8deb214f3a2"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:f438e416-82cf-4588-872c-c7df191d4960"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -11329,8 +11329,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:743ebbcb-8441-4fae-9a23-b00ed39663ae"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:85bf2583-5e94-4f05-bff2-ac5d87625fd1"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="356"/>
           <offset value="0"/>
           <parameter>
@@ -20324,8 +20324,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:743ebbcb-8441-4fae-9a23-b00ed39663ae"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:85bf2583-5e94-4f05-bff2-ac5d87625fd1"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="356"/>
           <offset value="0"/>
           <parameter>
@@ -22248,8 +22248,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:b5d4e717-28fa-47b8-969b-5004503e063a"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:4f3ddb1f-4bc0-4dbd-a6c1-647312556ef9"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -22403,8 +22403,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:b5d4e717-28fa-47b8-969b-5004503e063a"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:4f3ddb1f-4bc0-4dbd-a6c1-647312556ef9"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -23091,8 +23091,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:4594d8ef-cdb7-4bbc-8355-a0ac38736092"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:263f0bc0-f99a-4a5c-b731-5652cc3d77be"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -23931,8 +23931,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:4594d8ef-cdb7-4bbc-8355-a0ac38736092"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:263f0bc0-f99a-4a5c-b731-5652cc3d77be"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -24478,8 +24478,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:10076103-51a7-4ee1-8270-de6499880e03"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:2d45027c-0cce-489c-ab60-1d08f34d498c"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="15"/>
           <offset value="0"/>
           <parameter>
@@ -24933,8 +24933,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:10076103-51a7-4ee1-8270-de6499880e03"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:2d45027c-0cce-489c-ab60-1d08f34d498c"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="15"/>
           <offset value="0"/>
           <parameter>
@@ -25045,13 +25045,24 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
-              <a href="CodeSystem-BRCID10.html">codesystem Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem) v1.0.0-release (CodeSystem)</a>
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
-              </span>
-            </p>
-            <p>Este conjunto de valores contém 35 conceitos</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansão efectuada internamente com base em:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-BRCID10.html">codesystem Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem) v1.0.0-release (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html">codesystem Suspeita Diagnóstica (CodeSystem) v1.0.0-release (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>Este conjunto de valores contém 37 conceitos</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -25770,6 +25781,46 @@
                   </span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica-B04"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html#BRTerminologiaSuspeitaDiagnostica-B04">B04</a>
+                </td>
+                <td>Varíola dos macacos [Monkeypox]</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;B04&quot;, &quot;display&quot;: &quot;Varíola dos macacos [Monkeypox]&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;/&gt;&lt;version value=&quot;1.0.0-release&quot;/&gt;&lt;code value=&quot;B04&quot;/&gt;&lt;display value=&quot;Varíola dos macacos [Monkeypox]&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica-B342"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html#BRTerminologiaSuspeitaDiagnostica-B342">B342</a>
+                </td>
+                <td>Infecção por coronavírus de localização não especificada</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;B342&quot;, &quot;display&quot;: &quot;Infecção por coronavírus de localização não especificada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;/&gt;&lt;version value=&quot;1.0.0-release&quot;/&gt;&lt;code value=&quot;B342&quot;/&gt;&lt;display value=&quot;Infecção por coronavírus de localização não especificada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
@@ -25788,9 +25839,9 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:d39b89b9-9430-4a65-869c-46ba8079d4bb"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
-          <total value="35"/>
+          <identifier value="urn:uuid:d8692886-51af-4b51-9085-d64b157e763a"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
+          <total value="37"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25811,6 +25862,10 @@
           <parameter>
             <name value="used-codesystem"/>
             <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica|1.0.0-release"/>
           </parameter>
           <contains>
             <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
@@ -25986,6 +26041,16 @@
             <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
             <code value="B172"/>
             <display value="Hepatite aguda E"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica"/>
+            <code value="B04"/>
+            <display value="Varíola dos macacos [Monkeypox]"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica"/>
+            <code value="B342"/>
+            <display value="Infecção por coronavírus de localização não especificada"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -26000,13 +26065,24 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
-              <a href="CodeSystem-BRCID10.html">codesystem Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem) v1.0.0-release (CodeSystem)</a>
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
-              </span>
-            </p>
-            <p>Este conjunto de valores contém 35 conceitos</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansão efectuada internamente com base em:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-BRCID10.html">codesystem Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem) v1.0.0-release (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html">codesystem Suspeita Diagnóstica (CodeSystem) v1.0.0-release (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica|1.0.0-release" title="Clique para copiar o URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>Este conjunto de valores contém 37 conceitos</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -26725,6 +26801,46 @@
                   </span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica-B04"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html#BRTerminologiaSuspeitaDiagnostica-B04">B04</a>
+                </td>
+                <td>Varíola dos macacos [Monkeypox]</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;B04&quot;, &quot;display&quot;: &quot;Varíola dos macacos [Monkeypox]&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;/&gt;&lt;version value=&quot;1.0.0-release&quot;/&gt;&lt;code value=&quot;B04&quot;/&gt;&lt;display value=&quot;Varíola dos macacos [Monkeypox]&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica-B342"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRTerminologiaSuspeitaDiagnostica.html#BRTerminologiaSuspeitaDiagnostica-B342">B342</a>
+                </td>
+                <td>Infecção por coronavírus de localização não especificada</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;B342&quot;, &quot;display&quot;: &quot;Infecção por coronavírus de localização não especificada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica&quot;/&gt;&lt;version value=&quot;1.0.0-release&quot;/&gt;&lt;code value=&quot;B342&quot;/&gt;&lt;display value=&quot;Infecção por coronavírus de localização não especificada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
@@ -26743,9 +26859,9 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:d39b89b9-9430-4a65-869c-46ba8079d4bb"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
-          <total value="35"/>
+          <identifier value="urn:uuid:d8692886-51af-4b51-9085-d64b157e763a"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
+          <total value="37"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -26766,6 +26882,10 @@
           <parameter>
             <name value="used-codesystem"/>
             <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10|1.0.0-release"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica|1.0.0-release"/>
           </parameter>
           <contains>
             <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
@@ -26941,6 +27061,16 @@
             <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
             <code value="B172"/>
             <display value="Hepatite aguda E"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica"/>
+            <code value="B04"/>
+            <display value="Varíola dos macacos [Monkeypox]"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica"/>
+            <code value="B342"/>
+            <display value="Infecção por coronavírus de localização não especificada"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -28398,8 +28528,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:4d8e6a29-c421-498f-bda5-f0445dd3a7a9"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:036e2e7d-8cf4-4d3c-90d7-b3690fc00b44"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -30212,8 +30342,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:4d8e6a29-c421-498f-bda5-f0445dd3a7a9"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:036e2e7d-8cf4-4d3c-90d7-b3690fc00b44"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="66"/>
           <offset value="0"/>
           <parameter>
@@ -30860,8 +30990,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:a57ad6df-a9de-421e-b48f-92574f22adfe"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:a4259eff-b3a8-434f-90f3-a15b0fa15fc4"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -31229,8 +31359,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:a57ad6df-a9de-421e-b48f-92574f22adfe"/>
-          <timestamp value="2026-11-19T16:39:03-03:00"/>
+          <identifier value="urn:uuid:a4259eff-b3a8-434f-90f3-a15b0fa15fc4"/>
+          <timestamp value="2026-11-23T11:51:01-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>

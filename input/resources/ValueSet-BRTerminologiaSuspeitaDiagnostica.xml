@@ -59,10 +59,6 @@
         <display value="Febre de oropouche" />
       </concept>
       <concept>
-        <code value="A938" />
-        <display value="Outras febres virais especificadas transmitidas por artrópodes" />
-      </concept>
-      <concept>
         <code value="A923" />
         <display value="Infecção pelo vírus West Nile" />
       </concept>
@@ -158,6 +154,17 @@
       <concept>
         <code value="B172" />
         <display value="Hepatite aguda E" />
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica" />
+      <concept>
+        <code value="B04" />
+        <display value="Varíola dos macacos [Monkeypox]" />
+      </concept>
+      <concept>
+        <code value="B342" />
+        <display value="Infecção por coronavírus de localização não especificada" />
       </concept>
     </include>
   </compose>

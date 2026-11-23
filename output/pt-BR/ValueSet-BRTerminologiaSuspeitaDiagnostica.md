@@ -128,10 +128,6 @@
         "display" : "Febre de oropouche"
       },
       {
-        "code" : "A938",
-        "display" : "Outras febres virais especificadas transmitidas por artrópodes"
-      },
-      {
         "code" : "A923",
         "display" : "Infecção pelo vírus West Nile"
       },
@@ -226,6 +222,17 @@
       {
         "code" : "B172",
         "display" : "Hepatite aguda E"
+      }]
+    },
+    {
+      "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+      "concept" : [{
+        "code" : "B04",
+        "display" : "Varíola dos macacos [Monkeypox]"
+      },
+      {
+        "code" : "B342",
+        "display" : "Infecção por coronavírus de localização não especificada"
       }]
     }]
   }

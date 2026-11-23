@@ -103,6 +103,17 @@
     "ValueSet-BRTerminologiaPatogeno.html" : "Patógeno (ValueSet)"
   },
   {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRTerminologiaSuspeitaDiagnostica",
+    "title" : "Suspeita Diagnóstica (CodeSystem)",
+    "description" : "Terminologia para indicação de uma Suspeita Diagnóstica.",
+    "uses" : {
+    },
+    "ValueSet-BRTerminologiaSuspeitaDiagnostica.html" : "Suspeita Diagnóstica"
+  },
+  {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
     "version" : "1.0.0-release",
     "status" : "active",

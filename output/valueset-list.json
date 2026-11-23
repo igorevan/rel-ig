@@ -78,7 +78,8 @@
     "name" : "BRTerminologiaSuspeitaDiagnostica",
     "title" : "Suspeita Diagnóstica",
     "description" : "Conjunto de terminologias para indicação da Suspeita Diagnóstica.",
-    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"]
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
+    "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"]
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
