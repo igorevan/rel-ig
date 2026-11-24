@@ -1,4 +1,4 @@
-# br.gov.saude.rel.fhir#1.0.0-release: Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS(pt-BR)
+# br.gov.saude.rel.fhir#1.0.0: Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS(pt-BR)
 
 ## Pages
 
@@ -9,7 +9,7 @@
 * [Suporte da RNDS](pt-BR/suporte.md)
 * [Feedback](pt-BR/forms.md)
 * [Integração](pt-BR/integracao.md)
-* [Artefatos](pt-BR/artifacts.md)
+* [Resumo de Artefatos](pt-BR/artifacts.md)
 * [Histórico de mudanças](pt-BR/changes.md)
 * [Exemplos](pt-BR/exemplos.md)
 * [Modelo de Informação](pt-BR/mi.md)

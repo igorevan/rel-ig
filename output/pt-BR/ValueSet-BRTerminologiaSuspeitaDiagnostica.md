@@ -1,4 +1,4 @@
-# Suspeita Diagnóstica - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Suspeita Diagnóstica - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## ValueSet: Suspeita Diagnóstica 
 
@@ -25,36 +25,8 @@
   "resourceType" : "ValueSet",
   "id" : "BRTerminologiaSuspeitaDiagnostica",
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRTerminologiaSuspeitaDiagnostica",
   "title" : "Suspeita Diagnóstica",
   "status" : "active",

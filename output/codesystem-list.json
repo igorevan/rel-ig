@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCID10",
     "title" : "Classificação Internacional de Doenças - Décima Revisão - CID-10 (CodeSystem)",
@@ -9,7 +9,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRNomeExameGAL",
     "title" : "Exames do GAL",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRNomeExameLOINC",
     "title" : "Exames LOINC",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRResultadoQualitativoExame",
     "title" : "Resultado qualitativo do Exame (CodeSystem)",
@@ -33,7 +33,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRSubgrupoTabelaSUS",
     "title" : "Subgrupo da Tabela SUS",
@@ -41,7 +41,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaPatogeno",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTerminologiaPatogeno",
     "title" : "Patógeno (CodeSystem)",
@@ -49,7 +49,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTerminologiaSuspeitaDiagnostica",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTerminologiaSuspeitaDiagnostica",
     "title" : "Suspeita Diagnóstica (CodeSystem)",
@@ -57,7 +57,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoAmostraGAL",
     "title" : "Tipo de Amostra Biológica",
@@ -65,7 +65,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDocumento",
     "title" : "Tipo de Documento (CodeSystem)",
@@ -73,7 +73,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoAVIDEZ",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoAVIDEZ",
     "title" : "Tipo de Resultado (AVIDEZ)",
@@ -81,7 +81,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoDTNT",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoDTNT",
     "title" : "Tipo de Resultado (DTNT)",
@@ -89,7 +89,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoHISPT",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoHISPT",
     "title" : "Tipo de Resultado (HISPT)",
@@ -97,7 +97,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPRAU",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoPRAU",
     "title" : "Tipo de Resultado (PRAU)",
@@ -105,7 +105,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoPSNG",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoPSNG",
     "title" : "Tipo de Resultado (PSNG)",
@@ -113,7 +113,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRGNR",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoRGNR",
     "title" : "Tipo de Resultado (RGNR)",
@@ -121,7 +121,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSBAC",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoRSBAC",
     "title" : "Tipo de Resultado (RSBAC)",
@@ -129,7 +129,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoResultadoRSCUL",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoResultadoRSCUL",
     "title" : "Tipo de Resultado (RSCUL)",

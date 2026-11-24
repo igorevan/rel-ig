@@ -1,4 +1,4 @@
-# Bundle de exemplo do REL (LOINC) - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Bundle de exemplo do REL (LOINC) - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle de exemplo do REL (LOINC)
 

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaExame-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCategoriaExame",
     "title" : "Categoria do Exame",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BREstadoDocumento",
     "title" : "Estado do Documento",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoObservacao-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BREstadoObservacao",
     "title" : "Estado da Observação",
@@ -37,7 +37,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRNomeExame-2.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRNomeExame",
     "title" : "Nome do Exame",
@@ -50,7 +50,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRResultadoQualitativoExame",
     "title" : "Resultado Qualitativo do Exame 1.0 (ValueSet)",
@@ -62,7 +62,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-2.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRResultadoQualitativoExame",
     "title" : "Resultado Qualitativo do Exame 2.0 (ValueSet)",
@@ -82,7 +82,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaPatogeno",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTerminologiaPatogeno",
     "title" : "Patógeno (ValueSet)",
@@ -94,7 +94,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaSuspeitaDiagnostica",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTerminologiaSuspeitaDiagnostica",
     "title" : "Suspeita Diagnóstica",
@@ -107,7 +107,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoAmostra",
     "title" : "Tipo de Amostra de Exame",
@@ -120,7 +120,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDocumento",
     "title" : "Tipo de Documento (ValueSet)",

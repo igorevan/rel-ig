@@ -1,4 +1,4 @@
-# Amostra Biológica - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Amostra Biológica - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## Perfil de recurso: Amostra Biológica 
 
@@ -44,7 +44,7 @@ Esta estrutura deriva de [Specimen](http://hl7.org/fhir/R4/specimen.html)
 
 #### Terminologia Ligações (Diferencial)
 
- **Visão TotalView** 
+ **Visão CompletaView** 
 
 #### Terminologia Ligações
 
@@ -68,36 +68,8 @@ Outras representações do perfil: [CSV](../StructureDefinition-BRAmostraBiologi
     "lastUpdated" : "2020-03-26T13:02:05.548+00:00"
   },
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRAmostraBiologica",
   "title" : "Amostra Biológica",
   "status" : "active",

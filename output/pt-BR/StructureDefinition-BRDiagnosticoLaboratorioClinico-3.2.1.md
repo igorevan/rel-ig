@@ -1,4 +1,4 @@
-# Diagnóstico em Laboratório Clínico - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Diagnóstico em Laboratório Clínico - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## Perfil de recurso: Diagnóstico em Laboratório Clínico 
 
@@ -44,7 +44,7 @@ Esta estrutura deriva de [Observation](http://hl7.org/fhir/R4/observation.html)
 
 #### Terminologia Ligações (Diferencial)
 
- **Visão TotalView** 
+ **Visão CompletaView** 
 
 #### Terminologia Ligações
 
@@ -68,36 +68,8 @@ Outras representações do perfil: [CSV](../StructureDefinition-BRDiagnosticoLab
     "lastUpdated" : "2022-10-10T21:33:32.3996294+00:00"
   },
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRDiagnosticoLaboratorioClinico",
   "title" : "Diagnóstico em Laboratório Clínico",
   "status" : "active",

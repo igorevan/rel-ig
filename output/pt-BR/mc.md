@@ -1,4 +1,4 @@
-# Modelo Computacional - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Modelo Computacional - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## Modelo Computacional
 

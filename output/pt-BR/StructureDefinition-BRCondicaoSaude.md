@@ -1,4 +1,4 @@
-# Condição de Saúde - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0-release
+# Condição de Saúde - Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS v1.0.0
 
 ## Perfil de recurso: Condição de Saúde 
 
@@ -44,7 +44,7 @@ Esta estrutura deriva de [Condition](http://hl7.org/fhir/R4/condition.html)
 
 #### Terminologia Ligações (Diferencial)
 
- **Visão TotalView** 
+ **Visão CompletaView** 
 
 #### Terminologia Ligações
 
@@ -65,36 +65,8 @@ Outras representações do perfil: [CSV](../StructureDefinition-BRCondicaoSaude.
   "resourceType" : "StructureDefinition",
   "id" : "BRCondicaoSaude",
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/rel/ImplementationGuide/br.gov.saude.rel.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCondicaoSaude",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRCondicaoSaude",
   "title" : "Condição de Saúde",
   "status" : "active",

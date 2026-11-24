@@ -5,9 +5,9 @@
   "description" : "Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)",
   "status" : "active",
   "package-id" : "br.gov.saude.rel.fhir",
-  "ig-ver" : "1.0.0-release",
-  "date" : "Mon, 23 Nov, 2026 11:50:29 -0300",
-  "dateISO8601" : "2026-11-23T11:50:29-03:00",
+  "ig-ver" : "1.0.0",
+  "date" : "Tue, 24 Nov, 2026 15:54:14 -0300",
+  "dateISO8601" : "2026-11-24T15:54:14-03:00",
   "errs" : 1,
   "warnings" : 0,
   "hints" : 0,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 77,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 3734675328
+  "maxMemory" : 3513359952
 }
