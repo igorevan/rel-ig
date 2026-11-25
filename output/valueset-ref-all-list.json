@@ -12,8 +12,8 @@
     "uses" : {
     },
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -182,9 +182,9 @@
     "uses" : {
     },
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -199,9 +199,9 @@
     "uses" : {
     },
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -216,9 +216,9 @@
     "uses" : {
     },
     "StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html" : "Diagnóstico em Laboratório Clínico",
-    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica",
     "StructureDefinition-BRResultadoExameLaboratorial-3.2.1.html" : "Resultado de Exame Laboratorial",
-    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde"
+    "StructureDefinition-BRCondicaoSaude.html" : "Condição de Saúde",
+    "StructureDefinition-BRAmostraBiologica-1.0.html" : "Amostra Biológica"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
