@@ -98,7 +98,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
           Pacote br.gov.saude.rel.fhir#1.0.0 baseado em FHIR 4.0.1.
           Gerado 
   
-    2026-11-25
+    2026-11-26
   
 
           
@@ -125,6 +125,94 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
              
                 Creative Commons 0
          (        <a href="pt-BR/searchform.html">src</a>
+)
+      </li>
+      <li>
+  // 355abe13-4ecd-47ab-9be2-d266c817be32
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctBRAmostraBiologica-1.0Mo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="pt-BR/StructureDefinition-BRAmostraBiologica-1.0-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // 355abe13-4ecd-47ab-9be2-d266c817be32
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctBRCondicaoSaudeMo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="pt-BR/StructureDefinition-BRCondicaoSaude-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // 355abe13-4ecd-47ab-9be2-d266c817be32
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctBRDiagnosticoLaboratorioClinico-3.2.1Mo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="pt-BR/StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // 355abe13-4ecd-47ab-9be2-d266c817be32
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctBRResultadoExameLaboratorial-3.2.1Mo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="pt-BR/StructureDefinition-BRResultadoExameLaboratorial-3.2.1-mappings.html">src</a>
 )
       </li>
       <li>
@@ -162,8 +250,8 @@ Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS - Compi
           Pacote br.gov.saude.rel.fhir#1.0.0 baseado em           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Gerado 
-            <span title="2026-11-25 10:03:00 -0300">
-    2026-11-25
+            <span title="2026-11-26 14:32:00 -0300">
+    2026-11-26
   </span>
 
 
@@ -183,13 +271,26 @@ Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS - Compi
       </tr>
       <tr>
         <td>
+          <a href="pt-BR/StructureDefinition-BRCondicaoSaude-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/conceptdomain">snomed.info</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/conceptdomain">SNOMED CT Concept Domain Binding</a>
+ (sct-concept)
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="pt-BR/StructureDefinition-BRCondicaoSaude-mappings.html">web</a>
         </td>
         <td>
           <a href="http://snomed.info/conceptdomain">snomed.info</a>
         </td>
         <td>
-          <a href="http://snomed.info/conceptdomain" title="http://snomed.info/conceptdomain">SNOMED CT Concept Domain Binding</a>
+          <a href="http://snomed.info/conceptdomain" title="SNOMED CT Concept Domain Binding">SNOMED CT Concept Domain Binding</a>
+          <a name="sct-concept"> </a>
         </td>
       </tr>
       <tr>

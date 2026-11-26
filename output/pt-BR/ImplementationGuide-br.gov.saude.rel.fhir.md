@@ -15,7 +15,7 @@
   "title" : "Guia de Implementação do Resultado de Exame Laboratorial (REL) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-25T10:03:17-03:00",
+  "date" : "2026-11-26T14:32:43-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -884,99 +884,55 @@
       "description" : "Classifica o tipo de documento que está sendo trafegado."
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
       "nameUrl" : "toc.html",
       "title" : "Índice",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
         "nameUrl" : "index.html",
         "title" : "Principal",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "credenciamento.html"
-        }],
         "nameUrl" : "credenciamento.html",
         "title" : "Credenciamento",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "integracao.html"
-        }],
         "nameUrl" : "integracao.html",
         "title" : "Integração",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "mi.html"
-        }],
         "nameUrl" : "mi.html",
         "title" : "Modelo de Informação",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "mc.html"
-        }],
         "nameUrl" : "mc.html",
         "title" : "Modelo Computacional",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "exemplos.html"
-        }],
         "nameUrl" : "exemplos.html",
         "title" : "Exemplos",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "changes.html"
-        }],
         "nameUrl" : "changes.html",
         "title" : "Histórico de mudanças",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "downloads.html"
-        }],
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "forms.html"
-        }],
         "nameUrl" : "forms.html",
         "title" : "Feedback",
         "generation" : "html"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "suporte.html"
-        }],
         "nameUrl" : "suporte.html",
         "title" : "Suporte da RNDS",
         "generation" : "html"

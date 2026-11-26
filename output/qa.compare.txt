@@ -1,11 +1,11 @@
 RELIG : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0, broken links = 0
+err = 0, warn = 0, info = 0, broken links = 0
 $--
 Generated $--. FHIR version $-- for br.gov.saude.rel.fhir#$-- (canonical = https://fhir.saude.gov.br/rel)
  Build Errors : 0 / 0 / 0
- /home/igor/rel-ig/input/examples/example-bundle-rel-gal : 1 / 2 / 3
+ /home/igor/rel-ig/input/examples/example-bundle-rel-gal : 0 / 2 / 2
  /home/igor/rel-ig/input/examples/example-bundle-rel-loinc : 0 / 2 / 2
  /home/igor/rel-ig/input/myig : 0 / 0 / 2
  /home/igor/rel-ig/input/resources/CodeSystem-BRCID10 : 0 / 1 / 1
@@ -46,7 +46,6 @@ Generated $--. FHIR version $-- for br.gov.saude.rel.fhir#$-- (canonical = https
 
 
 == input/examples/example-bundle-rel-gal.json ==
-ERROR: Bundle/example-bundle-rel-gal: Bundle.entry[0].resource.section[0]: Slice 'Composition.section.entry:condicaoSaude': a matching slice is required, but not found (from http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-3.2.1|1.0.0). Note that other slices are allowed in addition to this required slice
 
 
 == input/examples/example-bundle-rel-loinc.json ==

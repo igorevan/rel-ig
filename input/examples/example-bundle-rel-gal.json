@@ -96,7 +96,7 @@
           {
             "assessment": [
               {
-                "reference": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1"
+                "reference": "urn:uuid:3c263b51-02c1-4cc7-82e2-a0f32c51efa2"
               }
             ]
           }

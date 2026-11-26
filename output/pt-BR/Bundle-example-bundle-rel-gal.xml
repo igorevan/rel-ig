@@ -66,7 +66,7 @@
         </meta>
         <language value="pt-BR"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><p class="res-header-id"><b>Narrativa gerada: Condition 6f8b5374-e21b-4b0c-a6a7-2dc628ffea06</b></p><a name="6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><a name="hc6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRCondicaoSaude.html">Condição de Saúde</a></p></div><p><b>verificationStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10 A90}">Dengue [dengue clássico]</span></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/898005900000823</p><h3>Stages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Assessment</b></td></tr><tr><td style="display: none">*</td><td><a href="StructureDefinition-BRDiagnosticoLaboratorioClinico-3.2.1.html">Diagnóstico em Laboratório Clínico</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><p class="res-header-id"><b>Narrativa gerada: Condition 6f8b5374-e21b-4b0c-a6a7-2dc628ffea06</b></p><a name="6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><a name="hc6f8b5374-e21b-4b0c-a6a7-2dc628ffea06"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-BRCondicaoSaude.html">Condição de Saúde</a></p></div><p><b>verificationStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10 A90}">Dengue [dengue clássico]</span></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/898005900000823</p><h3>Stages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Assessment</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-example-bundle-rel-gal.html#urn-uuid-3c263b51-02c1-4cc7-82e2-a0f32c51efa2">Observation DENGUE IGM</a></td></tr></table></div>
         </text>
         <verificationStatus>
           <coding>
@@ -88,7 +88,7 @@
         </subject>
         <stage>
           <assessment>
-            <reference value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-3.2.1"/>
+            <reference value="urn:uuid:3c263b51-02c1-4cc7-82e2-a0f32c51efa2"/>
           </assessment>
         </stage>
       </Condition>

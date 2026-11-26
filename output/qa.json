@@ -6,15 +6,15 @@
   "status" : "active",
   "package-id" : "br.gov.saude.rel.fhir",
   "ig-ver" : "1.0.0",
-  "date" : "Wed, 25 Nov, 2026 10:03:17 -0300",
-  "dateISO8601" : "2026-11-25T10:03:17-03:00",
-  "errs" : 1,
+  "date" : "Thu, 26 Nov, 2026 14:32:43 -0300",
+  "dateISO8601" : "2026-11-26T14:32:43-03:00",
+  "errs" : 0,
   "warnings" : 0,
   "hints" : 0,
   "broken-links" : 0,
-  "suppressed-hints" : 16,
-  "suppressed-warnings" : 77,
+  "suppressed-hints" : 14,
+  "suppressed-warnings" : 78,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 3544922584
+  "maxMemory" : 2370224776
 }
